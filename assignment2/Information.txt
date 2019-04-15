@@ -1,0 +1,40 @@
+[6]  crisis
+1. in common:
+	1)had problem just took off
+	2)control problem
+	3)erratic up and down
+	
+2. Could be wrong
+	1)MCAS made in dive pilot tried to keep hight
+	2)MCAS nudges the nose of plane, faulty sensor make condition worse
+	3)installed without fully informing staffs
+	
+	4)no optional safety features on Lion crash
+	5)Boeing asked for extra money to install warning light
+	6)new feature would alert and trigger MCAS
+	
+	7)few training (1hour) to pilot without introducing MCAS
+	
+3. ground
+	1)USFA waited 3days and said no systemic issues
+	2)some contries banned
+	3)satelite monitor airplane where there are no ground sensors. The data shows that same flying path
+	
+4. Boeing decided to release a update on software this April
+
+
+[3]
+1.analysis before second accident
+MCAS was capable of moving the tail more than four times farther than was stated in the initial safety analysis document.
+Failed to account for how the system could reset itself each time a pilot responded.
+System based on input from a single sensor
+
+2.Lion air crash: a single faulty sensor measured the angle of attack and triggered the MCAS mutiple times which then pushed the nose of plane done repeatly.
+
+Boeing’s bulletin to the airlines stated that the limit of MCAS’s command was 2.5 degrees.That number was new to FAA engineers who had seen 0.6 degrees in the safety assessment.
+
+The limit of the system’s authority to move the tail applies each time MCAS is triggered. And it can be triggered multiple times, as it was on the Lion Air flight.
+
+Like all 737s, the MAX actually has two of the sensors, one on each side of the fuselage near the cockpit. But the MCAS was designed to take a reading from only one of them.
+Boeing’s safety analysis of the system assumed that “the pilots would recognize what was happening as a runaway and cut off the switches,” said the engineer. “The assumptions in here are incorrect. The human factors were not properly evaluated.”
+According to a detailed FAA briefing to legislators, Boeing will change the MCAS software to give the system input from both angle-of-attack sensors.
