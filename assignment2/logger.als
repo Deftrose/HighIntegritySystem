@@ -74,19 +74,39 @@ pred recv_log_message[s, s' : State] {
 
 // =========================== Attacker Actions ==============================
 
-// <FILL IN HERE>
+// Models the action in which the attacker intercepts a message and prevent it being received
+// by removing it from the network
+// Precondition: exists some LogMessage msg on network
+// Postcondition: the messages doesn't exist 
+//			and nothing else will be changed
 pred attacker_action_drop[s, s' : State] {
-  // <FILL IN HERE>
+  (some msg : LogMessage |
+	msg in s.network and no s'.network ) and
+	s'.last_action = s.last_action and
+	s'.log = s.log
 }
 
-// <FILL IN HERE>
+// Models the action in which the attacker invents a new log message and injects it into the network
+// Precondition: there are no messages in the network
+// Postcondition: the message fabricated by attacker is added into the network
+// 			and nothing else will be changed
 pred attacker_action_fabricate[s, s' : State] {
-  // <FILL IN HERE>
+  (no s.network and some msg : LogMessage |
+	msg in s'.network ) and
+	s'.last_action = s.last_action
+	s'.log = s.log
 }
 
-// <FILL IN HERE>
+// Models the action in which the attacker inject an old message which already exists in the log
+// Precondition: there are no messages in the network and the msg is already in the log
+// Postcondition: the msg is added to the network
+//			and nothing else will be changed
 pred attacker_action_replay[s, s' : State] {
-  // <FILL IN HERE>
+  (no s.network and some msg : LogMessage |
+	msg in s.log.elems and
+	msg in s'.network) and
+	s'.last_action = s.last_action
+	s'.log = s.log
 }
 
 // =========================== State Transitions and Traces ==================
@@ -132,9 +152,13 @@ assert log_only_grows {
 
 check log_only_grows for 10 expect 0
 
-// <FILL IN HERE>
 pred log_correct[s : State] {
-  // <FILL IN HERE>
+  ( all msg : LogMessage |
+	msg in s.log.elems implies ( one s'.network = msg and s' in ord/prevs[s] ) )and
+  not s.log.hasDups and
+  ( all m1,m2 : LogMessage in s.log.elems |
+	(s.log.indsof[m1] > s.log.indsof[m2] ) implies ( one s'.network = m1 and s''.network = m2 and s' in ord/prevs[s''] ) )
+  or Init[s]
 }
 
 // used to specify the log_correct_* predicates below
