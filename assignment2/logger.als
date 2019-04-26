@@ -78,36 +78,54 @@ pred recv_log_message[s, s' : State] {
 // by removing it from the network
 // Precondition: exists some LogMessage msg on network
 // Postcondition: the messages doesn't exist 
-//			and nothing else will be changed
+//			and message log will be changed
 pred attacker_action_drop[s, s' : State] {
   (some msg : LogMessage |
 	msg in s.network and no s'.network ) and
-	s'.last_action = s.last_action and
+	s'.last_action = DropMessage and
 	s'.log = s.log
 }
+
+assert attack_drop {
+	all s,s' : State | attacker_action_drop[s,s'] implies ( no s'.network and some s.network)
+}
+
+check attack_drop for 10 expect 0
 
 // Models the action in which the attacker invents a new log message and injects it into the network
 // Precondition: there are no messages in the network
 // Postcondition: the message fabricated by attacker is added into the network
-// 			and nothing else will be changed
+// 			and message log will be changed
 pred attacker_action_fabricate[s, s' : State] {
   (no s.network and some msg : LogMessage |
 	msg in s'.network ) and
-	s'.last_action = s.last_action
+	s'.last_action = FabricateMessage and
 	s'.log = s.log
 }
+
+assert attack_fabricate {
+	all s,s': State | attacker_action_fabricate[s,s'] implies ( some s'.network and no s.network )
+}
+
+check attack_fabricate for 10 expect 0
 
 // Models the action in which the attacker inject an old message which already exists in the log
 // Precondition: there are no messages in the network and the msg is already in the log
 // Postcondition: the msg is added to the network
-//			and nothing else will be changed
+//			and message log will be changed
 pred attacker_action_replay[s, s' : State] {
   (no s.network and some msg : LogMessage |
 	msg in s.log.elems and
 	msg in s'.network) and
-	s'.last_action = s.last_action
+	s'.last_action = ReplayMessage and
 	s'.log = s.log
 }
+
+assert attack_replay {
+	all s,s':State | attacker_action_replay[s,s'] implies ( some msg: LogMessage | msg in s'.network and msg in s.log.elems and no s.network )
+}
+
+check attack_replay for 10 expect 0
 
 // =========================== State Transitions and Traces ==================
 
@@ -152,13 +170,15 @@ assert log_only_grows {
 
 check log_only_grows for 10 expect 0
 
+// used to check the correctness of the log
+// correct log means that the messages in log of any states should only been sent by the Sender instead of Attacker
+// To be specific, for each message which is in the log of state s, it should be sent by at least once in previous states by the Sender
 pred log_correct[s : State] {
-  ( all msg : LogMessage |
-	msg in s.log.elems implies ( one s'.network = msg and s' in ord/prevs[s] ) )and
-  not s.log.hasDups and
-  ( all m1,m2 : LogMessage in s.log.elems |
-	(s.log.indsof[m1] > s.log.indsof[m2] ) implies ( one s'.network = m1 and s''.network = m2 and s' in ord/prevs[s''] ) )
-  or Init[s]
+  all msg : LogMessage |
+	msg in s.log.elems implies 
+	( all s': State | ( msg in s'.network and s' in ord/prevs[s] )  implies 
+		( s'.last_action not in ReplayMessage and s'.last_action not in FabricateMessage )  // The msg in log should not come from attackers
+	)
 }
 
 // used to specify the log_correct_* predicates below
@@ -179,7 +199,7 @@ assert log_correct_when_attacker_only_replays {
 // <Adjust these thresholds as necessary to find the smallest
 //  attack you can, when such an attack exists, in each attacker model>
 check log_correct_when_attacker_only_replays for 10 expect 1
-// <Add attack description here>
+// 
 
 assert log_correct_when_attacker_only_fabricates {
   all s : State | attacker_only[FabricateMessage] implies log_correct[s]
@@ -191,3 +211,53 @@ check log_correct_when_attacker_only_fabricates for 10 expect 1
 
 // <Describe any additional attacks that are possible but are not
 //  captured by your model here>
+
+//=======================================Other Potential Attacks====================================
+// This models the action in which the attacker modifies the message from a sender
+// Precondition: exsists some message on the net 
+// Postcondition: the message from sender is replaced by another fake messages
+one sig ModifyMessage extends AttackerAction {}
+
+pred attack_action_modify[s,s': State]{
+   some msg,msg' : LogMessage |
+	msg in s.network and msg' in s'.network and
+	not msg' = msg and
+	s'.last_action = ModifyMessage
+}
+
+assert attack_modify {
+	all s,s' : State | attack_action_modify[s,s'] implies not s.network = s'.network
+}
+
+check attack_modify for 5 expect 0
+
+assert log_correct_when_attacker_only_modify {
+  all s : State | attacker_only[ModifyMessage] implies log_correct[s]
+}
+check log_correct_when_attacker_only_modify for 10 expect 1
+
+// This models the action in which the attacker replaces the new message with an old one which has already been in the log
+// Precondition: exsists some message on the net
+// Postcondition: the message is replaced with an message which is in the log
+one sig ReplayModifyMessage extends AttackerAction {}
+
+pred attack_action_replayModify[s,s': State]{
+    some msg,msg' : LogMessage |
+	msg in s.network and msg' in s.log.elems and
+	not msg = msg' and
+	msg in s'.network and
+	s'.last_action = ReplayModifyMessage
+}
+
+assert attack_replaymodify {
+	all s,s' : State | attack_action_replayModify[s,s'] implies
+	( not s.network = s'.network and
+	 s'.network in s.log.elems)
+}
+
+check attack_replaymodify for 5 expect 0
+
+assert log_correct_when_attacker_only_replaymodify {
+  all s : State | attacker_only[ReplayModifyMessage] implies log_correct[s]
+}
+check log_correct_when_attacker_only_replaymodify for 10 expect 1
