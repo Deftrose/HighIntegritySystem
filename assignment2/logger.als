@@ -176,8 +176,10 @@ check log_only_grows for 10 expect 0
 pred log_correct[s : State] {
   all msg : LogMessage |
 	msg in s.log.elems implies 
+  // For all the states, the message should come from previous states' network
 	( all s': State | ( msg in s'.network and s' in ord/prevs[s] )  implies 
-		( s'.last_action not in ReplayMessage and s'.last_action not in FabricateMessage )  // The msg in log should not come from attackers
+    // The msg in log should not come from attackers
+		( s'.last_action not in ReplayMessage and s'.last_action not in FabricateMessage )  
 	)
 }
 
@@ -198,16 +200,31 @@ assert log_correct_when_attacker_only_replays {
 }
 // <Adjust these thresholds as necessary to find the smallest
 //  attack you can, when such an attack exists, in each attacker model>
-check log_correct_when_attacker_only_replays for 10 expect 1
-// 
+check log_correct_when_attacker_only_replays for 5 expect 1
+// The smallest attack in this model requires at least 5 states to exist.
+// The Attacker do replay message attack, using an existing message in the log
+// and inserting it into the network again. This means that there should at least 
+// have one message in the log which requires a Normal Sender does a send action
+// and the server receives that message. Then the Attacker could use that message and
+// insert that into the network again after which the server would receive the same message.
+// So the trace would be like: s0(initial)-(send)->s1-(receive)
+//                              ->s2-(replay)->s3-(receive)->s4(where the attack is detected)
+// Since the last action of the state s which contains this message is replayMessage
+// so it is captured 
 
 assert log_correct_when_attacker_only_fabricates {
   all s : State | attacker_only[FabricateMessage] implies log_correct[s]
 }
 // <Adjust these thresholds as necessary to find the smallest
 //  attack you can, when such an attack exists, in each attacker model>
-check log_correct_when_attacker_only_fabricates for 10 expect 1
-// <Add attack description here>
+check log_correct_when_attacker_only_fabricates for 3 expect 1
+// The smallest attack in this model requires at least 3 states to exist.
+// The attacker could fabricate a fake message which the sender doesn't intend to send
+// and inject it into the network
+// Thus this requires 3 states to detect the attack
+// The trace would be like: s0(inital)-(fabricate)->s1-(receive)->s2(where the attack is detected)
+// Since the last action of the state s which contains this message is fabricateMessage
+// so it is captured 
 
 // <Describe any additional attacks that are possible but are not
 //  captured by your model here>
@@ -229,7 +246,7 @@ assert attack_modify {
 	all s,s' : State | attack_action_modify[s,s'] implies not s.network = s'.network
 }
 
-check attack_modify for 5 expect 0
+check attack_modify for 3 expect 0
 
 assert log_correct_when_attacker_only_modify {
   all s : State | attacker_only[ModifyMessage] implies log_correct[s]
@@ -255,9 +272,14 @@ assert attack_replaymodify {
 	 s'.network in s.log.elems)
 }
 
-check attack_replaymodify for 5 expect 0
+check attack_replaymodify for 3 expect 0
 
 assert log_correct_when_attacker_only_replaymodify {
   all s : State | attacker_only[ReplayModifyMessage] implies log_correct[s]
 }
 check log_correct_when_attacker_only_replaymodify for 10 expect 1
+
+// For these two attacks, they are like combination of those former three attacks
+// The model we generate here can only correctly capture the attacks when there
+// is only single type of attack. However, when there are combine attacks, it's
+// hard for it to detect or tell whether the action is done by normal user instead of attacker.
