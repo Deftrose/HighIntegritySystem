@@ -180,13 +180,17 @@ check log_only_grows for 10 expect 0
 // correct log means that the messages in log of any states should only been sent by the Sender instead of Attacker
 // To be specific, for each message which is in the log of state s, it should be sent by at least once in previous states by the Sender
 pred log_correct[s : State] {
+  // All the messages in the log should come from previous state's network
   all msg : LogMessage |
 	msg in s.log.elems implies 
-  // For all the states, the message should come from previous states' network
 	( all s': State | ( msg in s'.network and s' in ord/prevs[s] )  implies 
-    // The msg in log should not come from attackers
-		( s'.last_action not in ReplayMessage and s'.last_action not in FabricateMessage )  
-	)
+    // The msg in log should come from the normal sender
+		( s'.last_action in SendLogMessage )  
+	) 
+  and // message in the log should not be out of order
+  ( all index : Int | all s': ord/prevs[s] | 
+  index < #(s'.log) implies
+  s'.log[index] = s.log[index] )
 }
 
 // used to specify the log_correct_* predicates below
@@ -208,9 +212,9 @@ assert log_correct_when_attacker_only_replays {
 //  attack you can, when such an attack exists, in each attacker model>
 check log_correct_when_attacker_only_replays for 5 expect 1
 // The smallest attack in this model requires at least 5 states to exist.
-// The Attacker do replay message attack, using an existing message in the log
+// The Attacker do replay message attack, using an existing message in the previous network
 // and inserting it into the network again. This means that there should at least 
-// have one message in the log which requires a Normal Sender does a send action
+// have one message in the network before which requires a Normal Sender does a send action
 // and the server receives that message. Then the Attacker could use that message and
 // insert that into the network again after which the server would receive the same message.
 // So the trace would be like: s0(initial)-(send)->s1-(receive)
@@ -289,4 +293,6 @@ check log_correct_when_attacker_only_replaymodify for 10 expect 1
 // The model we generate here can only correctly capture the attacks when there
 // is only single type of attack. However, when there are combine attacks, it's
 // hard for it to detect or tell whether the action is done by normal user instead of attacker.
-// What's more. this model didn't simulate the condition of message of sender missing in some way.
+// There is also another properbility that an attacker constantly drop the message on the network
+// which leads to the condition that no messages are received by the logger.
+// However, it cannot be detected by this model.
