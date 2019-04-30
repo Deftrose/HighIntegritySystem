@@ -110,19 +110,25 @@ assert attack_fabricate {
 check attack_fabricate for 10 expect 0
 
 // Models the action in which the attacker inject an old message which already exists in the log
-// Precondition: there are no messages in the network and the msg is already in the log
+// Precondition: there are no messages in the network and the msg is already in some previous network of states
 // Postcondition: the msg is added to the network
 //			and message log will be changed
-pred attacker_action_replay[s, s' : State] {
-  (no s.network and some msg : LogMessage |
-	msg in s.log.elems and
-	msg in s'.network) and
-	s'.last_action = ReplayMessage and
-	s'.log = s.log
+// s:the state before attack, s':the state after attack, s'':the previous state contains the replayed message
+pred attacker_action_replay[s, s': State] {
+  (some s'':State | 
+    no s.network and 
+    s'.network in s''.network and
+    s'' in ord/prevs[s] ) and
+    s'.last_action = ReplayMessage and
+    s.log = s'.log
 }
 
 assert attack_replay {
-	all s,s':State | attacker_action_replay[s,s'] implies ( some msg: LogMessage | msg in s'.network and msg in s.log.elems and no s.network )
+	all s,s':State | attacker_action_replay[s,s'] implies ( 
+    some s'': State | s'.network in s''.network and
+    s'' in ord/prevs[s] and
+    no s.network
+   )
 }
 
 check attack_replay for 10 expect 0
@@ -283,3 +289,4 @@ check log_correct_when_attacker_only_replaymodify for 10 expect 1
 // The model we generate here can only correctly capture the attacks when there
 // is only single type of attack. However, when there are combine attacks, it's
 // hard for it to detect or tell whether the action is done by normal user instead of attacker.
+// What's more. this model didn't simulate the condition of message of sender missing in some way.
