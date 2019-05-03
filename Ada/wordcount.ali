@@ -1,0 +1,144 @@
+V "GNAT Lib v2018"
+M P W=b
+P ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_PROTECTED_OBJECTS
+RV NO_NESTED_FINALIZATION
+RV NO_PROTECTED_TYPES
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLICIT_LOOPS
+RV SPARK_05
+RV MAX_PROTECTED_ENTRIES=6
+
+U wordcount%b		wordcount.adb		680893dc NE OO SU IU
+W ada%s			ada.ads			ada.ali
+W ada.characters%s	a-charac.ads		a-charac.ali
+W ada.characters.latin_1%s  a-chlat1.ads	a-chlat1.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W protectedstack%s	protectedstack.adb	protectedstack.ali
+Z system%s		system.ads		system.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.exception_table%s  s-exctab.adb	s-exctab.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.protected_objects.entries%s  s-tpoben.adb  s-tpoben.ali
+Z system.tasking.protected_objects.operations%s  s-tpobop.adb  s-tpobop.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-charac.ads		20180524051736 2d3ec45b ada.characters%s
+D a-chlat1.ads		20180524051736 66457d31 ada.characters.latin_1%s
+D a-except.ads		20180524051736 291912d5 ada.exceptions%s
+D a-finali.ads		20180524051738 bf4f806b ada.finalization%s
+D a-inteio.ads		20180524051738 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-string.ads		20180524051736 90ac6797 ada.strings%s
+D a-strmap.ads		20180524051736 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20180524051738 8098c91f ada.strings.unbounded%s
+D a-tags.ads		20180524051738 491b781d ada.tags%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D a-tiinio.ads		20180524051736 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-c.ads		20180524051736 5421119b interfaces.c%s
+D i-cstrin.ads		20180524051736 341d0ddf interfaces.c.strings%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D protectedstack.ads	20190502233344 40022830 protectedstack%s
+D protectedstack.adb	20190502233346 ca920aeb protectedstack%b
+D system.ads		20180524051738 32a08138 system%s
+D s-atacco.ads		20180524051738 4c36d12f system.address_to_access_conversions%s
+D s-atocou.ads		20180524051738 b45c2d8d system.atomic_counters%s
+D s-conca3.ads		20180524051738 0b705ca5 system.concat_3%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-finmas.ads		20180524051738 7811a767 system.finalization_masters%s
+D s-finroo.ads		20180524051738 4ff27390 system.finalization_root%s
+D s-memory.ads		20180524051736 597d6634 system.memory%s
+D s-multip.ads		20180524051736 38ac9f73 system.multiprocessors%s
+D s-osinte.ads		20180524051738 2e5b26a9 system.os_interface%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180524051736 a7318a92 system.soft_links%s
+D s-stache.ads		20180524051738 a37c21ec system.stack_checking%s
+D s-stausa.ads		20180524051736 017a0a05 system.stack_usage%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+D s-stalib.adb		20180524051736 f2fe2716 system.standard_library%b
+D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20180524051736 b16154c2 system.storage_pools%s
+D s-stposu.ads		20180524051736 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20180524051736 aedef97e system.stream_attributes%s
+D s-tasinf.ads		20180524051738 601f6b72 system.task_info%s
+D s-taspri.ads		20180524051738 6c1d93d4 system.task_primitives%s
+D s-taskin.ads		20180524051738 1d8c1ccb system.tasking%s
+D s-taprob.ads		20180524051738 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20180524051738 60ad3dae system.tasking.protected_objects.entries%s
+D s-tpobop.ads		20180524051738 5f548bb3 system.tasking.protected_objects.operations%s
+D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+D s-win32.ads		20180524051736 b7f96285 system.win32%s
+D wordcount.adb		20190503013454 b081353c wordcount%b
+X 1 ada.ads
+16K9*Ada 20e8 55|1r6 2r6 4r6 5r6 8r6 10r6 17r24 40r7
+X 2 a-charac.ads
+16K13*Characters 18e19 55|10r10
+X 3 a-chlat1.ads
+18K24*Latin_1 296e27 55|10w21
+X 6 a-inteio.ads
+18K13*Integer_Text_IO[14|46] 55|4w10 5r10
+X 9 a-string.ads
+16K13*Strings 35e16 55|8r10 17r28
+X 11 a-strunb.ads
+76K21*Unbounded 491e26 55|8w18 17r36
+79R9*Unbounded_String<5|43R9> 474e14 55|19r55 22r20
+94V13*To_Unbounded_String{79R9} 55|37s19
+100V13*To_String{string} 55|38s15
+X 13 a-textio.ads
+49K13*Text_IO 471e16 55|1w10 2r10 40r11
+166U14*New_Line 55|40s19
+206U14*Get 55|34s7
+242U14*Put 55|38s7 39s7
+X 14 a-tiinio.ads
+66U14*Put 55|39s34[6|18]
+X 20 protectedstack.ads
+13k9*ProtectedStack 49e19 55|7w6 19r31
+30W19 Stack 55|29r21[19]
+X 22 system.ads
+67M9*Address
+X 31 s-memory.ads
+53V13*Alloc{22|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{22|67M9} 105i<c,__gnat_realloc>22
+X 38 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 40 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 55 wordcount.adb
+15U11*WordCount 15b11 42l5 42t14
+17K12 ASU=17:36 18r8 19r51 22r16 37r15 38r11
+19K12 StringStack[20|13] 29r9
+21e4 Ch{character} 34m11 38r40
+22r4 Word{11|79R9} 37m7 38r25
+25i4 NumChars{integer} 36m7 36r19 39r38
+26i4 NumWords{integer}
+29w4 St{20|30W19[19]}
+

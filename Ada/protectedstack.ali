@@ -1,0 +1,48 @@
+V "GNAT Lib v2018"
+P ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_PROTECTED_TYPES
+RV SPARK_05
+RV MAX_PROTECTED_ENTRIES=6
+
+U protectedstack%b	protectedstack.adb	8a9022db NE OO PK GE
+
+U protectedstack%s	protectedstack.ads	40022830 BN EE NE OO PK GE
+
+D protectedstack.ads	20190502233344 40022830 protectedstack%s
+D protectedstack.adb	20190502233346 ca920aeb protectedstack%b
+D system.ads		20180524051738 32a08138 system%s
+X 1 protectedstack.ads
+9i4 Max_Size{positive} 43r32 45r32 2|26r24 64r35
+10+9 Item 31r24 32r24 33r24 43r45 2|23r24 34r24 45r24
+13k9*ProtectedStack 9z4 10z9 43E9 49l5 49e19 2|19b14 75l5 75t19
+15R9*StackType 38r13 44c9 47e14
+18X4*Stack_Underflow 2|41r19 51r19
+18X21*Stack_Overflow 2|30r19
+30W19*Stack 38E7 39l8 39e13 2|21b19 73l8 73t13
+31Y13 Push 31>18 2|23b13 32l11 32t15
+31*18 I{10+9} 2|28r35
+32Y13 Pop 32<17 2|34b13 43l11 43t14
+32*17 I{10+9} 2|38m13
+33Y13 Top 33<17 2|45b13 53l11 53t14
+33*17 I{10+9} 2|49m13
+34Y13 Empty 34<19 2|55b13 59l11 59t16
+34b19 EmptyStack{boolean} 2|58m10
+35Y13 Full 35<18 2|61b13 65l11 65t15
+35b18 FullStack{boolean} 2|64m10
+36Y13 Clean 2|67b13 71l11 71t16
+38r7 Stk{15R9} 2|26r13 27m13 27r25 28m13 28r22 37r13 38r18 38r27 39m13 39r25
+. 48r13 49r18 49r27 58r25 64r24 70m10
+43A9 StackData(10+9)<integer> 46r13
+45i7 Size{integer} 2|26r17 27m17 27r29 28r26 37r17 38r31 39m17 39r29 48r17
+. 49r31 58r29 64r28 70m14
+46a7 Data{43A9} 2|28m17 38r22 49r22
+X 2 protectedstack.adb
+23*18 I{1|10+9}
+34*17 I{1|10+9}
+45*17 I{1|10+9}
+55b19 EmptyStack{boolean}
+61b18 FullStack{boolean}
+
