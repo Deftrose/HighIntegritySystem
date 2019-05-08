@@ -1,0 +1,61 @@
+V "GNAT Lib v2018"
+M P W=b
+P ZX
+
+RN
+RV NO_IO
+RV SPARK_05
+
+U testdate%b		testdate.adb		3a6a0517 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W date%s		date.adb		date.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-except.ads		20180524051736 291912d5 ada.exceptions%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-tags.ads		20180524051738 491b781d ada.tags%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D date.ads		20150226035634 1159f10c date%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D system.ads		20180524051738 32a08138 system%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180524051736 a7318a92 system.soft_links%s
+D s-stache.ads		20180524051738 a37c21ec system.stack_checking%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
+D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+D testdate.adb		20190508020600 a32e4741 testdate%b
+X 1 ada.ads
+16K9*Ada 20e8 24|1r6 1r23
+X 6 a-textio.ads
+49K13*Text_IO 471e16 24|1w10 1r27
+263U14*Put_Line 24|12s7 13s12 21s7 29s7 37s7 44s7 52s7 60s7
+X 8 date.ads
+1K9*Date 38e9 24|2w6 5r19 8r4 9r4 10r4 11r11 12r41 13r38 17r4 18r4 19r4 20r11
+. 21r41 25r4 26r4 27r4 28r11 29r41 33r4 34r4 35r4 36r11 37r41 41r4 42r4 43r11
+. 44r41 48r4 49r4 50r4 51r11 52r41 56r4 57r4 58r4 59r11 60r41
+8R9*DateType 37e17 24|5r24
+11U14*Create 24|8s9 10s9 17s9 19s9 25s9 27s9 33s9 35s9 42s9 48s9 50s9 56s9
+. 58s9
+17U14*Increment 24|9s9 18s9 26s9 34s9 41s9 49s9 57s9
+25V13*Equals{boolean} 24|11s16 20s16 28s16 36s16 43s16 51s16 59s16
+28U14*Print 24|12s46 13s43 21s46 29s46 37s46 44s46 52s46 60s46
+X 24 testdate.adb
+4U11*TestDate 4b11 63l5 63t13
+5r4 Date1{8|8R9} 8m16 9m19 9r19 11r23 12r52 13r49 17m16 18m19 18r19 20r23
+. 21r52 25m16 26m19 26r19 28r23 29r52 33m16 34m19 34r19 36r23 37r52 41m19
+. 41r19 43r23 44r52 48m16 49m19 49r19 51r23 52r52 56m16 57m19 57r19 59r23
+. 60r52
+5r11 Date2{8|8R9} 10m16 11r30 19m16 20r30 27m16 28r30 35m16 36r30 42m16 43r30
+. 50m16 51r30 58m16 59r30
+

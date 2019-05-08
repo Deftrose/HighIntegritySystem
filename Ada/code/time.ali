@@ -1,0 +1,86 @@
+V "GNAT Lib v2018"
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV SPARK_05
+
+U time%b		time.adb		eee3ae2d NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W date%s		date.adb		date.ali
+Z system.concat_4%s	s-conca4.adb		s-conca4.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+
+U time%s		time.ads		0b3650a6 EE NE OO PK
+W date%s		date.adb		date.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-except.ads		20180524051736 291912d5 ada.exceptions%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-tags.ads		20180524051738 491b781d ada.tags%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D date.ads		20150226035634 1159f10c date%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D system.ads		20180524051738 32a08138 system%s
+D s-conca4.ads		20180524051738 7e642b20 system.concat_4%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-imgint.ads		20180524051736 02dbe0c2 system.img_int%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180524051736 a7318a92 system.soft_links%s
+D s-stache.ads		20180524051738 a37c21ec system.stack_checking%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
+D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+D time.ads		20150226035634 1a6fa1aa time%s
+D time.adb		20190508022358 6dc84dd1 time%b
+X 1 ada.ads
+16K9*Ada 20e8 27|1r6 1r23
+X 6 a-textio.ads
+49K13*Text_IO 471e16 27|1w10 1r27
+242U14*Put 27|58s7
+X 8 date.ads
+1K9*Date 38e9 26|1w6 15r32 23r48 37r18 27|2w6 8r32 20r29 40r48 49r9 60r7
+8R9*DateType 37e17 26|15r37 23r53 37r23 27|8r37 40r53
+17U14*Increment 27|20s34
+25V13*Equals{boolean} 27|49s14
+28U14*Print 27|60s12
+X 26 time.ads
+3K9*Time 33E9 39l5 39e9 27|4b14 62l5 62t9
+5I12*MinuteType{integer} 14r33 36r19 27|7r33
+6I12*HourType{integer} 13r31 21r50 22r48 35r17 27|6r31 30r50 35r48
+9R9*TimeType 12r32 18r38 21r33 22r31 23r31 26r38 29r30 33c9 38e17 27|5r32
+. 15r38 30r33 35r31 40r31 45r38 56r30
+12U14*Create 12<21 13>21 14>21 15>21 27|5b14 13l8 13t14
+12r21 Time{9R9} 27|5b21 10m7 11m7 12m7
+13i21 Hour{6I12} 27|6b21 11r20
+14i21 Minute{5I12} 27|7b21 10r22
+15r21 TDate{8|8R9} 27|8b21 12r21
+18U14*Increment 18=24 27|15b14 27l8 27t17
+18r24 Time{9R9} 27|15b24 17r10 18m10 19r13 20m13 20m44 20r44 22m13 22r26
+. 25m10 25r25
+21V13*GetMinute{6I12} 21>23 27|30b13 33l8 33t17 58s25
+21r23 Time{9R9} 27|30b23 32r14
+22V13*GetHour{6I12} 22>21 27|35b13 38l8 38t15 59s27
+22r21 Time{9R9} 27|35b21 37r14
+23V13*GetDate{8|8R9} 23>21 27|40b13 43l8 43t15 60s18
+23r21 Time{9R9} 27|40b21 42r14
+26V13*Equals{boolean} 26>20 26>27 27|45b13 54l8 54t14
+26r20 Time1{9R9} 27|45b20 47r10 48r9 49r21
+26r27 Time2{9R9} 27|45b27 47r25 48r22 49r34
+29U14*Print 29>20 27|56b14 61l8 61t13
+29r20 Time{9R9} 27|56b20 58r35 59r35 60r26
+35i10*Hour{6I12} 27|11m12 19r18 20m18 22m18 22r31 37r19 48r15 48r28
+36i10*Minute{5I12} 27|10m12 17r15 18m15 25m15 25r30 32r19 47r16 47r31
+37r10*TDate{8|8R9} 27|12m12 20m49 42r19 49r27 49r40
+

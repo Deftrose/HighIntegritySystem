@@ -1,0 +1,64 @@
+V "GNAT Lib v2018"
+M P W=b
+P ZX
+
+RN
+RV NO_IO
+RV SPARK_05
+
+U testtime%b		testtime.adb		352a5344 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W date%s		date.adb		date.ali
+W time%s		time.adb		time.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-except.ads		20180524051736 291912d5 ada.exceptions%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-tags.ads		20180524051738 491b781d ada.tags%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D date.ads		20150226035634 1159f10c date%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D system.ads		20180524051738 32a08138 system%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180524051736 a7318a92 system.soft_links%s
+D s-stache.ads		20180524051738 a37c21ec system.stack_checking%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
+D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+D testtime.adb		20150309100042 b601b0b8 testtime%b
+D time.ads		20150226035634 1a6fa1aa time%s
+X 1 ada.ads
+16K9*Ada 20e8 24|1r6 1r23
+X 6 a-textio.ads
+49K13*Text_IO 471e16 24|1w10 1r27
+242U14*Put 24|15s7 24s7 32s7
+X 8 date.ads
+1K9*Date 38e9 24|3w6 7r19 10r4 21r4
+8R9*DateType 37e17 24|7r24
+11U14*Create 24|10s9 21s9
+X 24 testtime.adb
+5U11*TestTime 5b11 34l5 34t13
+6r4 Time1{25|9R9} 11m16 12m19 12r19 14r23 15r49 19m16 20m19 20r19 23r23 24r49
+. 28m16 29m19 29r19 31r23 32r49
+6r11 Time2{25|9R9} 13m16 14r30 22m16 23r30 30m16 31r30
+7r4 Date1{8|8R9} 10m16 11r30 13r29 19r31 28r31 30r31
+7r11 Date2{8|8R9} 21m16 22r29
+X 25 time.ads
+3K9*Time 24|2w6 6r19 11r4 12r4 13r4 14r11 15r38 19r4 20r4 22r4 23r11 24r38
+. 28r4 29r4 30r4 31r11 32r38 25|39e9
+9R9*TimeType 24|6r24 25|38e17
+12U14*Create 24|11s9 13s9 19s9 22s9 28s9 30s9
+18U14*Increment 24|12s9 20s9 29s9
+26V13*Equals{boolean} 24|14s16 23s16 31s16
+29U14*Print 24|15s43 24s43 32s43
+
