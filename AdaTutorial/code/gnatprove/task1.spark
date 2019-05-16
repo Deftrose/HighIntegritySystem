@@ -1,0 +1,138 @@
+{
+  "spark": [
+    {
+      "name": "Task1",
+      "sloc": [
+        {
+          "file": "task1.ads",
+          "line": 3
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Task1.Task1Procedure",
+      "sloc": [
+        {
+          "file": "task1.ads",
+          "line": 6
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+    {
+      "file": "task1.adb",
+      "line": 10,
+      "col": 12,
+      "rule": "INEFFECTIVE",
+      "severity": "warning",
+      "entity": {
+        "name": "Task1.Task1Procedure",
+        "sloc": [
+          {
+            "file": "task1.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "task1__flow__28.trace",
+      "msg_id": 0,
+      "how_proved": "flow"
+    },
+    {
+      "file": "task1.ads",
+      "line": 6,
+      "col": 29,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Task1.Task1Procedure",
+        "sloc": [
+          {
+            "file": "task1.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "task1__flow__32.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "task1.adb",
+      "line": 9,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "high",
+      "entity": {
+        "name": "Task1.Task1Procedure",
+        "sloc": [
+          {
+            "file": "task1.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "task1__flow__33.trace",
+      "msg_id": 1,
+      "how_proved": "flow"
+    },
+    {
+      "file": "task1.adb",
+      "line": 15,
+      "col": 17,
+      "rule": "UNINITIALIZED",
+      "severity": "medium",
+      "entity": {
+        "name": "Task1.Task1Procedure",
+        "sloc": [
+          {
+            "file": "task1.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "task1__flow__34.trace",
+      "msg_id": 2,
+      "how_proved": "flow"
+    },
+    {
+      "file": "task1.adb",
+      "line": 15,
+      "col": 21,
+      "rule": "UNINITIALIZED",
+      "severity": "medium",
+      "entity": {
+        "name": "Task1.Task1Procedure",
+        "sloc": [
+          {
+            "file": "task1.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "task1__flow__35.trace",
+      "msg_id": 3,
+      "how_proved": "flow"
+    }
+  ],
+  "assumptions": [
+  ],
+  "timings": {
+    "marking": 1.40392003231682E-04,
+    "globals (basic)": 6.34514028206468E-04,
+    "globals/properties (advanced)": 4.14431886747479E-03,
+    "flow analysis": 4.96504502370954E-03
+  }
+}

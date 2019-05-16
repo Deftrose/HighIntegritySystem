@@ -1,0 +1,140 @@
+{
+  "spark": [
+    {
+      "name": "Task4",
+      "sloc": [
+        {
+          "file": "task4.ads",
+          "line": 1
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Task4.Task4Procedure",
+      "sloc": [
+        {
+          "file": "task4.ads",
+          "line": 9
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+  ],
+  "proof": [
+    {
+      "file": "task4.adb",
+      "line": 9,
+      "col": 49,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Task4.Task4Procedure",
+        "sloc": [
+          {
+            "file": "task4.ads",
+            "line": 9
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "task4.adb",
+      "check_line": 9,
+      "check_col": 49,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    }
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Task4.Task4Procedure",
+          "sloc": [
+            {
+              "file": "task4.ads",
+              "line": 9
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Task4.Task4Procedure",
+          "sloc": [
+            {
+              "file": "task4.ads",
+              "line": 9
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Task4",
+          "sloc": [
+            {
+              "file": "task4.ads",
+              "line": 1
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "marking": 2.34231003560126E-04,
+    "globals (basic)": 2.33498998568393E-04,
+    "globals/properties (advanced)": 5.44706999789923E-04,
+    "flow analysis": 1.36543298140168E-03,
+    "codepeer results": 4.76500008517178E-06,
+    "init_why_sections": 2.01607996132225E-04,
+    "translation of standard": 2.99955392256379E-03,
+    "translation of compilation unit": 1.05642399284989E-03,
+    "proof": 8.95073175430298E-01
+  }
+}

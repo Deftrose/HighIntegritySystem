@@ -1,0 +1,8 @@
+20190516033224
+-c
+-x
+ada
+-gnatA
+-gnatwa
+-gnatc
+-gnates=C:\Users\BAI\Desktop\study\HighIntegritySystem\AdaTutorial\code\gnatprove\fc89fd16.tmp

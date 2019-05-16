@@ -1,0 +1,232 @@
+{
+  "spark": [
+    {
+      "name": "Task3",
+      "sloc": [
+        {
+          "file": "task3.ads",
+          "line": 1
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Task3.Task3Procedure",
+      "sloc": [
+        {
+          "file": "task3.ads",
+          "line": 4
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+    {
+      "file": "task3.ads",
+      "line": 4,
+      "col": 49,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Task3.Task3Procedure",
+        "sloc": [
+          {
+            "file": "task3.ads",
+            "line": 4
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "task3__flow__24.trace",
+      "how_proved": "flow"
+    }
+  ],
+  "proof": [
+    {
+      "file": "task3.adb",
+      "line": 10,
+      "col": 26,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Task3.Task3Procedure",
+        "sloc": [
+          {
+            "file": "task3.ads",
+            "line": 4
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "task3.adb",
+      "check_line": 10,
+      "check_col": 26,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "task3.adb",
+      "line": 8,
+      "col": 16,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Task3.Task3Procedure",
+        "sloc": [
+          {
+            "file": "task3.ads",
+            "line": 4
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "task3.adb",
+      "check_line": 8,
+      "check_col": 16,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "task3.adb",
+      "line": 9,
+      "col": 15,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "medium",
+      "entity": {
+        "name": "Task3.Task3Procedure",
+        "sloc": [
+          {
+            "file": "task3.ads",
+            "line": 4
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown (other)",
+              "steps": 17,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (other)",
+              "steps": 17,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "task3.adb",
+      "check_line": 9,
+      "check_col": 15,
+      "cntexmp": {
+        "task3.adb": {
+          "9": [
+            {
+              "name": "Input",
+              "value": "-214748365",
+              "kind": "variable"
+            }
+          ]
+        },
+        "task3.ads": {
+          "4": [
+            {
+              "name": "Input",
+              "value": "-214748365",
+              "kind": "variable"
+            }
+          ]
+        }
+      },
+      "msg_id": 0,
+      "how_proved": "prover"
+    }
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Task3.Task3Procedure",
+          "sloc": [
+            {
+              "file": "task3.ads",
+              "line": 4
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Task3",
+          "sloc": [
+            {
+              "file": "task3.ads",
+              "line": 1
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "marking": 1.44791003549471E-04,
+    "globals (basic)": 2.65023001702502E-04,
+    "globals/properties (advanced)": 4.89722995553166E-04,
+    "flow analysis": 1.36176694650203E-03,
+    "codepeer results": 4.76600007459638E-06,
+    "init_why_sections": 2.10405007237568E-04,
+    "translation of standard": 3.34338610991836E-03,
+    "translation of compilation unit": 6.28650013823062E-04,
+    "proof": 9.48508322238922E-01
+  }
+}

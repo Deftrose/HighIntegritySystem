@@ -1,0 +1,5 @@
+task1.adb:6:07: warning: variable "Ok" is read but never assigned
+task1.adb:9:10: high: "Ok" is not initialized[#1]
+task1.adb:10:12: warning: unused assignment[#0]
+task1.adb:15:17: medium: "I" might not be initialized[#2]
+task1.adb:15:21: medium: "J" might not be initialized[#3]

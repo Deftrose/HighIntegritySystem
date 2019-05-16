@@ -1,0 +1,22 @@
+V "GNAT Lib v2018"
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U task1%b		task1.adb		9319502e NE OO PK
+
+U task1%s		task1.ads		13829493 EE NE OO PK
+
+D system.ads		20180524051738 32a08138 system%s
+D task1.ads		20150424050336 13829493 task1%s
+D task1.adb		20150424050354 809bc4bd task1%b
+X 2 task1.ads
+3K9*Task1 8l5 8e10 3|1b14 17l5 17t10
+6U14*Task1Procedure 6<29 3|5b14 15l8 15t22
+6i29 Result{integer} 3|5b29 14m7
+X 3 task1.adb
+6b7 Ok{boolean} 9r10
+7i7 I{integer} 10m10 14r17
+7i10 J{integer} 11m10 14r21
+

@@ -1,0 +1,13 @@
+project Workshop is
+
+   for Source_Dirs use (".");
+
+   package Compiler is
+      for Default_Switches ("ada") use ("-gnatwa");
+   end Compiler;
+
+   package Builder is
+   end Builder;
+
+end Workshop;
+

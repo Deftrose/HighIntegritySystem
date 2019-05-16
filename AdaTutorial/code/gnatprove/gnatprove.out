@@ -1,0 +1,28 @@
+Summary of SPARK analysis
+=========================
+
+-------------------------------------------------------------------------------------------------------
+SPARK Analysis results        Total       Flow   Interval   CodePeer     Provers   Justified   Unproved
+-------------------------------------------------------------------------------------------------------
+Data Dependencies                 .          .          .          .           .           .          .
+Flow Dependencies                 .          .          .          .           .           .          .
+Initialization                    5          2          .          .           .           .          3
+Non-Aliasing                      .          .          .          .           .           .          .
+Run-time Checks                   4          .          .          .    3 (CVC4)           .          1
+Assertions                        .          .          .          .           .           .          .
+Functional Contracts              .          .          .          .           .           .          .
+LSP Verification                  .          .          .          .           .           .          .
+-------------------------------------------------------------------------------------------------------
+Total                             9    2 (22%)          .          .     3 (33%)           .    4 (44%)
+
+
+Analyzed 3 units
+in unit task1, 2 subprograms and packages out of 2 analyzed
+  Task1 at task1.ads:3 flow analyzed (0 errors, 0 checks and 0 warnings)
+  Task1.Task1Procedure at task1.ads:6 flow analyzed (0 errors, 3 checks and 1 warnings)
+in unit task3, 2 subprograms and packages out of 2 analyzed
+  Task3 at task3.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Task3.Task3Procedure at task3.ads:4 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 2 checks out of 3 proved
+in unit task4, 2 subprograms and packages out of 2 analyzed
+  Task4 at task4.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Task4.Task4Procedure at task4.ads:9 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
