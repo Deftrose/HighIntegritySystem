@@ -1,0 +1,303 @@
+{
+  "spark": [
+    {
+      "name": "Driver",
+      "sloc": [
+        {
+          "file": "driver.adb",
+          "line": 7
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+    {
+      "file": "driver.adb",
+      "line": 7,
+      "col": 11,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Driver",
+        "sloc": [
+          {
+            "file": "driver.adb",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "driver__flow__80.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "driver.adb",
+      "line": 21,
+      "col": 27,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Driver",
+        "sloc": [
+          {
+            "file": "driver.adb",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "driver__flow__81.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "driver.adb",
+      "line": 25,
+      "col": 24,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Driver",
+        "sloc": [
+          {
+            "file": "driver.adb",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "driver__flow__82.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "driver.adb",
+      "line": 27,
+      "col": 27,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Driver",
+        "sloc": [
+          {
+            "file": "driver.adb",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "driver__flow__83.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "driver.adb",
+      "line": 32,
+      "col": 19,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Driver",
+        "sloc": [
+          {
+            "file": "driver.adb",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "driver__flow__84.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "driver.adb",
+      "line": 34,
+      "col": 12,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Driver",
+        "sloc": [
+          {
+            "file": "driver.adb",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "driver__flow__85.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "driver.adb",
+      "line": 35,
+      "col": 4,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Driver",
+        "sloc": [
+          {
+            "file": "driver.adb",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "driver__flow__86.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "driver.adb",
+      "line": 36,
+      "col": 29,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Driver",
+        "sloc": [
+          {
+            "file": "driver.adb",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "driver__flow__87.trace",
+      "how_proved": "flow"
+    }
+  ],
+  "proof": [
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Debug.New_Line",
+            "sloc": [
+              {
+                "file": "debug.ads",
+                "line": 16
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Debug.Put",
+            "sloc": [
+              {
+                "file": "debug.ads",
+                "line": 4
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Debug.Put",
+            "sloc": [
+              {
+                "file": "debug.ads",
+                "line": 12
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Debug.Put_Line",
+            "sloc": [
+              {
+                "file": "debug.ads",
+                "line": 8
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Instruction.GenerateRandomInstr",
+            "sloc": [
+              {
+                "file": "instruction.ads",
+                "line": 74
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Instruction.Init",
+            "sloc": [
+              {
+                "file": "instruction.ads",
+                "line": 70
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Machine.DetectInvalidBehaviour",
+            "sloc": [
+              {
+                "file": "machine.ads",
+                "line": 47
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Machine.ExecuteProgram",
+            "sloc": [
+              {
+                "file": "machine.ads",
+                "line": 35
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Driver",
+          "sloc": [
+            {
+              "file": "driver.adb",
+              "line": 7
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "marking": 5.77404303476214E-03,
+    "globals (basic)": 4.03244644403458E-02,
+    "globals/properties (advanced)": 8.08120444417000E-02,
+    "flow analysis": 1.29784019663930E-02,
+    "codepeer results": 2.34590006584767E-05,
+    "init_why_sections": 6.02256972342730E-04,
+    "translation of standard": 2.53644436597824E-02,
+    "translation of compilation unit": 6.40613809227943E-02,
+    "proof": 3.66600011147966E-06
+  }
+}
