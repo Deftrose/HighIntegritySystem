@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <Locations >
-  <Project>
-    <vfs_file />
+  <Project >
     <file_marker column=" 12" line=" 10" >
       <vfs_project />
       <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\AdaTutorial\code\task1.adb</vfs_file>
@@ -23,331 +22,276 @@
       <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\AdaTutorial\code\task4.adb</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\debug.adb</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\debug.ads</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\driver.adb</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\instruction.adb</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.ads</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.ads</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\debug.adb</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\debug.ads</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\driver.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 11" line=" 38" >
-      <vfs_project />
+    <file_marker column=" 1" line=" 52" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\instruction.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 7" line=" 29" >
-      <vfs_project />
+    <file_marker column=" 1" line=" 32" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\instruction.ads</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.ads</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\debug.adb</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\debug.ads</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\driver.adb</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 52" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 32" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 187" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 52" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 187" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 52" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 52" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 52" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 52" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 52" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 52" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 72" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 52" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 72" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 72" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 108" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 108" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 108" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 110" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 108" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 108" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 108" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 108" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 108" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 108" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 108" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 108" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 108" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 108" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 108" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 108" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 110" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 125" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 35" line=" 117" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 124" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 32" line=" 136" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 126" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 133" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 29" line=" 145" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 136" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 35" line=" 137" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\instruction.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\driver.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\driver.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\instruction.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\instruction.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\instruction.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\driver.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\instruction.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.ads</vfs_file>
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.ads</vfs_file>
     </file_marker>
     <file_marker column=" 42" line=" 28" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 24" line=" 33" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 50" line=" 34" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 28" line=" 35" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.ads</vfs_file>
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.ads</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\instruction.ads</vfs_file>
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\instruction.ads</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\driver.adb</vfs_file>
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.ads</vfs_file>
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\instruction.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\driver.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\instruction.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\instruction.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\driver.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\instruction.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\instruction.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\driver.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 8" line=" 14" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 7" line=" 29" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 150" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 7" line=" 29" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
-    </file_marker>
-    <file_marker current="true" column=" 8" line=" 25" >
-      <vfs_project />
-      <vfs_file>C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
-    </file_marker>
-  </Project>
-  <Project >
-    <vfs_file >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_file>
-    <file_marker column=" 12" line=" 10">
-      <vfs_project  />
-      <vfs_file >C:\Users\BAI\Desktop\study\HighIntegritySystem\AdaTutorial\code\task1.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 10">
-      <vfs_project  />
-      <vfs_file >C:\Users\BAI\Desktop\study\HighIntegritySystem\AdaTutorial\code\task1.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 23" line=" 14">
-      <vfs_project  />
-      <vfs_file >C:\Users\BAI\Desktop\study\HighIntegritySystem\AdaTutorial\code\task3.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 9" line=" 14">
-      <vfs_project  />
-      <vfs_file >C:\Users\BAI\Desktop\study\HighIntegritySystem\AdaTutorial\code\task5.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 14" line=" 11">
-      <vfs_project  />
-      <vfs_file >C:\Users\BAI\Desktop\study\HighIntegritySystem\AdaTutorial\code\task4.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1">
-      <vfs_project >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
-      <vfs_file >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\debug.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1">
-      <vfs_project >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
-      <vfs_file >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\debug.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1">
-      <vfs_project >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
-      <vfs_file >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\driver.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1">
-      <vfs_project >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
-      <vfs_file >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\instruction.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1">
-      <vfs_project >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
-      <vfs_file >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1">
-      <vfs_project >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
-      <vfs_file >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1">
-      <vfs_project >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
-      <vfs_file >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1">
-      <vfs_project >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
-      <vfs_file >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1">
-      <vfs_project >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
-      <vfs_file >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\debug.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1">
-      <vfs_project >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
-      <vfs_file >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\debug.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1">
-      <vfs_project >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
-      <vfs_file >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\driver.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 11" line=" 34">
-      <vfs_project >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
-      <vfs_file >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1">
-      <vfs_project >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
-      <vfs_file >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\instruction.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 40" line=" 24">
-      <vfs_project >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
-      <vfs_file >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1">
-      <vfs_project >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
-      <vfs_file >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\instruction.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1">
-      <vfs_project >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
-      <vfs_file >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1">
-      <vfs_project >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
-      <vfs_file >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1">
-      <vfs_project >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
-      <vfs_file >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\debug.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1">
-      <vfs_project >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
-      <vfs_file >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\debug.ads</vfs_file>
-    </file_marker>
-    <file_marker current="true" column=" 1" line=" 1">
-      <vfs_project >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
-      <vfs_file >C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\driver.adb</vfs_file>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.adb</vfs_file>
     </file_marker>
   </Project>
 </Locations>

@@ -8,12 +8,12 @@ Data Dependencies                 .           .          .          .           
 Flow Dependencies                 .           .          .          .            .           .          .
 Initialization                   99          99          .          .            .           .          .
 Non-Aliasing                      .           .          .          .            .           .          .
-Run-time Checks                  72           .          .          .    63 (CVC4)           .          9
+Run-time Checks                  84           .          .          .    81 (CVC4)           .          3
 Assertions                        .           .          .          .            .           .          .
 Functional Contracts              .           .          .          .            .           .          .
 LSP Verification                  .           .          .          .            .           .          .
 ---------------------------------------------------------------------------------------------------------
-Total                           171    99 (58%)          .          .     63 (37%)           .     9 (5%)
+Total                           183    99 (54%)          .          .     81 (44%)           .     3 (2%)
 
 
 Analyzed 4 units
@@ -62,13 +62,43 @@ in unit instruction, 1 subprograms and packages out of 33 analyzed
   Instruction.Random_Reg.Value at a-nudira.ads:67, instantiated at instruction.adb:8 skipped
 in unit machine, 11 subprograms and packages out of 11 analyzed
   Machine at machine.ads:4 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DetectInvalidBehaviour at machine.ads:47 flow analyzed (0 errors, 0 checks and 2 warnings) and proved (0 checks)
+  Machine.DetectInvalidBehaviour at machine.ads:47 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+   suppressed messages:
+    machine.ads:48:36: 
+    machine.ads:47:36: 
   Machine.DoAdd at machine.adb:33 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DoDiv at machine.adb:66 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DoLdr at machine.adb:75 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DoMov at machine.adb:95 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DoMul at machine.adb:57 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DoStr at machine.adb:85 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DoSub at machine.adb:48 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.ExecuteProgram at machine.ads:35 flow analyzed (0 errors, 0 checks and 8 warnings) and not proved, 39 checks out of 48 proved
+  Machine.DoDiv at machine.adb:109 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DoLdr at machine.adb:127 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+   suppressed messages:
+    machine.adb:138:17: 
+    machine.adb:140:17: 
+    machine.adb:143:14: 
+  Machine.DoMov at machine.adb:158 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DoMul at machine.adb:73 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DoStr at machine.adb:148 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DoSub at machine.adb:54 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.ExecuteProgram at machine.ads:35 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 57 checks out of 60 proved
+   suppressed messages:
+    machine.adb:44:17: 
+    machine.adb:46:17: 
+    machine.adb:49:14: 
+    machine.adb:64:17: 
+    machine.adb:66:17: 
+    machine.adb:69:14: 
+    machine.adb:81:14: 
+    machine.adb:87:23: 
+    machine.adb:89:23: 
+    machine.adb:95:26: 
+    machine.adb:97:26: 
+    machine.adb:100:22: 
+    machine.adb:104:17: 
+    machine.adb:118:17: 
+    machine.adb:120:17: 
+    machine.adb:123:14: 
+    machine.adb:138:17: 
+    machine.adb:140:17: 
+    machine.adb:143:14: 
+    machine.adb:145:11: 
+    machine.adb:155:11: 
+    machine.adb:163:11: 
   Machine.IncPC at machine.adb:22 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
