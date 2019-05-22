@@ -45,7 +45,7 @@
       "sloc": [
         {
           "file": "machine.adb",
-          "line": 28
+          "line": 33
         }
       ],
       "spark": "all"
@@ -55,7 +55,7 @@
       "sloc": [
         {
           "file": "machine.adb",
-          "line": 37
+          "line": 48
         }
       ],
       "spark": "all"
@@ -65,7 +65,7 @@
       "sloc": [
         {
           "file": "machine.adb",
-          "line": 46
+          "line": 57
         }
       ],
       "spark": "all"
@@ -75,7 +75,7 @@
       "sloc": [
         {
           "file": "machine.adb",
-          "line": 55
+          "line": 66
         }
       ],
       "spark": "all"
@@ -85,7 +85,7 @@
       "sloc": [
         {
           "file": "machine.adb",
-          "line": 64
+          "line": 75
         }
       ],
       "spark": "all"
@@ -95,7 +95,7 @@
       "sloc": [
         {
           "file": "machine.adb",
-          "line": 74
+          "line": 85
         }
       ],
       "spark": "all"
@@ -105,7 +105,7 @@
       "sloc": [
         {
           "file": "machine.adb",
-          "line": 84
+          "line": 95
         }
       ],
       "spark": "all"
@@ -114,16 +114,16 @@
   "flow": [
     {
       "file": "machine.adb",
-      "line": 31,
+      "line": 51,
       "col": 20,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
-        "name": "Machine.DoAdd",
+        "name": "Machine.DoSub",
         "sloc": [
           {
             "file": "machine.adb",
-            "line": 28
+            "line": 48
           }
         ]
       },
@@ -134,16 +134,16 @@
     },
     {
       "file": "machine.adb",
-      "line": 77,
+      "line": 78,
       "col": 20,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
-        "name": "Machine.DoStr",
+        "name": "Machine.DoLdr",
         "sloc": [
           {
             "file": "machine.adb",
-            "line": 74
+            "line": 75
           }
         ]
       },
@@ -154,42 +154,22 @@
     },
     {
       "file": "machine.adb",
-      "line": 80,
-      "col": 17,
+      "line": 81,
+      "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
-        "name": "Machine.DoStr",
+        "name": "Machine.DoLdr",
         "sloc": [
           {
             "file": "machine.adb",
-            "line": 74
+            "line": 75
           }
         ]
       },
       "check_tree": {
       },
       "tracefile": "machine__flow__52.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 58,
-      "col": 20,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.DoDiv",
-        "sloc": [
-          {
-            "file": "machine.adb",
-            "line": 55
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__75.trace",
       "how_proved": "flow"
     },
     {
@@ -234,28 +214,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 86,
-      "col": 20,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.DoMov",
-        "sloc": [
-          {
-            "file": "machine.adb",
-            "line": 84
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__112.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 34,
-      "col": 11,
+      "line": 41,
+      "col": 14,
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -269,13 +229,34 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__225.trace",
+      "tracefile": "machine__flow__182.trace",
       "msg_id": 2,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 43,
+      "col": 14,
+      "rule": "INEFFECTIVE",
+      "severity": "warning",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__183.trace",
+      "msg_id": 3,
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 54,
       "col": 11,
       "rule": "INEFFECTIVE",
       "severity": "warning",
@@ -290,13 +271,55 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__241.trace",
-      "msg_id": 3,
+      "tracefile": "machine__flow__201.trace",
+      "msg_id": 4,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 52,
+      "line": 63,
+      "col": 11,
+      "rule": "INEFFECTIVE",
+      "severity": "warning",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__219.trace",
+      "msg_id": 5,
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 72,
+      "col": 11,
+      "rule": "INEFFECTIVE",
+      "severity": "warning",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__237.trace",
+      "msg_id": 6,
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 82,
       "col": 11,
       "rule": "INEFFECTIVE",
       "severity": "warning",
@@ -312,75 +335,12 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__257.trace",
-      "msg_id": 4,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 61,
-      "col": 11,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__273.trace",
-      "msg_id": 5,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 71,
-      "col": 11,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__291.trace",
-      "msg_id": 6,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 81,
-      "col": 11,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__309.trace",
       "msg_id": 7,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 89,
+      "line": 92,
       "col": 11,
       "rule": "INEFFECTIVE",
       "severity": "warning",
@@ -395,8 +355,29 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__322.trace",
+      "tracefile": "machine__flow__277.trace",
       "msg_id": 8,
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 100,
+      "col": 11,
+      "rule": "INEFFECTIVE",
+      "severity": "warning",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__292.trace",
+      "msg_id": 9,
       "how_proved": "flow"
     },
     {
@@ -416,7 +397,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__356.trace",
+      "tracefile": "machine__flow__336.trace",
       "how_proved": "flow"
     },
     {
@@ -436,7 +417,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__357.trace",
+      "tracefile": "machine__flow__337.trace",
       "how_proved": "flow"
     },
     {
@@ -456,13 +437,413 @@
       },
       "check_tree": {
       },
+      "tracefile": "machine__flow__338.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 115,
+      "col": 15,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__339.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 118,
+      "col": 14,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__340.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 119,
+      "col": 26,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__341.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 119,
+      "col": 26,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__342.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 119,
+      "col": 26,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__343.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 119,
+      "col": 26,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__344.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 119,
+      "col": 26,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__345.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 119,
+      "col": 26,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__346.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 119,
+      "col": 26,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__347.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 119,
+      "col": 26,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__348.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 119,
+      "col": 26,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__349.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 119,
+      "col": 26,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__350.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 119,
+      "col": 26,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__351.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 119,
+      "col": 26,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__352.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 119,
+      "col": 26,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__353.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 119,
+      "col": 26,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__354.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 119,
+      "col": 26,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__355.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 119,
+      "col": 26,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__356.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 119,
+      "col": 26,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__357.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 119,
+      "col": 26,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
       "tracefile": "machine__flow__358.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 104,
-      "col": 15,
+      "line": 119,
+      "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -481,8 +862,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 107,
-      "col": 14,
+      "line": 119,
+      "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -501,7 +882,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 108,
+      "line": 119,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -521,7 +902,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 108,
+      "line": 119,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -541,7 +922,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 108,
+      "line": 119,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -561,7 +942,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 108,
+      "line": 119,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -581,8 +962,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 108,
-      "col": 26,
+      "line": 124,
+      "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -601,8 +982,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 108,
-      "col": 26,
+      "line": 124,
+      "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -621,8 +1002,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 108,
-      "col": 26,
+      "line": 124,
+      "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -641,8 +1022,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 108,
-      "col": 26,
+      "line": 24,
+      "col": 7,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -661,8 +1042,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 108,
-      "col": 26,
+      "line": 26,
+      "col": 12,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -681,8 +1062,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 108,
-      "col": 26,
+      "line": 127,
+      "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -701,8 +1082,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 108,
-      "col": 26,
+      "line": 127,
+      "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -721,8 +1102,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 108,
-      "col": 26,
+      "line": 127,
+      "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -741,8 +1122,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 108,
-      "col": 26,
+      "line": 24,
+      "col": 7,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -761,8 +1142,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 108,
-      "col": 26,
+      "line": 26,
+      "col": 12,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -781,8 +1162,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 108,
-      "col": 26,
+      "line": 130,
+      "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -801,8 +1182,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 108,
-      "col": 26,
+      "line": 130,
+      "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -821,8 +1202,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 108,
-      "col": 26,
+      "line": 130,
+      "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -841,8 +1222,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 108,
-      "col": 26,
+      "line": 24,
+      "col": 7,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -861,8 +1242,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 108,
-      "col": 26,
+      "line": 26,
+      "col": 12,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -881,8 +1262,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 108,
-      "col": 26,
+      "line": 133,
+      "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -901,8 +1282,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 108,
-      "col": 26,
+      "line": 133,
+      "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -921,8 +1302,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 108,
-      "col": 26,
+      "line": 133,
+      "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -941,8 +1322,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 108,
-      "col": 26,
+      "line": 24,
+      "col": 7,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -961,8 +1342,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 108,
-      "col": 26,
+      "line": 26,
+      "col": 12,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -981,7 +1362,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 113,
+      "line": 136,
       "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1001,7 +1382,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 113,
+      "line": 136,
       "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1021,7 +1402,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 113,
+      "line": 136,
       "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1041,8 +1422,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 24,
-      "col": 10,
+      "line": 81,
+      "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -1061,8 +1442,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 116,
-      "col": 16,
+      "line": 24,
+      "col": 7,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -1081,8 +1462,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 116,
-      "col": 16,
+      "line": 26,
+      "col": 12,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -1101,7 +1482,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 116,
+      "line": 139,
       "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1121,8 +1502,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 24,
-      "col": 10,
+      "line": 139,
+      "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -1141,7 +1522,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 119,
+      "line": 139,
       "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1161,8 +1542,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 119,
-      "col": 16,
+      "line": 91,
+      "col": 17,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -1181,8 +1562,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 119,
-      "col": 16,
+      "line": 24,
+      "col": 7,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -1201,8 +1582,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 24,
-      "col": 10,
+      "line": 26,
+      "col": 12,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -1221,7 +1602,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 122,
+      "line": 142,
       "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1241,7 +1622,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 122,
+      "line": 142,
       "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1261,8 +1642,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 122,
-      "col": 16,
+      "line": 24,
+      "col": 7,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -1281,8 +1662,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 24,
-      "col": 10,
+      "line": 26,
+      "col": 12,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -1301,8 +1682,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 125,
-      "col": 16,
+      "line": 145,
+      "col": 23,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -1321,7 +1702,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 125,
+      "line": 149,
       "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1341,8 +1722,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 125,
-      "col": 16,
+      "line": 24,
+      "col": 7,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -1361,8 +1742,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 70,
-      "col": 16,
+      "line": 26,
+      "col": 12,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -1381,8 +1762,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 24,
-      "col": 10,
+      "line": 151,
+      "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -1401,8 +1782,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 128,
-      "col": 16,
+      "line": 152,
+      "col": 19,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -1421,8 +1802,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 128,
-      "col": 16,
+      "line": 24,
+      "col": 7,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -1441,8 +1822,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 128,
-      "col": 16,
+      "line": 26,
+      "col": 12,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -1461,8 +1842,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 80,
-      "col": 17,
+      "line": 24,
+      "col": 7,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -1481,8 +1862,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 24,
-      "col": 10,
+      "line": 26,
+      "col": 12,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -1501,8 +1882,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 131,
-      "col": 16,
+      "line": 24,
+      "col": 7,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -1521,8 +1902,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 131,
-      "col": 16,
+      "line": 26,
+      "col": 12,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -1541,8 +1922,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 24,
-      "col": 10,
+      "line": 159,
+      "col": 21,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -1561,8 +1942,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 134,
-      "col": 23,
+      "line": 114,
+      "col": 53,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -1581,8 +1962,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 138,
-      "col": 16,
+      "line": 114,
+      "col": 53,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -1601,8 +1982,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 24,
-      "col": 10,
+      "line": 161,
+      "col": 7,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -1621,187 +2002,87 @@
     },
     {
       "file": "machine.adb",
-      "line": 140,
-      "col": 16,
+      "line": 88,
+      "col": 20,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
-        "name": "Machine.ExecuteProgram",
+        "name": "Machine.DoStr",
         "sloc": [
           {
-            "file": "machine.ads",
-            "line": 35
+            "file": "machine.adb",
+            "line": 85
           }
         ]
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__417.trace",
+      "tracefile": "machine__flow__445.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 141,
-      "col": 19,
+      "line": 91,
+      "col": 17,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
-        "name": "Machine.ExecuteProgram",
+        "name": "Machine.DoStr",
         "sloc": [
           {
-            "file": "machine.ads",
-            "line": 35
+            "file": "machine.adb",
+            "line": 85
           }
         ]
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__418.trace",
+      "tracefile": "machine__flow__446.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 24,
-      "col": 10,
+      "line": 69,
+      "col": 20,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
-        "name": "Machine.ExecuteProgram",
+        "name": "Machine.DoDiv",
         "sloc": [
           {
-            "file": "machine.ads",
-            "line": 35
+            "file": "machine.adb",
+            "line": 66
           }
         ]
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__419.trace",
+      "tracefile": "machine__flow__469.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 24,
-      "col": 10,
+      "line": 97,
+      "col": 20,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
-        "name": "Machine.ExecuteProgram",
+        "name": "Machine.DoMov",
         "sloc": [
           {
-            "file": "machine.ads",
-            "line": 35
+            "file": "machine.adb",
+            "line": 95
           }
         ]
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__420.trace",
+      "tracefile": "machine__flow__519.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 24,
-      "col": 10,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__421.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 148,
-      "col": 21,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__422.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 103,
-      "col": 53,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__423.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 103,
-      "col": 53,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__424.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 150,
-      "col": 7,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__425.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 49,
+      "line": 60,
       "col": 20,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1810,73 +2091,13 @@
         "sloc": [
           {
             "file": "machine.adb",
-            "line": 46
+            "line": 57
           }
         ]
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__448.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 40,
-      "col": 20,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.DoSub",
-        "sloc": [
-          {
-            "file": "machine.adb",
-            "line": 37
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__500.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 67,
-      "col": 20,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.DoLdr",
-        "sloc": [
-          {
-            "file": "machine.adb",
-            "line": 64
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__529.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 70,
-      "col": 16,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.DoLdr",
-        "sloc": [
-          {
-            "file": "machine.adb",
-            "line": 64
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__530.trace",
+      "tracefile": "machine__flow__542.trace",
       "how_proved": "flow"
     },
     {
@@ -1896,17 +2117,37 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__547.trace",
+      "tracefile": "machine__flow__561.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 36,
+      "col": 20,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.DoAdd",
+        "sloc": [
+          {
+            "file": "machine.adb",
+            "line": 33
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__586.trace",
       "how_proved": "flow"
     }
   ],
   "proof": [
     {
       "file": "machine.adb",
-      "line": 24,
-      "col": 40,
+      "line": 26,
+      "col": 42,
       "rule": "VC_RANGE_CHECK",
-      "severity": "medium",
+      "severity": "info",
       "entity": {
         "name": "Machine.ExecuteProgram",
         "sloc": [
@@ -1920,14 +2161,9 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 67,
-              "time": 1.70000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 67,
-              "time": 3.10000000000000E-01
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
             }
           },
           "transformations": {
@@ -1935,115 +2171,23 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 24,
-      "check_col": 40,
-      "tracefile": "machine.adb_24_40_machine.adb_146_16_range_check.trace",
-      "cntexmp": {
-        "machine.adb": {
-          "20": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "24": [
-            {
-              "name": "PC",
-              "value": "65536",
-              "kind": "variable"
-            }
-          ],
-          "100": [
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "101": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "102": [
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "103": [
-            {
-              "name": "A",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "CycleCount",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
-              "kind": "variable"
-            },
-            {
-              "name": "Memory",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "PC",
-              "value": "65536",
-              "kind": "variable"
-            },
-            {
-              "name": "Regs",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "104": [
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
-              "kind": "variable"
-            }
-          ]
-        },
-        "machine.ads": {
-          "35": [
-            {
-              "name": "Prog",
-              "value": "(others => (Op => NOP, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0))",
-              "kind": "variable"
-            }
-          ]
+      "check_line": 26,
+      "check_col": 42,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
         }
-      },
-      "msg_id": 9,
-      "how_proved": "prover"
+      }
     },
     {
       "file": "machine.adb",
-      "line": 24,
-      "col": 40,
+      "line": 26,
+      "col": 42,
       "rule": "VC_RANGE_CHECK",
-      "severity": "medium",
+      "severity": "info",
       "entity": {
         "name": "Machine.ExecuteProgram",
         "sloc": [
@@ -2057,14 +2201,9 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 125,
-              "time": 1.70000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 125,
-              "time": 2.30000000000000E-01
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
             }
           },
           "transformations": {
@@ -2072,113 +2211,21 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 24,
-      "check_col": 40,
-      "tracefile": "machine.adb_24_40_machine.adb_143_19_range_check.trace",
-      "cntexmp": {
-        "machine.adb": {
-          "20": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "24": [
-            {
-              "name": "PC",
-              "value": "65536",
-              "kind": "variable"
-            }
-          ],
-          "100": [
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "101": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "102": [
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "103": [
-            {
-              "name": "A",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "CycleCount",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
-              "kind": "variable"
-            },
-            {
-              "name": "Memory",
-              "value": "(others => -1)",
-              "kind": "variable"
-            },
-            {
-              "name": "PC",
-              "value": "65536",
-              "kind": "variable"
-            },
-            {
-              "name": "Regs",
-              "value": "(others => -1)",
-              "kind": "variable"
-            },
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "104": [
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
-              "kind": "variable"
-            }
-          ]
-        },
-        "machine.ads": {
-          "35": [
-            {
-              "name": "Prog",
-              "value": "(65536 => (Op => JZ, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0), others => (Op => NOP, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0))",
-              "kind": "variable"
-            }
-          ]
+      "check_line": 26,
+      "check_col": 42,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
         }
-      },
-      "msg_id": 10,
-      "how_proved": "prover"
+      }
     },
     {
       "file": "machine.adb",
-      "line": 141,
-      "col": 19,
+      "line": 130,
+      "col": 16,
       "rule": "VC_DISCRIMINANT_CHECK",
       "severity": "info",
       "entity": {
@@ -2196,7 +2243,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.10000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -2204,22 +2251,935 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 141,
-      "check_col": 19,
+      "check_line": 130,
+      "check_col": 16,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.09999999403954E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
     {
       "file": "machine.adb",
-      "line": 116,
+      "line": 79,
+      "col": 33,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "medium",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown (none)",
+              "steps": 149,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (other)",
+              "steps": 149,
+              "time": 2.00000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 79,
+      "check_col": 33,
+      "tracefile": "machine.adb_79_33_machine.adb_136_16_range_check.trace",
+      "cntexmp": {
+        "machine.adb": {
+          "20": [
+            {
+              "name": "PC",
+              "value": "1",
+              "kind": "variable"
+            }
+          ],
+          "79": [
+            {
+              "name": "A",
+              "value": "0",
+              "kind": "variable"
+            }
+          ],
+          "111": [
+            {
+              "name": "Ret",
+              "value": "Success",
+              "kind": "variable"
+            }
+          ],
+          "112": [
+            {
+              "name": "PC",
+              "value": "1",
+              "kind": "variable"
+            }
+          ],
+          "113": [
+            {
+              "name": "Result",
+              "value": "0",
+              "kind": "variable"
+            }
+          ],
+          "114": [
+            {
+              "name": "A",
+              "value": "0",
+              "kind": "variable"
+            },
+            {
+              "name": "CycleCount",
+              "value": "0",
+              "kind": "variable"
+            },
+            {
+              "name": "Inst",
+              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
+              "kind": "variable"
+            },
+            {
+              "name": "Memory",
+              "value": "(others => -1)",
+              "kind": "variable"
+            },
+            {
+              "name": "PC",
+              "value": "1",
+              "kind": "variable"
+            },
+            {
+              "name": "Regs",
+              "value": "(others => -1)",
+              "kind": "variable"
+            },
+            {
+              "name": "Result",
+              "value": "0",
+              "kind": "variable"
+            },
+            {
+              "name": "Ret",
+              "value": "Success",
+              "kind": "variable"
+            }
+          ],
+          "115": [
+            {
+              "name": "Inst",
+              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
+              "kind": "variable"
+            }
+          ]
+        },
+        "machine.ads": {
+          "35": [
+            {
+              "name": "Prog",
+              "value": "(1 => (Op => LDR, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0), others => (Op => NOP, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0))",
+              "kind": "variable"
+            }
+          ]
+        }
+      },
+      "msg_id": 10,
+      "how_proved": "prover"
+    },
+    {
+      "file": "machine.adb",
+      "line": 26,
+      "col": 42,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 26,
+      "check_col": 42,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 142,
       "col": 16,
       "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 142,
+      "check_col": 16,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 130,
+      "col": 16,
+      "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 130,
+      "check_col": 16,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 142,
+      "col": 16,
+      "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 142,
+      "check_col": 16,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 71,
+      "col": 29,
+      "rule": "VC_DIVISION_CHECK",
+      "severity": "medium",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown (none)",
+              "steps": 134,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (other)",
+              "steps": 134,
+              "time": 2.20000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 71,
+      "check_col": 29,
+      "tracefile": "machine.adb_71_29_machine.adb_133_16_division_check.trace",
+      "cntexmp": {
+        "machine.adb": {
+          "20": [
+            {
+              "name": "PC",
+              "value": "1",
+              "kind": "variable"
+            }
+          ],
+          "71": [
+            {
+              "name": "Regs",
+              "value": "(others => 0)",
+              "kind": "variable"
+            }
+          ],
+          "111": [
+            {
+              "name": "Ret",
+              "value": "Success",
+              "kind": "variable"
+            }
+          ],
+          "112": [
+            {
+              "name": "PC",
+              "value": "1",
+              "kind": "variable"
+            }
+          ],
+          "113": [
+            {
+              "name": "Result",
+              "value": "0",
+              "kind": "variable"
+            }
+          ],
+          "114": [
+            {
+              "name": "A",
+              "value": "0",
+              "kind": "variable"
+            },
+            {
+              "name": "CycleCount",
+              "value": "0",
+              "kind": "variable"
+            },
+            {
+              "name": "Inst",
+              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
+              "kind": "variable"
+            },
+            {
+              "name": "Memory",
+              "value": "(others => 0)",
+              "kind": "variable"
+            },
+            {
+              "name": "PC",
+              "value": "1",
+              "kind": "variable"
+            },
+            {
+              "name": "Regs",
+              "value": "(others => 0)",
+              "kind": "variable"
+            },
+            {
+              "name": "Result",
+              "value": "0",
+              "kind": "variable"
+            },
+            {
+              "name": "Ret",
+              "value": "Success",
+              "kind": "variable"
+            }
+          ],
+          "115": [
+            {
+              "name": "Inst",
+              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
+              "kind": "variable"
+            }
+          ]
+        },
+        "machine.ads": {
+          "35": [
+            {
+              "name": "Prog",
+              "value": "(1 => (Op => DIV, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0), others => (Op => NOP, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0))",
+              "kind": "variable"
+            }
+          ]
+        }
+      },
+      "msg_id": 11,
+      "how_proved": "prover"
+    },
+    {
+      "file": "machine.adb",
+      "line": 136,
+      "col": 16,
+      "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 136,
+      "check_col": 16,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 124,
+      "col": 16,
+      "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 124,
+      "check_col": 16,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 53,
+      "col": 29,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "medium",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown (none)",
+              "steps": 203,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (other)",
+              "steps": 203,
+              "time": 2.20000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 53,
+      "check_col": 29,
+      "tracefile": "machine.adb_53_29_machine.adb_127_16_overflow_check.trace",
+      "cntexmp": {
+        "machine.adb": {
+          "20": [
+            {
+              "name": "PC",
+              "value": "1",
+              "kind": "variable"
+            }
+          ],
+          "53": [
+            {
+              "name": "Regs",
+              "value": "(1 => 1, others => -2147483648)",
+              "kind": "variable"
+            }
+          ],
+          "111": [
+            {
+              "name": "Ret",
+              "value": "Success",
+              "kind": "variable"
+            }
+          ],
+          "112": [
+            {
+              "name": "PC",
+              "value": "1",
+              "kind": "variable"
+            }
+          ],
+          "113": [
+            {
+              "name": "Result",
+              "value": "0",
+              "kind": "variable"
+            }
+          ],
+          "114": [
+            {
+              "name": "A",
+              "value": "0",
+              "kind": "variable"
+            },
+            {
+              "name": "CycleCount",
+              "value": "0",
+              "kind": "variable"
+            },
+            {
+              "name": "Inst",
+              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
+              "kind": "variable"
+            },
+            {
+              "name": "Memory",
+              "value": "(others => -2147483648)",
+              "kind": "variable"
+            },
+            {
+              "name": "PC",
+              "value": "1",
+              "kind": "variable"
+            },
+            {
+              "name": "Regs",
+              "value": "(1 => 1, others => -2147483648)",
+              "kind": "variable"
+            },
+            {
+              "name": "Result",
+              "value": "0",
+              "kind": "variable"
+            },
+            {
+              "name": "Ret",
+              "value": "Success",
+              "kind": "variable"
+            }
+          ],
+          "115": [
+            {
+              "name": "Inst",
+              "value": "(AddRd => 1, AddRs1 => 1, AddRs2 => 1, SubRd => 0, SubRs1 => 0, SubRs2 => 1, MulRd => 1, MulRs1 => 1, MulRs2 => 1, DivRd => 1, DivRs1 => 1, DivRs2 => 1, RetRs => 1, LdrRd => 1, LdrRs => 1, LdrOffs => 0, StrRa => 1, StrOffs => 0, StrRb => 1, MovRd => 1, MovOffs => 0, JmpOffs => 0, JzRa => 1, JzOffs => 0, others => ?)",
+              "kind": "variable"
+            }
+          ]
+        },
+        "machine.ads": {
+          "35": [
+            {
+              "name": "Prog",
+              "value": "(1 => (Op => SUB, AddRd => 1, AddRs1 => 1, AddRs2 => 1, SubRd => 0, SubRs1 => 0, SubRs2 => 1, MulRd => 1, MulRs1 => 1, MulRs2 => 1, DivRd => 1, DivRs1 => 1, DivRs2 => 1, RetRs => 1, LdrRd => 1, LdrRs => 1, LdrOffs => 0, StrRa => 1, StrOffs => 0, StrRb => 1, MovRd => 1, MovOffs => 0, JmpOffs => 0, JzRa => 1, JzOffs => 0), others => (Op => NOP, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0))",
+              "kind": "variable"
+            }
+          ]
+        }
+      },
+      "msg_id": 12,
+      "how_proved": "prover"
+    },
+    {
+      "file": "machine.adb",
+      "line": 139,
+      "col": 16,
+      "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 139,
+      "check_col": 16,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 26,
+      "col": 42,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 26,
+      "check_col": 42,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 79,
+      "col": 33,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "medium",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown (none)",
+              "steps": 149,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (other)",
+              "steps": 149,
+              "time": 2.70000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 79,
+      "check_col": 33,
+      "tracefile": "machine.adb_79_33_machine.adb_136_16_overflow_check.trace",
+      "cntexmp": {
+        "machine.adb": {
+          "20": [
+            {
+              "name": "PC",
+              "value": "1",
+              "kind": "variable"
+            }
+          ],
+          "79": [
+            {
+              "name": "A",
+              "value": "0",
+              "kind": "variable"
+            },
+            {
+              "name": "Regs",
+              "value": "(others => -2147483648)",
+              "kind": "variable"
+            }
+          ],
+          "111": [
+            {
+              "name": "Ret",
+              "value": "Success",
+              "kind": "variable"
+            }
+          ],
+          "112": [
+            {
+              "name": "PC",
+              "value": "1",
+              "kind": "variable"
+            }
+          ],
+          "113": [
+            {
+              "name": "Result",
+              "value": "0",
+              "kind": "variable"
+            }
+          ],
+          "114": [
+            {
+              "name": "A",
+              "value": "0",
+              "kind": "variable"
+            },
+            {
+              "name": "CycleCount",
+              "value": "0",
+              "kind": "variable"
+            },
+            {
+              "name": "Inst",
+              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => -1, StrRa => 0, StrOffs => -1, StrRb => 0, MovRd => 0, MovOffs => -1, JmpOffs => -1, JzRa => 0, JzOffs => -1, others => ?)",
+              "kind": "variable"
+            },
+            {
+              "name": "Memory",
+              "value": "(others => -2147483648)",
+              "kind": "variable"
+            },
+            {
+              "name": "PC",
+              "value": "1",
+              "kind": "variable"
+            },
+            {
+              "name": "Regs",
+              "value": "(others => -2147483648)",
+              "kind": "variable"
+            },
+            {
+              "name": "Result",
+              "value": "0",
+              "kind": "variable"
+            },
+            {
+              "name": "Ret",
+              "value": "Success",
+              "kind": "variable"
+            }
+          ],
+          "115": [
+            {
+              "name": "Inst",
+              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => -1, StrRa => 0, StrOffs => -1, StrRb => 0, MovRd => 0, MovOffs => -1, JmpOffs => -1, JzRa => 0, JzOffs => -1, others => ?)",
+              "kind": "variable"
+            }
+          ]
+        },
+        "machine.ads": {
+          "35": [
+            {
+              "name": "Prog",
+              "value": "(1 => (Op => LDR, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => -1, StrRa => 0, StrOffs => -1, StrRb => 0, MovRd => 0, MovOffs => -1, JmpOffs => -1, JzRa => 0, JzOffs => -1), others => (Op => NOP, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => -1, StrRa => 0, StrOffs => -1, StrRb => 0, MovRd => 0, MovOffs => -1, JmpOffs => -1, JzRa => 0, JzOffs => -1))",
+              "kind": "variable"
+            }
+          ]
+        }
+      },
+      "msg_id": 13,
+      "how_proved": "prover"
+    },
+    {
+      "file": "machine.adb",
+      "line": 26,
+      "col": 42,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 26,
+      "check_col": 42,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 26,
+      "col": 42,
+      "rule": "VC_RANGE_CHECK",
       "severity": "info",
       "entity": {
         "name": "Machine.ExecuteProgram",
@@ -2244,8 +3204,8 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 116,
-      "check_col": 16,
+      "check_line": 26,
+      "check_col": 42,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -2257,7 +3217,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 78,
+      "line": 89,
       "col": 33,
       "rule": "VC_RANGE_CHECK",
       "severity": "medium",
@@ -2274,14 +3234,14 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Unknown (other)",
+              "result": "Unknown (none)",
               "steps": 149,
-              "time": 1.70000000000000E-01
+              "time": 0
             },
             "CVC4_CE": {
               "result": "Unknown (other)",
               "steps": 149,
-              "time": 2.50000000000000E-01
+              "time": 2.20000000000000E-01
             }
           },
           "transformations": {
@@ -2289,9 +3249,9 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 78,
+      "check_line": 89,
       "check_col": 33,
-      "tracefile": "machine.adb_78_33_machine.adb_128_16_range_check.trace",
+      "tracefile": "machine.adb_89_33_machine.adb_139_16_range_check.trace",
       "cntexmp": {
         "machine.adb": {
           "20": [
@@ -2301,35 +3261,35 @@
               "kind": "variable"
             }
           ],
-          "78": [
+          "89": [
             {
               "name": "A",
               "value": "0",
               "kind": "variable"
             }
           ],
-          "100": [
+          "111": [
             {
               "name": "Ret",
               "value": "Success",
               "kind": "variable"
             }
           ],
-          "101": [
+          "112": [
             {
               "name": "PC",
               "value": "1",
               "kind": "variable"
             }
           ],
-          "102": [
+          "113": [
             {
               "name": "Result",
               "value": "0",
               "kind": "variable"
             }
           ],
-          "103": [
+          "114": [
             {
               "name": "A",
               "value": "0",
@@ -2371,7 +3331,7 @@
               "kind": "variable"
             }
           ],
-          "104": [
+          "115": [
             {
               "name": "Inst",
               "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
@@ -2389,13 +3349,133 @@
           ]
         }
       },
-      "msg_id": 11,
+      "msg_id": 14,
       "how_proved": "prover"
     },
     {
       "file": "machine.adb",
-      "line": 42,
-      "col": 29,
+      "line": 149,
+      "col": 16,
+      "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 149,
+      "check_col": 16,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 136,
+      "col": 16,
+      "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 136,
+      "check_col": 16,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 124,
+      "col": 16,
+      "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 124,
+      "check_col": 16,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 39,
+      "col": 24,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "medium",
       "entity": {
@@ -2411,14 +3491,14 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 203,
-              "time": 1.70000000000000E-01
+              "result": "Unknown (none)",
+              "steps": 189,
+              "time": 0
             },
             "CVC4_CE": {
               "result": "Unknown (other)",
-              "steps": 203,
-              "time": 2.50000000000000E-01
+              "steps": 189,
+              "time": 2.30000000000000E-01
             }
           },
           "transformations": {
@@ -2426,9 +3506,9 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 42,
-      "check_col": 29,
-      "tracefile": "machine.adb_42_29_machine.adb_116_16_overflow_check.trace",
+      "check_line": 39,
+      "check_col": 24,
+      "tracefile": "machine.adb_39_24_machine.adb_124_16_overflow_check.trace",
       "cntexmp": {
         "machine.adb": {
           "20": [
@@ -2438,35 +3518,35 @@
               "kind": "variable"
             }
           ],
-          "42": [
+          "39": [
             {
               "name": "Regs",
-              "value": "(1 => 1, others => -2147483648)",
+              "value": "(others => -1073741825)",
               "kind": "variable"
             }
           ],
-          "100": [
+          "111": [
             {
               "name": "Ret",
               "value": "Success",
               "kind": "variable"
             }
           ],
-          "101": [
+          "112": [
             {
               "name": "PC",
               "value": "1",
               "kind": "variable"
             }
           ],
-          "102": [
+          "113": [
             {
               "name": "Result",
               "value": "0",
               "kind": "variable"
             }
           ],
-          "103": [
+          "114": [
             {
               "name": "A",
               "value": "0",
@@ -2484,7 +3564,7 @@
             },
             {
               "name": "Memory",
-              "value": "(others => -2147483648)",
+              "value": "(others => -1073741825)",
               "kind": "variable"
             },
             {
@@ -2494,7 +3574,7 @@
             },
             {
               "name": "Regs",
-              "value": "(1 => 1, others => -2147483648)",
+              "value": "(others => -1073741825)",
               "kind": "variable"
             },
             {
@@ -2508,10 +3588,10 @@
               "kind": "variable"
             }
           ],
-          "104": [
+          "115": [
             {
               "name": "Inst",
-              "value": "(AddRd => 1, AddRs1 => 1, AddRs2 => 1, SubRd => 0, SubRs1 => 0, SubRs2 => 1, MulRd => 1, MulRs1 => 1, MulRs2 => 1, DivRd => 1, DivRs1 => 1, DivRs2 => 1, RetRs => 1, LdrRd => 1, LdrRs => 1, LdrOffs => 0, StrRa => 1, StrOffs => 0, StrRb => 1, MovRd => 1, MovOffs => 0, JmpOffs => 0, JzRa => 1, JzOffs => 0, others => ?)",
+              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
               "kind": "variable"
             }
           ]
@@ -2520,18 +3600,218 @@
           "35": [
             {
               "name": "Prog",
-              "value": "(1 => (Op => SUB, AddRd => 1, AddRs1 => 1, AddRs2 => 1, SubRd => 0, SubRs1 => 0, SubRs2 => 1, MulRd => 1, MulRs1 => 1, MulRs2 => 1, DivRd => 1, DivRs1 => 1, DivRs2 => 1, RetRs => 1, LdrRd => 1, LdrRs => 1, LdrOffs => 0, StrRa => 1, StrOffs => 0, StrRb => 1, MovRd => 1, MovOffs => 0, JmpOffs => 0, JzRa => 1, JzOffs => 0), others => (Op => NOP, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0))",
+              "value": "(1 => (Op => ADD, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0), others => (Op => NOP, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0))",
               "kind": "variable"
             }
           ]
         }
       },
-      "msg_id": 12,
+      "msg_id": 15,
       "how_proved": "prover"
     },
     {
       "file": "machine.adb",
-      "line": 78,
+      "line": 26,
+      "col": 42,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 26,
+      "check_col": 42,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 26,
+      "col": 42,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 26,
+      "check_col": 42,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 133,
+      "col": 16,
+      "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 133,
+      "check_col": 16,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 133,
+      "col": 16,
+      "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 133,
+      "check_col": 16,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 139,
+      "col": 16,
+      "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 139,
+      "check_col": 16,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 89,
       "col": 33,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "medium",
@@ -2548,14 +3828,14 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Unknown (other)",
+              "result": "Unknown (none)",
               "steps": 149,
-              "time": 2.00000000000000E-01
+              "time": 0
             },
             "CVC4_CE": {
               "result": "Unknown (other)",
               "steps": 149,
-              "time": 3.00000000000000E-01
+              "time": 2.30000000000000E-01
             }
           },
           "transformations": {
@@ -2563,9 +3843,9 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 78,
+      "check_line": 89,
       "check_col": 33,
-      "tracefile": "machine.adb_78_33_machine.adb_128_16_overflow_check.trace",
+      "tracefile": "machine.adb_89_33_machine.adb_139_16_overflow_check.trace",
       "cntexmp": {
         "machine.adb": {
           "20": [
@@ -2575,7 +3855,7 @@
               "kind": "variable"
             }
           ],
-          "78": [
+          "89": [
             {
               "name": "A",
               "value": "0",
@@ -2587,28 +3867,28 @@
               "kind": "variable"
             }
           ],
-          "100": [
+          "111": [
             {
               "name": "Ret",
               "value": "Success",
               "kind": "variable"
             }
           ],
-          "101": [
+          "112": [
             {
               "name": "PC",
               "value": "1",
               "kind": "variable"
             }
           ],
-          "102": [
+          "113": [
             {
               "name": "Result",
               "value": "0",
               "kind": "variable"
             }
           ],
-          "103": [
+          "114": [
             {
               "name": "A",
               "value": "0",
@@ -2650,7 +3930,7 @@
               "kind": "variable"
             }
           ],
-          "104": [
+          "115": [
             {
               "name": "Inst",
               "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => -1, StrRa => 0, StrOffs => -1, StrRb => 0, MovRd => 0, MovOffs => -1, JmpOffs => -1, JzRa => 0, JzOffs => -1, others => ?)",
@@ -2668,13 +3948,13 @@
           ]
         }
       },
-      "msg_id": 13,
+      "msg_id": 16,
       "how_proved": "prover"
     },
     {
       "file": "machine.adb",
-      "line": 134,
-      "col": 43,
+      "line": 151,
+      "col": 28,
       "rule": "VC_DISCRIMINANT_CHECK",
       "severity": "info",
       "entity": {
@@ -2692,7 +3972,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.10000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -2700,517 +3980,20 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 134,
-      "check_col": 43,
+      "check_line": 151,
+      "check_col": 28,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.09999999403954E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
     {
       "file": "machine.adb",
-      "line": 122,
-      "col": 16,
-      "rule": "VC_DISCRIMINANT_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 1.70000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 122,
-      "check_col": 16,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 1.70000001788139E-01
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 125,
-      "col": 16,
-      "rule": "VC_DISCRIMINANT_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 1.60000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 125,
-      "check_col": 16,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 1.59999996423721E-01
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 113,
-      "col": 16,
-      "rule": "VC_DISCRIMINANT_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 1.90000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 113,
-      "check_col": 16,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 1.89999997615814E-01
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 128,
-      "col": 16,
-      "rule": "VC_DISCRIMINANT_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 1.40000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 128,
-      "check_col": 16,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 1.40000000596046E-01
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 125,
-      "col": 16,
-      "rule": "VC_DISCRIMINANT_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 1.70000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 125,
-      "check_col": 16,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 1.70000001788139E-01
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 24,
-      "col": 40,
-      "rule": "VC_RANGE_CHECK",
-      "severity": "medium",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 101,
-              "time": 2.00000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 101,
-              "time": 2.70000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 24,
-      "check_col": 40,
-      "tracefile": "machine.adb_24_40_machine.adb_138_16_range_check.trace",
-      "cntexmp": {
-        "machine.adb": {
-          "20": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "24": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "100": [
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "101": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "102": [
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "103": [
-            {
-              "name": "A",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "CycleCount",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => -1, StrRa => 0, StrOffs => -1, StrRb => 0, MovRd => 0, MovOffs => -1, JmpOffs => -1, JzRa => 0, JzOffs => -1, others => ?)",
-              "kind": "variable"
-            },
-            {
-              "name": "Memory",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "Regs",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "104": [
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => -1, StrRa => 0, StrOffs => -1, StrRb => 0, MovRd => 0, MovOffs => -1, JmpOffs => -1, JzRa => 0, JzOffs => -1, others => ?)",
-              "kind": "variable"
-            }
-          ]
-        },
-        "machine.ads": {
-          "35": [
-            {
-              "name": "Prog",
-              "value": "(1 => (Op => JMP, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => -1, StrRa => 0, StrOffs => -1, StrRb => 0, MovRd => 0, MovOffs => -1, JmpOffs => -1, JzRa => 0, JzOffs => -1), others => (Op => NOP, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => -1, StrRa => 0, StrOffs => -1, StrRb => 0, MovRd => 0, MovOffs => -1, JmpOffs => -1, JzRa => 0, JzOffs => -1))",
-              "kind": "variable"
-            }
-          ]
-        }
-      },
-      "msg_id": 14,
-      "how_proved": "prover"
-    },
-    {
-      "file": "machine.adb",
-      "line": 113,
-      "col": 16,
-      "rule": "VC_DISCRIMINANT_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 1.40000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 113,
-      "check_col": 16,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 1.40000000596046E-01
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 128,
-      "col": 16,
-      "rule": "VC_DISCRIMINANT_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 1.40000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 128,
-      "check_col": 16,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 1.40000000596046E-01
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 122,
-      "col": 16,
-      "rule": "VC_DISCRIMINANT_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 1.60000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 122,
-      "check_col": 16,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 1.59999996423721E-01
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 122,
-      "col": 16,
-      "rule": "VC_DISCRIMINANT_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 1.10000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 122,
-      "check_col": 16,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 1.09999999403954E-01
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 51,
+      "line": 62,
       "col": 29,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "medium",
@@ -3227,14 +4010,14 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Unknown (other)",
+              "result": "Unknown (none)",
               "steps": 682,
-              "time": 2.50000000000000E-01
+              "time": 0
             },
             "CVC4_CE": {
               "result": "Unknown (other)",
               "steps": 682,
-              "time": 3.00000000000000E-01
+              "time": 3.10000000000000E-01
             }
           },
           "transformations": {
@@ -3242,9 +4025,9 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 51,
+      "check_line": 62,
       "check_col": 29,
-      "tracefile": "machine.adb_51_29_machine.adb_119_16_overflow_check.trace",
+      "tracefile": "machine.adb_62_29_machine.adb_130_16_overflow_check.trace",
       "cntexmp": {
         "machine.adb": {
           "20": [
@@ -3254,35 +4037,35 @@
               "kind": "variable"
             }
           ],
-          "51": [
+          "62": [
             {
               "name": "Regs",
               "value": "(1 => 2, others => -2)",
               "kind": "variable"
             }
           ],
-          "100": [
+          "111": [
             {
               "name": "Ret",
               "value": "Success",
               "kind": "variable"
             }
           ],
-          "101": [
+          "112": [
             {
               "name": "PC",
               "value": "1",
               "kind": "variable"
             }
           ],
-          "102": [
+          "113": [
             {
               "name": "Result",
               "value": "0",
               "kind": "variable"
             }
           ],
-          "103": [
+          "114": [
             {
               "name": "A",
               "value": "0",
@@ -3324,7 +4107,7 @@
               "kind": "variable"
             }
           ],
-          "104": [
+          "115": [
             {
               "name": "Inst",
               "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 1, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
@@ -3342,343 +4125,15 @@
           ]
         }
       },
-      "msg_id": 15,
-      "how_proved": "prover"
-    },
-    {
-      "file": "machine.adb",
-      "line": 60,
-      "col": 29,
-      "rule": "VC_DIVISION_CHECK",
-      "severity": "medium",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 134,
-              "time": 1.60000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 134,
-              "time": 2.70000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 60,
-      "check_col": 29,
-      "tracefile": "machine.adb_60_29_machine.adb_122_16_division_check.trace",
-      "cntexmp": {
-        "machine.adb": {
-          "20": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "60": [
-            {
-              "name": "Regs",
-              "value": "(others => 0)",
-              "kind": "variable"
-            }
-          ],
-          "100": [
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "101": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "102": [
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "103": [
-            {
-              "name": "A",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "CycleCount",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
-              "kind": "variable"
-            },
-            {
-              "name": "Memory",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "Regs",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "104": [
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
-              "kind": "variable"
-            }
-          ]
-        },
-        "machine.ads": {
-          "35": [
-            {
-              "name": "Prog",
-              "value": "(1 => (Op => DIV, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0), others => (Op => NOP, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0))",
-              "kind": "variable"
-            }
-          ]
-        }
-      },
-      "msg_id": 16,
-      "how_proved": "prover"
-    },
-    {
-      "file": "machine.adb",
-      "line": 24,
-      "col": 40,
-      "rule": "VC_RANGE_CHECK",
-      "severity": "medium",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 167,
-              "time": 2.00000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 167,
-              "time": 2.80000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 24,
-      "check_col": 40,
-      "tracefile": "machine.adb_24_40_machine.adb_117_16_range_check.trace",
-      "cntexmp": {
-        "machine.adb": {
-          "20": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "24": [
-            {
-              "name": "PC",
-              "value": "65536",
-              "kind": "variable"
-            }
-          ],
-          "42": [
-            {
-              "name": "Regs",
-              "value": "(others => 0)",
-              "kind": "variable"
-            }
-          ],
-          "43": [
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "100": [
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "101": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "102": [
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "103": [
-            {
-              "name": "A",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "CycleCount",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
-              "kind": "variable"
-            },
-            {
-              "name": "Memory",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "PC",
-              "value": "65536",
-              "kind": "variable"
-            },
-            {
-              "name": "Regs",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "104": [
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
-              "kind": "variable"
-            }
-          ]
-        },
-        "machine.ads": {
-          "35": [
-            {
-              "name": "Prog",
-              "value": "(65536 => (Op => SUB, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0), others => (Op => NOP, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0))",
-              "kind": "variable"
-            }
-          ]
-        }
-      },
       "msg_id": 17,
       "how_proved": "prover"
     },
     {
       "file": "machine.adb",
-      "line": 125,
-      "col": 16,
-      "rule": "VC_DISCRIMINANT_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 1.60000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 125,
-      "check_col": 16,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 1.59999996423721E-01
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 68,
-      "col": 33,
+      "line": 26,
+      "col": 42,
       "rule": "VC_RANGE_CHECK",
-      "severity": "medium",
+      "severity": "info",
       "entity": {
         "name": "Machine.ExecuteProgram",
         "sloc": [
@@ -3692,14 +4147,9 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 149,
-              "time": 2.20000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 149,
-              "time": 3.10000000000000E-01
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
             }
           },
           "transformations": {
@@ -3707,115 +4157,23 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 68,
-      "check_col": 33,
-      "tracefile": "machine.adb_68_33_machine.adb_125_16_range_check.trace",
-      "cntexmp": {
-        "machine.adb": {
-          "20": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "68": [
-            {
-              "name": "A",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "100": [
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "101": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "102": [
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "103": [
-            {
-              "name": "A",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "CycleCount",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
-              "kind": "variable"
-            },
-            {
-              "name": "Memory",
-              "value": "(others => -1)",
-              "kind": "variable"
-            },
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "Regs",
-              "value": "(others => -1)",
-              "kind": "variable"
-            },
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "104": [
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
-              "kind": "variable"
-            }
-          ]
-        },
-        "machine.ads": {
-          "35": [
-            {
-              "name": "Prog",
-              "value": "(1 => (Op => LDR, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0), others => (Op => NOP, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0))",
-              "kind": "variable"
-            }
-          ]
+      "check_line": 26,
+      "check_col": 42,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
         }
-      },
-      "msg_id": 18,
-      "how_proved": "prover"
+      }
     },
     {
       "file": "machine.adb",
-      "line": 24,
-      "col": 40,
+      "line": 26,
+      "col": 42,
       "rule": "VC_RANGE_CHECK",
-      "severity": "medium",
+      "severity": "info",
       "entity": {
         "name": "Machine.ExecuteProgram",
         "sloc": [
@@ -3829,14 +4187,9 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 129,
-              "time": 1.70000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 129,
-              "time": 2.80000000000000E-01
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
             }
           },
           "transformations": {
@@ -3844,112 +4197,20 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 24,
-      "check_col": 40,
-      "tracefile": "machine.adb_24_40_machine.adb_141_19_range_check.trace",
-      "cntexmp": {
-        "machine.adb": {
-          "20": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "24": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "100": [
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "101": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "102": [
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "103": [
-            {
-              "name": "A",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "CycleCount",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => -1, StrRa => 0, StrOffs => -1, StrRb => 0, MovRd => 0, MovOffs => -1, JmpOffs => -1, JzRa => 0, JzOffs => -1, others => ?)",
-              "kind": "variable"
-            },
-            {
-              "name": "Memory",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "Regs",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "104": [
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => -1, StrRa => 0, StrOffs => -1, StrRb => 0, MovRd => 0, MovOffs => -1, JmpOffs => -1, JzRa => 0, JzOffs => -1, others => ?)",
-              "kind": "variable"
-            }
-          ]
-        },
-        "machine.ads": {
-          "35": [
-            {
-              "name": "Prog",
-              "value": "(1 => (Op => JZ, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => -1, StrRa => 0, StrOffs => -1, StrRb => 0, MovRd => 0, MovOffs => -1, JmpOffs => -1, JzRa => 0, JzOffs => -1), others => (Op => NOP, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => -1, StrRa => 0, StrOffs => -1, StrRb => 0, MovRd => 0, MovOffs => -1, JmpOffs => -1, JzRa => 0, JzOffs => -1))",
-              "kind": "variable"
-            }
-          ]
+      "check_line": 26,
+      "check_col": 42,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
         }
-      },
-      "msg_id": 19,
-      "how_proved": "prover"
+      }
     },
     {
       "file": "machine.adb",
-      "line": 113,
+      "line": 124,
       "col": 16,
       "rule": "VC_DISCRIMINANT_CHECK",
       "severity": "info",
@@ -3968,7 +4229,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 9.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -3976,355 +4237,20 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 113,
+      "check_line": 124,
       "check_col": 16,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 9.00000035762787E-02
+          "max_time": 0.00000000000000E+00
         }
       }
     },
     {
       "file": "machine.adb",
-      "line": 24,
-      "col": 40,
-      "rule": "VC_RANGE_CHECK",
-      "severity": "medium",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 153,
-              "time": 2.20000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 153,
-              "time": 2.70000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 24,
-      "check_col": 40,
-      "tracefile": "machine.adb_24_40_machine.adb_126_16_range_check.trace",
-      "cntexmp": {
-        "machine.adb": {
-          "20": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "24": [
-            {
-              "name": "PC",
-              "value": "65536",
-              "kind": "variable"
-            }
-          ],
-          "68": [
-            {
-              "name": "A",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "70": [
-            {
-              "name": "Regs",
-              "value": "(others => 0)",
-              "kind": "variable"
-            }
-          ],
-          "71": [
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "100": [
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "101": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "102": [
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "103": [
-            {
-              "name": "A",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "CycleCount",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
-              "kind": "variable"
-            },
-            {
-              "name": "Memory",
-              "value": "(0 => 0, others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "PC",
-              "value": "65536",
-              "kind": "variable"
-            },
-            {
-              "name": "Regs",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "104": [
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
-              "kind": "variable"
-            }
-          ]
-        },
-        "machine.ads": {
-          "35": [
-            {
-              "name": "Prog",
-              "value": "(65536 => (Op => LDR, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0), others => (Op => NOP, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0))",
-              "kind": "variable"
-            }
-          ]
-        }
-      },
-      "msg_id": 20,
-      "how_proved": "prover"
-    },
-    {
-      "file": "machine.adb",
-      "line": 140,
-      "col": 28,
-      "rule": "VC_DISCRIMINANT_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 1.40000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 140,
-      "check_col": 28,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 1.40000000596046E-01
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 33,
-      "col": 29,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "medium",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 189,
-              "time": 2.30000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 189,
-              "time": 3.30000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 33,
-      "check_col": 29,
-      "tracefile": "machine.adb_33_29_machine.adb_113_16_overflow_check.trace",
-      "cntexmp": {
-        "machine.adb": {
-          "20": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "33": [
-            {
-              "name": "Regs",
-              "value": "(others => -1073741825)",
-              "kind": "variable"
-            }
-          ],
-          "100": [
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "101": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "102": [
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "103": [
-            {
-              "name": "A",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "CycleCount",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
-              "kind": "variable"
-            },
-            {
-              "name": "Memory",
-              "value": "(others => -1073741825)",
-              "kind": "variable"
-            },
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "Regs",
-              "value": "(others => -1073741825)",
-              "kind": "variable"
-            },
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "104": [
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
-              "kind": "variable"
-            }
-          ]
-        },
-        "machine.ads": {
-          "35": [
-            {
-              "name": "Prog",
-              "value": "(1 => (Op => ADD, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0), others => (Op => NOP, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0))",
-              "kind": "variable"
-            }
-          ]
-        }
-      },
-      "msg_id": 21,
-      "how_proved": "prover"
-    },
-    {
-      "file": "machine.adb",
-      "line": 128,
+      "line": 133,
       "col": 16,
       "rule": "VC_DISCRIMINANT_CHECK",
       "severity": "info",
@@ -4343,7 +4269,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.40000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -4351,172 +4277,21 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 128,
+      "check_line": 133,
       "check_col": 16,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.40000000596046E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
     {
       "file": "machine.adb",
-      "line": 24,
-      "col": 40,
-      "rule": "VC_RANGE_CHECK",
-      "severity": "medium",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 168,
-              "time": 2.20000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 168,
-              "time": 3.40000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 24,
-      "check_col": 40,
-      "tracefile": "machine.adb_24_40_machine.adb_120_16_range_check.trace",
-      "cntexmp": {
-        "machine.adb": {
-          "20": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "24": [
-            {
-              "name": "PC",
-              "value": "65536",
-              "kind": "variable"
-            }
-          ],
-          "51": [
-            {
-              "name": "Regs",
-              "value": "(others => 0)",
-              "kind": "variable"
-            }
-          ],
-          "52": [
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "100": [
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "101": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "102": [
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "103": [
-            {
-              "name": "A",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "CycleCount",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
-              "kind": "variable"
-            },
-            {
-              "name": "Memory",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "PC",
-              "value": "65536",
-              "kind": "variable"
-            },
-            {
-              "name": "Regs",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "104": [
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
-              "kind": "variable"
-            }
-          ]
-        },
-        "machine.ads": {
-          "35": [
-            {
-              "name": "Prog",
-              "value": "(65536 => (Op => MUL, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0), others => (Op => NOP, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0))",
-              "kind": "variable"
-            }
-          ]
-        }
-      },
-      "msg_id": 22,
-      "how_proved": "prover"
-    },
-    {
-      "file": "machine.adb",
-      "line": 116,
-      "col": 16,
+      "line": 152,
+      "col": 19,
       "rule": "VC_DISCRIMINANT_CHECK",
       "severity": "info",
       "entity": {
@@ -4534,7 +4309,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.40000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -4542,823 +4317,21 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 116,
-      "check_col": 16,
+      "check_line": 152,
+      "check_col": 19,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.40000000596046E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
     {
       "file": "machine.adb",
-      "line": 131,
-      "col": 16,
-      "rule": "VC_DISCRIMINANT_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 1.40000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 131,
-      "check_col": 16,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 1.40000000596046E-01
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 116,
-      "col": 16,
-      "rule": "VC_DISCRIMINANT_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 1.70000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 116,
-      "check_col": 16,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 1.70000001788139E-01
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 68,
-      "col": 33,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "medium",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 149,
-              "time": 2.00000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 149,
-              "time": 3.30000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 68,
-      "check_col": 33,
-      "tracefile": "machine.adb_68_33_machine.adb_125_16_overflow_check.trace",
-      "cntexmp": {
-        "machine.adb": {
-          "20": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "68": [
-            {
-              "name": "A",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Regs",
-              "value": "(others => -2147483648)",
-              "kind": "variable"
-            }
-          ],
-          "100": [
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "101": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "102": [
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "103": [
-            {
-              "name": "A",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "CycleCount",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => -1, StrRa => 0, StrOffs => -1, StrRb => 0, MovRd => 0, MovOffs => -1, JmpOffs => -1, JzRa => 0, JzOffs => -1, others => ?)",
-              "kind": "variable"
-            },
-            {
-              "name": "Memory",
-              "value": "(others => -2147483648)",
-              "kind": "variable"
-            },
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "Regs",
-              "value": "(others => -2147483648)",
-              "kind": "variable"
-            },
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "104": [
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => -1, StrRa => 0, StrOffs => -1, StrRb => 0, MovRd => 0, MovOffs => -1, JmpOffs => -1, JzRa => 0, JzOffs => -1, others => ?)",
-              "kind": "variable"
-            }
-          ]
-        },
-        "machine.ads": {
-          "35": [
-            {
-              "name": "Prog",
-              "value": "(1 => (Op => LDR, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => -1, StrRa => 0, StrOffs => -1, StrRb => 0, MovRd => 0, MovOffs => -1, JmpOffs => -1, JzRa => 0, JzOffs => -1), others => (Op => NOP, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => -1, StrRa => 0, StrOffs => -1, StrRb => 0, MovRd => 0, MovOffs => -1, JmpOffs => -1, JzRa => 0, JzOffs => -1))",
-              "kind": "variable"
-            }
-          ]
-        }
-      },
-      "msg_id": 23,
-      "how_proved": "prover"
-    },
-    {
-      "file": "machine.adb",
-      "line": 131,
-      "col": 16,
-      "rule": "VC_DISCRIMINANT_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 1.40000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 131,
-      "check_col": 16,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 1.40000000596046E-01
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 24,
-      "col": 40,
-      "rule": "VC_RANGE_CHECK",
-      "severity": "medium",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 114,
-              "time": 2.20000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 114,
-              "time": 2.50000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 24,
-      "check_col": 40,
-      "tracefile": "machine.adb_24_40_machine.adb_132_16_range_check.trace",
-      "cntexmp": {
-        "machine.adb": {
-          "20": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "24": [
-            {
-              "name": "PC",
-              "value": "65536",
-              "kind": "variable"
-            }
-          ],
-          "88": [
-            {
-              "name": "Regs",
-              "value": "(others => 0)",
-              "kind": "variable"
-            }
-          ],
-          "89": [
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "100": [
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "101": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "102": [
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "103": [
-            {
-              "name": "A",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "CycleCount",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
-              "kind": "variable"
-            },
-            {
-              "name": "Memory",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "PC",
-              "value": "65536",
-              "kind": "variable"
-            },
-            {
-              "name": "Regs",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "104": [
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
-              "kind": "variable"
-            }
-          ]
-        },
-        "machine.ads": {
-          "35": [
-            {
-              "name": "Prog",
-              "value": "(65536 => (Op => MOV, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0), others => (Op => NOP, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0))",
-              "kind": "variable"
-            }
-          ]
-        }
-      },
-      "msg_id": 24,
-      "how_proved": "prover"
-    },
-    {
-      "file": "machine.adb",
-      "line": 119,
-      "col": 16,
-      "rule": "VC_DISCRIMINANT_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 1.60000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 119,
-      "check_col": 16,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 1.59999996423721E-01
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 119,
-      "col": 16,
-      "rule": "VC_DISCRIMINANT_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 1.10000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 119,
-      "check_col": 16,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 1.09999999403954E-01
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 24,
-      "col": 40,
-      "rule": "VC_RANGE_CHECK",
-      "severity": "medium",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 284,
-              "time": 2.20000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 296,
-              "time": 2.30000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 24,
-      "check_col": 40,
-      "tracefile": "machine.adb_24_40_machine.adb_123_16_range_check.trace",
-      "cntexmp": {
-        "machine.adb": {
-          "20": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "24": [
-            {
-              "name": "PC",
-              "value": "65536",
-              "kind": "variable"
-            }
-          ],
-          "60": [
-            {
-              "name": "Regs",
-              "value": "(1 => -1, others => 0)",
-              "kind": "variable"
-            }
-          ],
-          "61": [
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "100": [
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "101": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "102": [
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "103": [
-            {
-              "name": "A",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "CycleCount",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Inst",
-              "value": "(AddRd => 1, AddRs1 => 1, AddRs2 => 1, SubRd => 1, SubRs1 => 1, SubRs2 => 1, MulRd => 1, MulRs1 => 1, MulRs2 => 1, DivRd => 1, DivRs1 => 1, DivRs2 => 1, RetRs => 1, LdrRd => 1, LdrRs => 1, LdrOffs => 0, StrRa => 1, StrOffs => 0, StrRb => 1, MovRd => 1, MovOffs => 0, JmpOffs => 0, JzRa => 1, JzOffs => 0, others => ?)",
-              "kind": "variable"
-            },
-            {
-              "name": "Memory",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "PC",
-              "value": "65536",
-              "kind": "variable"
-            },
-            {
-              "name": "Regs",
-              "value": "(1 => -1, others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "104": [
-            {
-              "name": "Inst",
-              "value": "(AddRd => 1, AddRs1 => 1, AddRs2 => 1, SubRd => 1, SubRs1 => 1, SubRs2 => 1, MulRd => 1, MulRs1 => 1, MulRs2 => 1, DivRd => 0, DivRs1 => 1, DivRs2 => 0, RetRs => 1, LdrRd => 1, LdrRs => 1, LdrOffs => 0, StrRa => 1, StrOffs => 0, StrRb => 1, MovRd => 1, MovOffs => 0, JmpOffs => 0, JzRa => 1, JzOffs => 0, others => ?)",
-              "kind": "variable"
-            }
-          ]
-        },
-        "machine.ads": {
-          "35": [
-            {
-              "name": "Prog",
-              "value": "(65536 => (Op => DIV, AddRd => 1, AddRs1 => 1, AddRs2 => 1, SubRd => 1, SubRs1 => 1, SubRs2 => 1, MulRd => 1, MulRs1 => 1, MulRs2 => 1, DivRd => 0, DivRs1 => 1, DivRs2 => 0, RetRs => 1, LdrRd => 1, LdrRs => 1, LdrOffs => 0, StrRa => 1, StrOffs => 0, StrRb => 1, MovRd => 1, MovOffs => 0, JmpOffs => 0, JzRa => 1, JzOffs => 0), others => (Op => NOP, AddRd => 1, AddRs1 => 1, AddRs2 => 1, SubRd => 1, SubRs1 => 1, SubRs2 => 1, MulRd => 1, MulRs1 => 1, MulRs2 => 1, DivRd => 1, DivRs1 => 1, DivRs2 => 1, RetRs => 1, LdrRd => 1, LdrRs => 1, LdrOffs => 0, StrRa => 1, StrOffs => 0, StrRb => 1, MovRd => 1, MovOffs => 0, JmpOffs => 0, JzRa => 1, JzOffs => 0))",
-              "kind": "variable"
-            }
-          ]
-        }
-      },
-      "msg_id": 25,
-      "how_proved": "prover"
-    },
-    {
-      "file": "machine.adb",
-      "line": 24,
-      "col": 40,
-      "rule": "VC_RANGE_CHECK",
-      "severity": "medium",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 154,
-              "time": 2.00000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 154,
-              "time": 3.10000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 24,
-      "check_col": 40,
-      "tracefile": "machine.adb_24_40_machine.adb_129_16_range_check.trace",
-      "cntexmp": {
-        "machine.adb": {
-          "20": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "24": [
-            {
-              "name": "PC",
-              "value": "65536",
-              "kind": "variable"
-            }
-          ],
-          "78": [
-            {
-              "name": "A",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "80": [
-            {
-              "name": "Memory",
-              "value": "(others => 0)",
-              "kind": "variable"
-            }
-          ],
-          "81": [
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "100": [
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "101": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "102": [
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "103": [
-            {
-              "name": "A",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "CycleCount",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
-              "kind": "variable"
-            },
-            {
-              "name": "Memory",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "PC",
-              "value": "65536",
-              "kind": "variable"
-            },
-            {
-              "name": "Regs",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "104": [
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
-              "kind": "variable"
-            }
-          ]
-        },
-        "machine.ads": {
-          "35": [
-            {
-              "name": "Prog",
-              "value": "(65536 => (Op => STR, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0), others => (Op => NOP, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0))",
-              "kind": "variable"
-            }
-          ]
-        }
-      },
-      "msg_id": 26,
-      "how_proved": "prover"
-    },
-    {
-      "file": "machine.adb",
-      "line": 148,
-      "col": 35,
+      "line": 38,
+      "col": 45,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
       "entity": {
@@ -5375,57 +4348,6 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 14,
-              "time": 3.80000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 148,
-      "check_col": 35,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 3.79999995231628E-01
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 104,
-      "col": 15,
-      "rule": "VC_DISCRIMINANT_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 9.00000000000000E-02
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
               "steps": 5,
               "time": 1.40000000000000E-01
             }
@@ -5435,12 +4357,12 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 104,
-      "check_col": 15,
+      "check_line": 38,
+      "check_col": 45,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
-          "count": 2,
+          "count": 1,
           "max_steps": 1,
           "max_time": 1.40000000596046E-01
         }
@@ -5448,9 +4370,9 @@
     },
     {
       "file": "machine.adb",
-      "line": 119,
-      "col": 16,
-      "rule": "VC_DISCRIMINANT_CHECK",
+      "line": 40,
+      "col": 32,
+      "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
       "entity": {
         "name": "Machine.ExecuteProgram",
@@ -5475,8 +4397,8 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 119,
-      "check_col": 16,
+      "check_line": 40,
+      "check_col": 32,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -5488,10 +4410,10 @@
     },
     {
       "file": "machine.adb",
-      "line": 24,
-      "col": 40,
+      "line": 26,
+      "col": 42,
       "rule": "VC_RANGE_CHECK",
-      "severity": "medium",
+      "severity": "info",
       "entity": {
         "name": "Machine.ExecuteProgram",
         "sloc": [
@@ -5505,14 +4427,9 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 167,
-              "time": 1.70000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 167,
-              "time": 2.80000000000000E-01
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
             }
           },
           "transformations": {
@@ -5520,263 +4437,20 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 24,
-      "check_col": 40,
-      "tracefile": "machine.adb_24_40_machine.adb_114_16_range_check.trace",
-      "cntexmp": {
-        "machine.adb": {
-          "20": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "24": [
-            {
-              "name": "PC",
-              "value": "65536",
-              "kind": "variable"
-            }
-          ],
-          "33": [
-            {
-              "name": "Regs",
-              "value": "(others => 0)",
-              "kind": "variable"
-            }
-          ],
-          "34": [
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "100": [
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "101": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "102": [
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "103": [
-            {
-              "name": "A",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "CycleCount",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
-              "kind": "variable"
-            },
-            {
-              "name": "Memory",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "PC",
-              "value": "65536",
-              "kind": "variable"
-            },
-            {
-              "name": "Regs",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "104": [
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
-              "kind": "variable"
-            }
-          ]
-        },
-        "machine.ads": {
-          "35": [
-            {
-              "name": "Prog",
-              "value": "(65536 => (Op => ADD, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0), others => (Op => NOP, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0))",
-              "kind": "variable"
-            }
-          ]
+      "check_line": 26,
+      "check_col": 42,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
         }
-      },
-      "msg_id": 27,
-      "how_proved": "prover"
+      }
     },
     {
       "file": "machine.adb",
-      "line": 60,
-      "col": 29,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "medium",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 289,
-              "time": 1.70000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 289,
-              "time": 3.30000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 60,
-      "check_col": 29,
-      "tracefile": "machine.adb_60_29_machine.adb_122_16_overflow_check.trace",
-      "cntexmp": {
-        "machine.adb": {
-          "20": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "60": [
-            {
-              "name": "Regs",
-              "value": "(0 => -1, others => 0)",
-              "kind": "variable"
-            }
-          ],
-          "100": [
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "101": [
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "102": [
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "103": [
-            {
-              "name": "A",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "CycleCount",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Inst",
-              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
-              "kind": "variable"
-            },
-            {
-              "name": "Memory",
-              "value": "(others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "PC",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "Regs",
-              "value": "(0 => -1, others => 0)",
-              "kind": "variable"
-            },
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Ret",
-              "value": "Success",
-              "kind": "variable"
-            }
-          ],
-          "104": [
-            {
-              "name": "Inst",
-              "value": "(AddRd => 1, AddRs1 => 1, AddRs2 => 1, SubRd => 1, SubRs1 => 1, SubRs2 => 1, MulRd => 1, MulRs1 => 1, MulRs2 => 1, DivRd => 0, DivRs1 => 0, DivRs2 => 1, RetRs => 1, LdrRd => 1, LdrRs => 1, LdrOffs => 0, StrRa => 1, StrOffs => 0, StrRb => 1, MovRd => 1, MovOffs => 0, JmpOffs => 0, JzRa => 1, JzOffs => 0, others => ?)",
-              "kind": "variable"
-            }
-          ]
-        },
-        "machine.ads": {
-          "35": [
-            {
-              "name": "Prog",
-              "value": "(1 => (Op => DIV, AddRd => 1, AddRs1 => 1, AddRs2 => 1, SubRd => 1, SubRs1 => 1, SubRs2 => 1, MulRd => 1, MulRs1 => 1, MulRs2 => 1, DivRd => 0, DivRs1 => 0, DivRs2 => 1, RetRs => 1, LdrRd => 1, LdrRs => 1, LdrOffs => 0, StrRa => 1, StrOffs => 0, StrRb => 1, MovRd => 1, MovOffs => 0, JmpOffs => 0, JzRa => 1, JzOffs => 0), others => (Op => NOP, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0))",
-              "kind": "variable"
-            }
-          ]
-        }
-      },
-      "msg_id": 28,
-      "how_proved": "prover"
-    },
-    {
-      "file": "machine.adb",
-      "line": 138,
+      "line": 127,
       "col": 16,
       "rule": "VC_DISCRIMINANT_CHECK",
       "severity": "info",
@@ -5795,7 +4469,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.10000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -5803,19 +4477,503 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 138,
+      "check_line": 127,
       "check_col": 16,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.09999999403954E-01
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 159,
+      "col": 35,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 3.40000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 159,
+      "check_col": 35,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 3.40000003576279E-01
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 130,
+      "col": 16,
+      "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 130,
+      "check_col": 16,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 145,
+      "col": 43,
+      "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 145,
+      "check_col": 43,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 127,
+      "col": 16,
+      "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 127,
+      "check_col": 16,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 139,
+      "col": 16,
+      "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 139,
+      "check_col": 16,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 115,
+      "col": 15,
+      "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 115,
+      "check_col": 15,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 71,
+      "col": 29,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "medium",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown (none)",
+              "steps": 289,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (other)",
+              "steps": 289,
+              "time": 3.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 71,
+      "check_col": 29,
+      "tracefile": "machine.adb_71_29_machine.adb_133_16_overflow_check.trace",
+      "cntexmp": {
+        "machine.adb": {
+          "20": [
+            {
+              "name": "PC",
+              "value": "1",
+              "kind": "variable"
+            }
+          ],
+          "71": [
+            {
+              "name": "Regs",
+              "value": "(0 => -1, others => 0)",
+              "kind": "variable"
+            }
+          ],
+          "111": [
+            {
+              "name": "Ret",
+              "value": "Success",
+              "kind": "variable"
+            }
+          ],
+          "112": [
+            {
+              "name": "PC",
+              "value": "1",
+              "kind": "variable"
+            }
+          ],
+          "113": [
+            {
+              "name": "Result",
+              "value": "0",
+              "kind": "variable"
+            }
+          ],
+          "114": [
+            {
+              "name": "A",
+              "value": "0",
+              "kind": "variable"
+            },
+            {
+              "name": "CycleCount",
+              "value": "0",
+              "kind": "variable"
+            },
+            {
+              "name": "Inst",
+              "value": "(AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0, others => ?)",
+              "kind": "variable"
+            },
+            {
+              "name": "Memory",
+              "value": "(others => 0)",
+              "kind": "variable"
+            },
+            {
+              "name": "PC",
+              "value": "1",
+              "kind": "variable"
+            },
+            {
+              "name": "Regs",
+              "value": "(0 => -1, others => 0)",
+              "kind": "variable"
+            },
+            {
+              "name": "Result",
+              "value": "0",
+              "kind": "variable"
+            },
+            {
+              "name": "Ret",
+              "value": "Success",
+              "kind": "variable"
+            }
+          ],
+          "115": [
+            {
+              "name": "Inst",
+              "value": "(AddRd => 1, AddRs1 => 1, AddRs2 => 1, SubRd => 1, SubRs1 => 1, SubRs2 => 1, MulRd => 1, MulRs1 => 1, MulRs2 => 1, DivRd => 0, DivRs1 => 0, DivRs2 => 1, RetRs => 1, LdrRd => 1, LdrRs => 1, LdrOffs => 0, StrRa => 1, StrOffs => 0, StrRb => 1, MovRd => 1, MovOffs => 0, JmpOffs => 0, JzRa => 1, JzOffs => 0, others => ?)",
+              "kind": "variable"
+            }
+          ]
+        },
+        "machine.ads": {
+          "35": [
+            {
+              "name": "Prog",
+              "value": "(1 => (Op => DIV, AddRd => 1, AddRs1 => 1, AddRs2 => 1, SubRd => 1, SubRs1 => 1, SubRs2 => 1, MulRd => 1, MulRs1 => 1, MulRs2 => 1, DivRd => 0, DivRs1 => 0, DivRs2 => 1, RetRs => 1, LdrRd => 1, LdrRs => 1, LdrOffs => 0, StrRa => 1, StrOffs => 0, StrRb => 1, MovRd => 1, MovOffs => 0, JmpOffs => 0, JzRa => 1, JzOffs => 0), others => (Op => NOP, AddRd => 0, AddRs1 => 0, AddRs2 => 0, SubRd => 0, SubRs1 => 0, SubRs2 => 0, MulRd => 0, MulRs1 => 0, MulRs2 => 0, DivRd => 0, DivRs1 => 0, DivRs2 => 0, RetRs => 0, LdrRd => 0, LdrRs => 0, LdrOffs => 0, StrRa => 0, StrOffs => 0, StrRb => 0, MovRd => 0, MovOffs => 0, JmpOffs => 0, JzRa => 0, JzOffs => 0))",
+              "kind": "variable"
+            }
+          ]
+        }
+      },
+      "msg_id": 18,
+      "how_proved": "prover"
+    },
+    {
+      "file": "machine.adb",
+      "line": 127,
+      "col": 16,
+      "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 127,
+      "check_col": 16,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 136,
+      "col": 16,
+      "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 136,
+      "check_col": 16,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
         }
       }
     }
   ],
   "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Machine.DoDiv",
+          "sloc": [
+            {
+              "file": "machine.adb",
+              "line": 66
+            }
+          ]
+        }
+      }
+    },
     {
       "assumptions": [
       ],
@@ -5838,43 +4996,11 @@
       "claim": {
         "predicate": "CLAIM_EFFECTS",
         "arg": {
-          "name": "Machine.DoMov",
+          "name": "Machine.DoMul",
           "sloc": [
             {
               "file": "machine.adb",
-              "line": 84
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-      ],
-      "claim": {
-        "predicate": "CLAIM_EFFECTS",
-        "arg": {
-          "name": "Machine.DoAdd",
-          "sloc": [
-            {
-              "file": "machine.adb",
-              "line": 28
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-      ],
-      "claim": {
-        "predicate": "CLAIM_EFFECTS",
-        "arg": {
-          "name": "Machine.DoStr",
-          "sloc": [
-            {
-              "file": "machine.adb",
-              "line": 74
+              "line": 57
             }
           ]
         }
@@ -5902,11 +5028,11 @@
       "claim": {
         "predicate": "CLAIM_EFFECTS",
         "arg": {
-          "name": "Machine.DoLdr",
+          "name": "Machine.DoSub",
           "sloc": [
             {
               "file": "machine.adb",
-              "line": 64
+              "line": 48
             }
           ]
         }
@@ -5918,11 +5044,11 @@
       "claim": {
         "predicate": "CLAIM_EFFECTS",
         "arg": {
-          "name": "Machine.DoDiv",
+          "name": "Machine.DoMov",
           "sloc": [
             {
               "file": "machine.adb",
-              "line": 55
+              "line": 95
             }
           ]
         }
@@ -5934,11 +5060,11 @@
       "claim": {
         "predicate": "CLAIM_EFFECTS",
         "arg": {
-          "name": "Machine.DoMul",
+          "name": "Machine.DoAdd",
           "sloc": [
             {
               "file": "machine.adb",
-              "line": 46
+              "line": 33
             }
           ]
         }
@@ -5966,11 +5092,27 @@
       "claim": {
         "predicate": "CLAIM_EFFECTS",
         "arg": {
-          "name": "Machine.DoSub",
+          "name": "Machine.DoStr",
           "sloc": [
             {
               "file": "machine.adb",
-              "line": 37
+              "line": 85
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Machine.DoLdr",
+          "sloc": [
+            {
+              "file": "machine.adb",
+              "line": 75
             }
           ]
         }
@@ -5978,14 +5120,14 @@
     }
   ],
   "timings": {
-    "marking": 1.05583760887384E-02,
-    "globals (basic)": 4.83235232532024E-02,
-    "globals/properties (advanced)": 1.06053695082664E-01,
-    "flow analysis": 1.83109596371651E-01,
-    "codepeer results": 1.13639998744475E-05,
-    "init_why_sections": 4.66263009002432E-04,
-    "translation of standard": 8.08336772024632E-03,
-    "translation of compilation unit": 1.72449693083763E-01,
-    "proof": 1.45557508468628E+01
+    "marking": 1.02086795959622E-03,
+    "globals (basic)": 1.87953319400549E-02,
+    "globals/properties (advanced)": 2.79237590730190E-02,
+    "flow analysis": 7.52634406089783E-02,
+    "codepeer results": 6.23200003246893E-06,
+    "init_why_sections": 2.57323990808800E-04,
+    "translation of standard": 3.04757500998676E-03,
+    "translation of compilation unit": 3.71196344494820E-02,
+    "proof": 3.09189248085022E+00
   }
 }

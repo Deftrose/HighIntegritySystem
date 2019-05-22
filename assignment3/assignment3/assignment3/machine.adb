@@ -21,8 +21,13 @@ package body Machine with SPARK_Mode is
       
    procedure IncPC(Ret : out ReturnCode; Offs : in Offset) is
    begin
-      PC := ProgramCounter(Integer(PC) + Integer(Offs));
-      Ret := Success;
+      if 0 < (Integer(PC) + Integer(Offs)) and
+        (Integer(PC) + Integer(Offs)) < MAX_PROGRAM_LENGTH then
+        PC := ProgramCounter(Integer(PC) + Integer(Offs));
+        Ret := Success;
+      else
+        Ret := IllegalProgram;
+      end if;
    end IncPC;
    
    procedure DoAdd(Rd : in Reg; 
@@ -30,10 +35,16 @@ package body Machine with SPARK_Mode is
                    Rs2 : in Reg;
                    Ret : out ReturnCode) is
    begin
-      Regs(Rd) := Regs(Rs1) + Regs(Rs2);
-      Ret := Success;
+      if DataVal(Offset'First) < (Regs(Rs1) + Regs(Rs2))
+        and (Regs(Rs1) + Regs(Rs2)) < DataVal(Offset'Last) then
+         Regs(Rd) := Regs(Rs1) + Regs(Rs2);
+         Ret := Success;
+      else
+         Ret := IllegalProgram;
+         end if;
    end DoAdd;
-   
+
+
    procedure DoSub(Rd : in Reg; 
                    Rs1 : in Reg; 
                    Rs2 : in Reg;

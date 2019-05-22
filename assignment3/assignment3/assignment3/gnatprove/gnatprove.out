@@ -1,19 +1,19 @@
 Summary of SPARK analysis
 =========================
 
-----------------------------------------------------------------------------------------------------------
-SPARK Analysis results        Total        Flow   Interval   CodePeer      Provers   Justified    Unproved
-----------------------------------------------------------------------------------------------------------
-Data Dependencies                 .           .          .          .            .           .           .
-Flow Dependencies                 .           .          .          .            .           .           .
-Initialization                   88          88          .          .            .           .           .
-Non-Aliasing                      .           .          .          .            .           .           .
-Run-time Checks                  70           .          .          .    50 (CVC4)           .          20
-Assertions                        .           .          .          .            .           .           .
-Functional Contracts              .           .          .          .            .           .           .
-LSP Verification                  .           .          .          .            .           .           .
-----------------------------------------------------------------------------------------------------------
-Total                           158    88 (56%)          .          .     50 (32%)           .    20 (13%)
+---------------------------------------------------------------------------------------------------------
+SPARK Analysis results        Total        Flow   Interval   CodePeer      Provers   Justified   Unproved
+---------------------------------------------------------------------------------------------------------
+Data Dependencies                 .           .          .          .            .           .          .
+Flow Dependencies                 .           .          .          .            .           .          .
+Initialization                   99          99          .          .            .           .          .
+Non-Aliasing                      .           .          .          .            .           .          .
+Run-time Checks                  72           .          .          .    63 (CVC4)           .          9
+Assertions                        .           .          .          .            .           .          .
+Functional Contracts              .           .          .          .            .           .          .
+LSP Verification                  .           .          .          .            .           .          .
+---------------------------------------------------------------------------------------------------------
+Total                           171    99 (58%)          .          .     63 (37%)           .     9 (5%)
 
 
 Analyzed 4 units
@@ -63,12 +63,12 @@ in unit instruction, 1 subprograms and packages out of 33 analyzed
 in unit machine, 11 subprograms and packages out of 11 analyzed
   Machine at machine.ads:4 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
   Machine.DetectInvalidBehaviour at machine.ads:47 flow analyzed (0 errors, 0 checks and 2 warnings) and proved (0 checks)
-  Machine.DoAdd at machine.adb:28 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DoDiv at machine.adb:55 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DoLdr at machine.adb:64 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DoMov at machine.adb:84 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DoMul at machine.adb:46 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DoStr at machine.adb:74 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DoSub at machine.adb:37 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.ExecuteProgram at machine.ads:35 flow analyzed (0 errors, 0 checks and 7 warnings) and not proved, 26 checks out of 46 proved
+  Machine.DoAdd at machine.adb:33 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DoDiv at machine.adb:66 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DoLdr at machine.adb:75 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DoMov at machine.adb:95 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DoMul at machine.adb:57 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DoStr at machine.adb:85 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DoSub at machine.adb:48 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.ExecuteProgram at machine.ads:35 flow analyzed (0 errors, 0 checks and 8 warnings) and not proved, 39 checks out of 48 proved
   Machine.IncPC at machine.adb:22 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
