@@ -1,19 +1,19 @@
 Summary of SPARK analysis
 =========================
 
----------------------------------------------------------------------------------------------------------
-SPARK Analysis results        Total        Flow   Interval   CodePeer      Provers   Justified   Unproved
----------------------------------------------------------------------------------------------------------
-Data Dependencies                 .           .          .          .            .           .          .
-Flow Dependencies                 .           .          .          .            .           .          .
-Initialization                   99          99          .          .            .           .          .
-Non-Aliasing                      .           .          .          .            .           .          .
-Run-time Checks                  84           .          .          .    81 (CVC4)           .          3
-Assertions                        .           .          .          .            .           .          .
-Functional Contracts              .           .          .          .            .           .          .
-LSP Verification                  .           .          .          .            .           .          .
----------------------------------------------------------------------------------------------------------
-Total                           183    99 (54%)          .          .     81 (44%)           .     3 (2%)
+-----------------------------------------------------------------------------------------------------------
+SPARK Analysis results        Total         Flow   Interval   CodePeer       Provers   Justified   Unproved
+-----------------------------------------------------------------------------------------------------------
+Data Dependencies                 .            .          .          .             .           .          .
+Flow Dependencies                 .            .          .          .             .           .          .
+Initialization                  107          107          .          .             .           .          .
+Non-Aliasing                      .            .          .          .             .           .          .
+Run-time Checks                 103            .          .          .    103 (CVC4)           .          .
+Assertions                        .            .          .          .             .           .          .
+Functional Contracts              .            .          .          .             .           .          .
+LSP Verification                  .            .          .          .             .           .          .
+-----------------------------------------------------------------------------------------------------------
+Total                           210    107 (51%)          .          .     103 (49%)           .          .
 
 
 Analyzed 4 units
@@ -64,41 +64,57 @@ in unit machine, 11 subprograms and packages out of 11 analyzed
   Machine at machine.ads:4 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
   Machine.DetectInvalidBehaviour at machine.ads:47 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
    suppressed messages:
-    machine.ads:48:36: 
     machine.ads:47:36: 
+    machine.ads:48:36: 
   Machine.DoAdd at machine.adb:33 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DoDiv at machine.adb:109 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DoLdr at machine.adb:127 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DoDiv at machine.adb:154 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DoLdr at machine.adb:172 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DoMov at machine.adb:254 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DoMul at machine.adb:87 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DoStr at machine.adb:213 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DoSub at machine.adb:61 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.ExecuteProgram at machine.ads:35 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (79 checks)
    suppressed messages:
-    machine.adb:138:17: 
-    machine.adb:140:17: 
-    machine.adb:143:14: 
-  Machine.DoMov at machine.adb:158 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DoMul at machine.adb:73 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DoStr at machine.adb:148 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DoSub at machine.adb:54 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.ExecuteProgram at machine.ads:35 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 57 checks out of 60 proved
-   suppressed messages:
-    machine.adb:44:17: 
-    machine.adb:46:17: 
-    machine.adb:49:14: 
-    machine.adb:64:17: 
-    machine.adb:66:17: 
-    machine.adb:69:14: 
-    machine.adb:81:14: 
-    machine.adb:87:23: 
-    machine.adb:89:23: 
-    machine.adb:95:26: 
-    machine.adb:97:26: 
-    machine.adb:100:22: 
-    machine.adb:104:17: 
-    machine.adb:118:17: 
-    machine.adb:120:17: 
-    machine.adb:123:14: 
-    machine.adb:138:17: 
-    machine.adb:140:17: 
-    machine.adb:143:14: 
-    machine.adb:145:11: 
-    machine.adb:155:11: 
-    machine.adb:163:11: 
+    machine.adb:41:17: 
+    machine.adb:43:17: 
+    machine.adb:49:20: 
+    machine.adb:51:20: 
+    machine.adb:54:17: 
+    machine.adb:69:17: 
+    machine.adb:71:17: 
+    machine.adb:77:20: 
+    machine.adb:79:20: 
+    machine.adb:82:17: 
+    machine.adb:96:20: 
+    machine.adb:98:20: 
+    machine.adb:104:22: 
+    machine.adb:106:23: 
+    machine.adb:112:25: 
+    machine.adb:114:25: 
+    machine.adb:117:23: 
+    machine.adb:125:20: 
+    machine.adb:127:20: 
+    machine.adb:133:22: 
+    machine.adb:135:23: 
+    machine.adb:141:25: 
+    machine.adb:143:25: 
+    machine.adb:146:23: 
+    machine.adb:162:16: 
+    machine.adb:164:17: 
+    machine.adb:167:13: 
+    machine.adb:182:17: 
+    machine.adb:184:17: 
+    machine.adb:191:20: 
+    machine.adb:193:20: 
+    machine.adb:200:23: 
+    machine.adb:202:23: 
+    machine.adb:205:20: 
+    machine.adb:223:17: 
+    machine.adb:225:17: 
+    machine.adb:232:20: 
+    machine.adb:234:20: 
+    machine.adb:241:23: 
+    machine.adb:243:23: 
+    machine.adb:246:20: 
+    machine.adb:259:11: 
   Machine.IncPC at machine.adb:22 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)

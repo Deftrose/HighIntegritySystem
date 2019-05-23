@@ -1,3 +1,0 @@
-machine.adb:136:32: medium: range check might fail, in call inlined at machine.adb:199 (e.g. when A = 0)[#1]
-machine.adb:152:33: medium: range check might fail, in call inlined at machine.adb:202 (e.g. when A = 0)[#0]
-machine.adb:152:33: medium: overflow check might fail, in call inlined at machine.adb:202 (e.g. when A = 0 and Regs = (others => -2147483648))[#2]

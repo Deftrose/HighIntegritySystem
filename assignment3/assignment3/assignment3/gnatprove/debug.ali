@@ -28,8 +28,8 @@ D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
 D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
 D a-textio.ads		20180524051738 881db35a ada.text_io%s
 D a-tiinio.ads		20180524051736 aa04e5d6 ada.text_io.integer_io%s
-D debug.ads		20190522115824 cd66d8b0 debug%s
-D debug.adb		20190522115824 a3669b28 debug%b
+D debug.ads		20190505125630 cd66d8b0 debug%s
+D debug.adb		20190505125630 a3669b28 debug%b
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
 D system.ads		20180524051738 32a08138 system%s
