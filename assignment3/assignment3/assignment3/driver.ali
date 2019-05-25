@@ -20,11 +20,11 @@ Z interfaces%s		interfac.ads		interfac.ali
 W machine%s		machine.adb		machine.ali
 Z system.img_bool%s	s-imgboo.adb		s-imgboo.ali
 
-D debug.ads		20190505125630 cd66d8b0 debug%s
-D driver.adb		20190505125630 5cc5e6ed driver%b
-D instruction.ads	20190505125630 277a987f instruction%s
+D debug.ads		20190522115824 cd66d8b0 debug%s
+D driver.adb		20190522115824 5cc5e6ed driver%b
+D instruction.ads	20190522115824 277a987f instruction%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
-D machine.ads		20190505125630 a8861936 machine%s
+D machine.ads		20190522115824 a8861936 machine%s
 D system.ads		20180524051738 32a08138 system%s
 D s-imgboo.ads		20180524051736 f5d971eb system.img_bool%s
 X 1 debug.ads

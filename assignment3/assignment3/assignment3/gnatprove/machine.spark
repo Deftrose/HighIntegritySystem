@@ -156,7 +156,6 @@
       "file": "machine.ads",
       "line": 47,
       "col": 36,
-      "suppressed": "",
       "rule": "UNUSED",
       "severity": "warning",
       "entity": {
@@ -170,13 +169,13 @@
       },
       "check_tree": {
       },
+      "msg_id": 0,
       "how_proved": "flow"
     },
     {
       "file": "machine.ads",
       "line": 48,
       "col": 36,
-      "suppressed": "",
       "rule": "UNUSED",
       "severity": "warning",
       "entity": {
@@ -190,13 +189,13 @@
       },
       "check_tree": {
       },
+      "msg_id": 1,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 41,
       "col": 17,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -211,13 +210,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__205.trace",
+      "msg_id": 2,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 43,
       "col": 17,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -232,13 +231,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__206.trace",
+      "msg_id": 3,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 49,
       "col": 20,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -253,13 +252,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__210.trace",
+      "msg_id": 4,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 51,
       "col": 20,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -274,13 +273,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__211.trace",
+      "msg_id": 5,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 54,
       "col": 17,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -295,13 +294,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__212.trace",
+      "msg_id": 6,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 69,
       "col": 17,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -316,13 +315,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__232.trace",
+      "msg_id": 7,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 71,
       "col": 17,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -337,13 +336,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__233.trace",
+      "msg_id": 8,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 77,
       "col": 20,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -358,13 +357,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__237.trace",
+      "msg_id": 9,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 79,
       "col": 20,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -379,13 +378,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__238.trace",
+      "msg_id": 10,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 82,
       "col": 17,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -400,13 +399,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__239.trace",
+      "msg_id": 11,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 96,
       "col": 20,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -421,13 +420,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__260.trace",
+      "msg_id": 12,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 98,
       "col": 20,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -442,13 +441,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__261.trace",
+      "msg_id": 13,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 104,
       "col": 22,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -463,13 +462,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__265.trace",
+      "msg_id": 14,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 106,
       "col": 23,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -484,13 +483,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__266.trace",
+      "msg_id": 15,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 112,
       "col": 25,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -505,13 +504,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__270.trace",
+      "msg_id": 16,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 114,
       "col": 25,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -526,13 +525,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__271.trace",
+      "msg_id": 17,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 117,
       "col": 23,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -547,13 +546,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__272.trace",
+      "msg_id": 18,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 125,
       "col": 20,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -568,13 +567,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__276.trace",
+      "msg_id": 19,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 127,
       "col": 20,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -589,13 +588,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__277.trace",
+      "msg_id": 20,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 133,
       "col": 22,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -610,13 +609,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__281.trace",
+      "msg_id": 21,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 135,
       "col": 23,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -631,13 +630,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__282.trace",
+      "msg_id": 22,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 141,
       "col": 25,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -652,13 +651,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__286.trace",
+      "msg_id": 23,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 143,
       "col": 25,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -673,13 +672,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__287.trace",
+      "msg_id": 24,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 146,
       "col": 23,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -694,13 +693,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__288.trace",
+      "msg_id": 25,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 162,
       "col": 16,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -715,13 +714,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__308.trace",
+      "msg_id": 26,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 164,
       "col": 17,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -736,13 +735,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__309.trace",
+      "msg_id": 27,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 167,
       "col": 13,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -757,13 +756,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__310.trace",
+      "msg_id": 28,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 182,
       "col": 17,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -778,13 +777,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__333.trace",
+      "msg_id": 29,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 184,
       "col": 17,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -799,13 +798,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__334.trace",
+      "msg_id": 30,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 191,
       "col": 20,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -820,13 +819,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__339.trace",
+      "msg_id": 31,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 193,
       "col": 20,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -841,13 +840,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__340.trace",
+      "msg_id": 32,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 200,
       "col": 23,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -862,13 +861,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__345.trace",
+      "msg_id": 33,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 202,
       "col": 23,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -883,13 +882,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__346.trace",
+      "msg_id": 34,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 205,
       "col": 20,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -904,13 +903,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__347.trace",
+      "msg_id": 35,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 223,
       "col": 17,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -925,13 +924,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__370.trace",
+      "msg_id": 36,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 225,
       "col": 17,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -946,13 +945,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__371.trace",
+      "msg_id": 37,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 232,
       "col": 20,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -967,13 +966,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__376.trace",
+      "msg_id": 38,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 234,
       "col": 20,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -988,13 +987,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__377.trace",
+      "msg_id": 39,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 241,
       "col": 23,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -1009,13 +1008,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__382.trace",
+      "msg_id": 40,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 243,
       "col": 23,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -1030,13 +1029,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__383.trace",
+      "msg_id": 41,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 246,
       "col": 20,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -1051,13 +1050,13 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__384.trace",
+      "msg_id": 42,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 259,
       "col": 11,
-      "suppressed": "",
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
@@ -1072,6 +1071,7 @@
       "check_tree": {
       },
       "tracefile": "machine__flow__399.trace",
+      "msg_id": 43,
       "how_proved": "flow"
     },
     {
@@ -3037,7 +3037,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.30000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -3052,7 +3052,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.29999995231628E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -3077,7 +3077,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 602,
-              "time": 1.70000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -3092,7 +3092,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.70000001788139E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -3197,7 +3197,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.10000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -3212,7 +3212,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.09999999403954E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -3237,7 +3237,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 1.40000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -3252,7 +3252,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.40000000596046E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -3277,7 +3277,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.40000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -3292,7 +3292,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.40000000596046E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -3317,7 +3317,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.90000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -3332,7 +3332,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.89999997615814E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -3357,7 +3357,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 1.60000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -3372,7 +3372,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.59999996423721E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -3477,7 +3477,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.10000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -3492,7 +3492,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.09999999403954E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -3517,7 +3517,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.30000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -3587,7 +3587,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.29999995231628E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -3692,7 +3692,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 520,
-              "time": 2.30000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -3707,7 +3707,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 2.30000004172325E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -3732,7 +3732,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.10000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -3747,7 +3747,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.09999999403954E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -3852,7 +3852,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.70000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -3867,7 +3867,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.70000001788139E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -3932,7 +3932,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.40000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -3947,7 +3947,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.40000000596046E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -4012,7 +4012,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 886,
-              "time": 2.50000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -4027,7 +4027,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 2.50000000000000E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -4052,7 +4052,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.30000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -4067,7 +4067,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.29999995231628E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -4092,7 +4092,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 438,
-              "time": 2.30000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -4107,7 +4107,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 2.30000004172325E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -4172,7 +4172,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.60000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -4187,7 +4187,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.59999996423721E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -4212,7 +4212,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.40000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -4227,7 +4227,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.40000000596046E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -4252,7 +4252,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 319,
-              "time": 2.30000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -4267,7 +4267,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 2.30000004172325E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -4292,7 +4292,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.30000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -4307,7 +4307,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.29999995231628E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -4332,7 +4332,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.10000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -4347,7 +4347,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.09999999403954E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -4372,7 +4372,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 563,
-              "time": 2.20000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -4387,7 +4387,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 2.19999998807907E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -4412,7 +4412,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 1.60000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -4427,7 +4427,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.59999996423721E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -4452,7 +4452,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.60000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -4467,7 +4467,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.59999996423721E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -4492,7 +4492,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.40000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -4507,7 +4507,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.40000000596046E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -4532,7 +4532,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 7.00000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -4547,7 +4547,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 6.99999988079071E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -4572,7 +4572,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.60000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -4587,7 +4587,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.59999996423721E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -4612,7 +4612,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 343,
-              "time": 2.30000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -4682,7 +4682,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 2.30000004172325E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -4707,7 +4707,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.30000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -4722,7 +4722,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.29999995231628E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -4787,7 +4787,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.70000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -4802,7 +4802,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.70000001788139E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -4827,7 +4827,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.40000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -4842,7 +4842,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.40000000596046E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -4867,7 +4867,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.60000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -4882,7 +4882,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.59999996423721E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -4907,7 +4907,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.60000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -4922,7 +4922,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.59999996423721E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -4947,7 +4947,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 1.70000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -4962,7 +4962,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.70000001788139E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -4987,7 +4987,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 525,
-              "time": 2.00000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -5002,7 +5002,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 2.00000002980232E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -5027,7 +5027,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.30000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -5042,7 +5042,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.29999995231628E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -5067,7 +5067,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.30000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -5082,7 +5082,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.29999995231628E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -5107,7 +5107,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.30000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -5122,7 +5122,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.29999995231628E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -5147,7 +5147,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.30000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -5162,7 +5162,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.29999995231628E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -5187,7 +5187,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.70000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -5202,7 +5202,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.70000001788139E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -5227,7 +5227,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.10000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -5242,7 +5242,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.09999999403954E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -5267,7 +5267,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.40000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -5282,7 +5282,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.40000000596046E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -5307,7 +5307,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.40000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -5322,7 +5322,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.40000000596046E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -5347,7 +5347,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.90000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -5362,7 +5362,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.89999997615814E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -5387,7 +5387,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.90000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -5402,7 +5402,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.89999997615814E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -5427,7 +5427,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 1.60000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -5442,7 +5442,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.59999996423721E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -5467,7 +5467,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.30000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -5537,7 +5537,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.29999995231628E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -5562,7 +5562,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.10000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -5577,47 +5577,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.09999999403954E-01
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 289,
-      "col": 16,
-      "rule": "VC_DISCRIMINANT_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 1.10000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 289,
-      "check_col": 16,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 1.09999999403954E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -5682,7 +5642,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.30000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -5697,7 +5657,47 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.29999995231628E-01
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 289,
+      "col": 16,
+      "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 289,
+      "check_col": 16,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -5722,7 +5722,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 1.60000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -5737,7 +5737,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.59999996423721E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -5762,7 +5762,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.70000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -5777,7 +5777,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.70000001788139E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -5802,7 +5802,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.40000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -5817,7 +5817,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.40000000596046E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -5842,7 +5842,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 8.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -5857,7 +5857,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 7.99999982118607E-02
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -5882,7 +5882,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.30000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -5897,7 +5897,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.29999995231628E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -5922,7 +5922,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 1.70000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -5937,7 +5937,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.70000001788139E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -5962,7 +5962,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 1.40000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -5977,7 +5977,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.40000000596046E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -6002,7 +6002,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.10000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -6017,7 +6017,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.09999999403954E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -6042,7 +6042,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.10000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -6057,7 +6057,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.09999999403954E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -6082,7 +6082,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.10000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -6097,7 +6097,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.09999999403954E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -6122,7 +6122,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.60000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -6137,7 +6137,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.59999996423721E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -6162,7 +6162,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.40000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -6177,7 +6177,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.40000000596046E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -6202,7 +6202,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.10000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -6213,7 +6213,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.30000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -6228,7 +6228,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 1.29999995231628E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -6293,7 +6293,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.30000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -6308,7 +6308,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.29999995231628E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -6333,7 +6333,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 518,
-              "time": 2.20000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -6348,7 +6348,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 2.19999998807907E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     }
@@ -6365,22 +6365,6 @@
             {
               "file": "machine.ads",
               "line": 4
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-      ],
-      "claim": {
-        "predicate": "CLAIM_EFFECTS",
-        "arg": {
-          "name": "Machine.DetectInvalidBehaviour",
-          "sloc": [
-            {
-              "file": "machine.ads",
-              "line": 47
             }
           ]
         }
@@ -6547,70 +6531,6 @@
               }
             ]
           }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_EFFECTS",
-        "arg": {
-          "name": "Machine.ExecuteProgram",
-          "sloc": [
-            {
-              "file": "machine.ads",
-              "line": 35
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Debug.New_Line",
-            "sloc": [
-              {
-                "file": "debug.ads",
-                "line": 16
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Debug.Put",
-            "sloc": [
-              {
-                "file": "debug.ads",
-                "line": 12
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Debug.Put",
-            "sloc": [
-              {
-                "file": "debug.ads",
-                "line": 20
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Instruction.DebugPrintInstr",
-            "sloc": [
-              {
-                "file": "instruction.ads",
-                "line": 78
-              }
-            ]
-          }
         },
         {
           "predicate": "CLAIM_AORTE",
@@ -6708,14 +6628,14 @@
     }
   ],
   "timings": {
-    "marking": 1.35810300707817E-03,
-    "globals (basic)": 1.77960917353630E-02,
-    "globals/properties (advanced)": 2.81422287225723E-02,
-    "flow analysis": 1.34256765246391E-01,
-    "codepeer results": 5.49800006410806E-06,
-    "init_why_sections": 2.40830006077886E-04,
-    "translation of standard": 3.11722094193101E-03,
-    "translation of compilation unit": 4.14824262261391E-02,
-    "proof": 7.34535884857178E+00
+    "marking": 1.11682899296284E-03,
+    "globals (basic)": 1.23965498059988E-02,
+    "globals/properties (advanced)": 1.87740754336119E-02,
+    "flow analysis": 1.09929747879505E-01,
+    "codepeer results": 4.27499981014989E-06,
+    "init_why_sections": 2.01764007215388E-04,
+    "translation of standard": 2.90848710574210E-03,
+    "translation of compilation unit": 3.96510027348995E-02,
+    "proof": 1.45781517028809E+00
   }
 }
