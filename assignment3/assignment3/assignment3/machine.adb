@@ -21,8 +21,8 @@ package body Machine with SPARK_Mode is
       
    procedure IncPC(Ret : out ReturnCode; Offs : in Offset) is
    begin
-      if 0 < (Integer(PC) + Integer(Offs)) and
-        (Integer(PC) + Integer(Offs)) < MAX_PROGRAM_LENGTH then
+      if Integer(ProgramCounter'First) < (Integer(PC) + Integer(Offs)) and
+        (Integer(PC) + Integer(Offs)) < Integer(ProgramCounter'Last) then
         PC := ProgramCounter(Integer(PC) + Integer(Offs));
         Ret := Success;
       else
@@ -35,26 +35,25 @@ package body Machine with SPARK_Mode is
                    Rs2 : in Reg;
                    Ret : out ReturnCode) is
    begin
-      if Regs(Rs1) > DataVal'First and Regs(Rs1) <= 0 then
-         if Regs(Rs2) > (DataVal'First - Regs(Rs1)) and Regs(Rs2) < DataVal'Last then
-            Regs(Rd) := Regs(Rs1) + Regs(Rs2);
-            Ret := Success;
-         else
-            Ret := IllegalProgram;
-         end if;
-      else
-         if Regs(Rs1) < DataVal'Last and Regs(Rs1) > 0 then
-            if Regs(Rs2) < (DataVal'Last - Regs(Rs1)) and Regs(Rs2) > DataVal'First then
+         if Regs(Rs1) > DataVal'First and Regs(Rs1) <= 0 then
+            if Regs(Rs2) > (DataVal'First - Regs(Rs1)) and Regs(Rs2) < DataVal'Last then
                Regs(Rd) := Regs(Rs1) + Regs(Rs2);
                Ret := Success;
             else
                Ret := IllegalProgram;
             end if;
          else
-            Ret := IllegalProgram;
+            if Regs(Rs1) < DataVal'Last and Regs(Rs1) > 0 then
+               if Regs(Rs2) < (DataVal'Last - Regs(Rs1)) and Regs(Rs2) > DataVal'First then
+                  Regs(Rd) := Regs(Rs1) + Regs(Rs2);
+                  Ret := Success;
+               else
+                  Ret := IllegalProgram;
+               end if;
+            else
+               Ret := IllegalProgram;
+            end if;
          end if;
-      end if;
-      
    end DoAdd;
 
 
@@ -281,25 +280,53 @@ package body Machine with SPARK_Mode is
          case Inst.Op is
             when ADD =>
                DoAdd(Inst.AddRd,Inst.AddRs1,Inst.AddRs2,Ret);
-               IncPC(Ret,1);
+               if Ret = Success then
+                  IncPC(Ret,1);
+               else
+                  return;
+               end if;                                              
             when SUB =>
                DoSub(Inst.SubRd,Inst.SubRs1,Inst.SubRs2,Ret);
-               IncPC(Ret,1);
+               if Ret = Success then
+                  IncPC(Ret,1);
+               else
+                  return;
+               end if;                                              
             when MUL =>
                DoMul(Inst.MulRd,Inst.MulRs1,Inst.MulRs2,Ret);
-               IncPC(Ret,1);
+               if Ret = Success then
+                  IncPC(Ret,1);
+               else
+                  return;
+               end if;                                              
             when DIV =>
                DoDiv(Inst.DivRd,Inst.DivRs1,Inst.DivRs2,Ret);
-               IncPC(Ret,1);
+               if Ret = Success then
+                  IncPC(Ret,1);
+               else
+                  return;
+               end if;                                              
             when LDR =>
                DoLdr(Inst.LdrRd,Inst.LdrRs,Inst.LdrOffs,Ret);
-               IncPC(Ret,1);
+               if Ret = Success then
+                  IncPC(Ret,1);
+               else
+                  return;
+               end if;                                              
             when STR =>
                DoStr(Inst.StrRa,Inst.StrOffs,Inst.StrRb,Ret);
-               IncPC(Ret,1);
+               if Ret = Success then
+                  IncPC(Ret,1);
+               else
+                  return;
+               end if;                                              
             when MOV =>
                DoMov(Inst.MovRd,Inst.MovOffs,Ret);
-               IncPC(Ret,1);
+               if Ret = Success then
+                  IncPC(Ret,1);
+               else
+                  return;
+               end if;                                              
             when Instruction.RET =>
                Result := Integer(Regs(Inst.RetRs));
                Ret := Success;
@@ -326,6 +353,7 @@ package body Machine with SPARK_Mode is
    function DetectInvalidBehaviour(Prog : in Program;
                                    Cycles : in Integer) return Boolean is
    begin
+      Prog()
       return True;
    end DetectInvalidBehaviour;
    

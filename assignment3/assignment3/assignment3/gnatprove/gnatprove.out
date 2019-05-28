@@ -6,14 +6,14 @@ SPARK Analysis results        Total         Flow   Interval   CodePeer       Pro
 -----------------------------------------------------------------------------------------------------------
 Data Dependencies                 .            .          .          .             .           .          .
 Flow Dependencies                 .            .          .          .             .           .          .
-Initialization                  107          107          .          .             .           .          .
+Initialization                  114          114          .          .             .           .          .
 Non-Aliasing                      .            .          .          .             .           .          .
 Run-time Checks                 103            .          .          .    103 (CVC4)           .          .
 Assertions                        .            .          .          .             .           .          .
 Functional Contracts              .            .          .          .             .           .          .
 LSP Verification                  .            .          .          .             .           .          .
 -----------------------------------------------------------------------------------------------------------
-Total                           210    107 (51%)          .          .     103 (49%)           .          .
+Total                           217    114 (53%)          .          .     103 (47%)           .          .
 
 
 Analyzed 4 units
@@ -62,13 +62,13 @@ in unit instruction, 1 subprograms and packages out of 33 analyzed
   Instruction.Random_Reg.Value at a-nudira.ads:67, instantiated at instruction.adb:8 skipped
 in unit machine, 11 subprograms and packages out of 11 analyzed
   Machine at machine.ads:4 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DetectInvalidBehaviour at machine.ads:47 flow analyzed (0 errors, 0 checks and 2 warnings) and proved (0 checks)
+  Machine.DetectInvalidBehaviour at machine.ads:47 flow analyzed (0 errors, 0 checks and 3 warnings) and proved (0 checks)
   Machine.DoAdd at machine.adb:33 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DoDiv at machine.adb:154 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DoLdr at machine.adb:172 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DoMov at machine.adb:254 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DoMul at machine.adb:87 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DoStr at machine.adb:213 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DoSub at machine.adb:61 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.ExecuteProgram at machine.ads:35 flow analyzed (0 errors, 0 checks and 42 warnings) and proved (79 checks)
+  Machine.DoDiv at machine.adb:153 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DoLdr at machine.adb:171 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DoMov at machine.adb:253 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DoMul at machine.adb:86 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DoStr at machine.adb:212 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DoSub at machine.adb:60 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.ExecuteProgram at machine.ads:35 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (79 checks)
   Machine.IncPC at machine.adb:22 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)

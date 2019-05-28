@@ -55,7 +55,7 @@
       "sloc": [
         {
           "file": "machine.adb",
-          "line": 61
+          "line": 60
         }
       ],
       "spark": "all"
@@ -65,7 +65,7 @@
       "sloc": [
         {
           "file": "machine.adb",
-          "line": 87
+          "line": 86
         }
       ],
       "spark": "all"
@@ -75,7 +75,7 @@
       "sloc": [
         {
           "file": "machine.adb",
-          "line": 154
+          "line": 153
         }
       ],
       "spark": "all"
@@ -85,7 +85,7 @@
       "sloc": [
         {
           "file": "machine.adb",
-          "line": 172
+          "line": 171
         }
       ],
       "spark": "all"
@@ -95,7 +95,7 @@
       "sloc": [
         {
           "file": "machine.adb",
-          "line": 213
+          "line": 212
         }
       ],
       "spark": "all"
@@ -105,7 +105,7 @@
       "sloc": [
         {
           "file": "machine.adb",
-          "line": 254
+          "line": 253
         }
       ],
       "spark": "all"
@@ -114,42 +114,122 @@
   "flow": [
     {
       "file": "machine.adb",
-      "line": 90,
+      "line": 174,
       "col": 20,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
-        "name": "Machine.DoMul",
+        "name": "Machine.DoLdr",
         "sloc": [
           {
             "file": "machine.adb",
-            "line": 87
+            "line": 171
           }
         ]
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__53.trace",
+      "tracefile": "machine__flow__45.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 256,
-      "col": 20,
+      "line": 180,
+      "col": 22,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
-        "name": "Machine.DoMov",
+        "name": "Machine.DoLdr",
         "sloc": [
           {
             "file": "machine.adb",
-            "line": 254
+            "line": 171
           }
         ]
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__74.trace",
+      "tracefile": "machine__flow__46.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 189,
+      "col": 25,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.DoLdr",
+        "sloc": [
+          {
+            "file": "machine.adb",
+            "line": 171
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__47.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 198,
+      "col": 28,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.DoLdr",
+        "sloc": [
+          {
+            "file": "machine.adb",
+            "line": 171
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__48.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 63,
+      "col": 20,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.DoSub",
+        "sloc": [
+          {
+            "file": "machine.adb",
+            "line": 60
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__80.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 156,
+      "col": 20,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.DoDiv",
+        "sloc": [
+          {
+            "file": "machine.adb",
+            "line": 153
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__107.trace",
       "how_proved": "flow"
     },
     {
@@ -176,7 +256,7 @@
       "file": "machine.ads",
       "line": 48,
       "col": 36,
-      "rule": "UNUSED",
+      "rule": "UNUSED_INITIAL_VALUE",
       "severity": "warning",
       "entity": {
         "name": "Machine.DetectInvalidBehaviour",
@@ -194,884 +274,103 @@
     },
     {
       "file": "machine.adb",
-      "line": 41,
-      "col": 17,
+      "line": 357,
+      "col": 13,
       "rule": "INEFFECTIVE",
       "severity": "warning",
       "entity": {
-        "name": "Machine.ExecuteProgram",
+        "name": "Machine.DetectInvalidBehaviour",
         "sloc": [
           {
             "file": "machine.ads",
-            "line": 35
+            "line": 47
           }
         ]
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__205.trace",
+      "tracefile": "machine__flow__124.trace",
       "msg_id": 2,
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 43,
-      "col": 17,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__206.trace",
-      "msg_id": 3,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 49,
+      "line": 215,
       "col": 20,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
+      "rule": "UNINITIALIZED",
+      "severity": "info",
       "entity": {
-        "name": "Machine.ExecuteProgram",
+        "name": "Machine.DoStr",
         "sloc": [
           {
-            "file": "machine.ads",
-            "line": 35
+            "file": "machine.adb",
+            "line": 212
           }
         ]
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__210.trace",
-      "msg_id": 4,
+      "tracefile": "machine__flow__172.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 51,
-      "col": 20,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__211.trace",
-      "msg_id": 5,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 54,
-      "col": 17,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__212.trace",
-      "msg_id": 6,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 69,
-      "col": 17,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__232.trace",
-      "msg_id": 7,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 71,
-      "col": 17,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__233.trace",
-      "msg_id": 8,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 77,
-      "col": 20,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__237.trace",
-      "msg_id": 9,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 79,
-      "col": 20,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__238.trace",
-      "msg_id": 10,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 82,
-      "col": 17,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__239.trace",
-      "msg_id": 11,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 96,
-      "col": 20,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__260.trace",
-      "msg_id": 12,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 98,
-      "col": 20,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__261.trace",
-      "msg_id": 13,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 104,
-      "col": 22,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__265.trace",
-      "msg_id": 14,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 106,
+      "line": 221,
       "col": 23,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
+      "rule": "UNINITIALIZED",
+      "severity": "info",
       "entity": {
-        "name": "Machine.ExecuteProgram",
+        "name": "Machine.DoStr",
         "sloc": [
           {
-            "file": "machine.ads",
-            "line": 35
+            "file": "machine.adb",
+            "line": 212
           }
         ]
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__266.trace",
-      "msg_id": 15,
+      "tracefile": "machine__flow__173.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 112,
-      "col": 25,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
+      "line": 230,
+      "col": 26,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
       "entity": {
-        "name": "Machine.ExecuteProgram",
+        "name": "Machine.DoStr",
         "sloc": [
           {
-            "file": "machine.ads",
-            "line": 35
+            "file": "machine.adb",
+            "line": 212
           }
         ]
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__270.trace",
-      "msg_id": 16,
+      "tracefile": "machine__flow__174.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 114,
-      "col": 25,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
+      "line": 239,
+      "col": 29,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
       "entity": {
-        "name": "Machine.ExecuteProgram",
+        "name": "Machine.DoStr",
         "sloc": [
           {
-            "file": "machine.ads",
-            "line": 35
+            "file": "machine.adb",
+            "line": 212
           }
         ]
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__271.trace",
-      "msg_id": 17,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 117,
-      "col": 23,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__272.trace",
-      "msg_id": 18,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 125,
-      "col": 20,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__276.trace",
-      "msg_id": 19,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 127,
-      "col": 20,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__277.trace",
-      "msg_id": 20,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 133,
-      "col": 22,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__281.trace",
-      "msg_id": 21,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 135,
-      "col": 23,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__282.trace",
-      "msg_id": 22,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 141,
-      "col": 25,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__286.trace",
-      "msg_id": 23,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 143,
-      "col": 25,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__287.trace",
-      "msg_id": 24,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 146,
-      "col": 23,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__288.trace",
-      "msg_id": 25,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 162,
-      "col": 16,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__308.trace",
-      "msg_id": 26,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 164,
-      "col": 17,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__309.trace",
-      "msg_id": 27,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 167,
-      "col": 13,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__310.trace",
-      "msg_id": 28,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 182,
-      "col": 17,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__333.trace",
-      "msg_id": 29,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 184,
-      "col": 17,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__334.trace",
-      "msg_id": 30,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 191,
-      "col": 20,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__339.trace",
-      "msg_id": 31,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 193,
-      "col": 20,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__340.trace",
-      "msg_id": 32,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 200,
-      "col": 23,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__345.trace",
-      "msg_id": 33,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 202,
-      "col": 23,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__346.trace",
-      "msg_id": 34,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 205,
-      "col": 20,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__347.trace",
-      "msg_id": 35,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 223,
-      "col": 17,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__370.trace",
-      "msg_id": 36,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 225,
-      "col": 17,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__371.trace",
-      "msg_id": 37,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 232,
-      "col": 20,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__376.trace",
-      "msg_id": 38,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 234,
-      "col": 20,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__377.trace",
-      "msg_id": 39,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 241,
-      "col": 23,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__382.trace",
-      "msg_id": 40,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 243,
-      "col": 23,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__383.trace",
-      "msg_id": 41,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 246,
-      "col": 20,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__384.trace",
-      "msg_id": 42,
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 259,
-      "col": 11,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__399.trace",
-      "msg_id": 43,
+      "tracefile": "machine__flow__175.trace",
       "how_proved": "flow"
     },
     {
@@ -1091,7 +390,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__443.trace",
+      "tracefile": "machine__flow__542.trace",
       "how_proved": "flow"
     },
     {
@@ -1111,7 +410,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__444.trace",
+      "tracefile": "machine__flow__543.trace",
       "how_proved": "flow"
     },
     {
@@ -1131,12 +430,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__445.trace",
+      "tracefile": "machine__flow__544.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 274,
+      "line": 273,
       "col": 15,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1151,12 +450,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__446.trace",
+      "tracefile": "machine__flow__545.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 277,
+      "line": 276,
       "col": 14,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1171,12 +470,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__447.trace",
+      "tracefile": "machine__flow__546.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 278,
+      "line": 277,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1191,12 +490,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__448.trace",
+      "tracefile": "machine__flow__547.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 278,
+      "line": 277,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1211,12 +510,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__449.trace",
+      "tracefile": "machine__flow__548.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 278,
+      "line": 277,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1231,12 +530,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__450.trace",
+      "tracefile": "machine__flow__549.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 278,
+      "line": 277,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1251,12 +550,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__451.trace",
+      "tracefile": "machine__flow__550.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 278,
+      "line": 277,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1271,12 +570,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__452.trace",
+      "tracefile": "machine__flow__551.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 278,
+      "line": 277,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1291,12 +590,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__453.trace",
+      "tracefile": "machine__flow__552.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 278,
+      "line": 277,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1311,12 +610,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__454.trace",
+      "tracefile": "machine__flow__553.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 278,
+      "line": 277,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1331,12 +630,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__455.trace",
+      "tracefile": "machine__flow__554.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 278,
+      "line": 277,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1351,12 +650,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__456.trace",
+      "tracefile": "machine__flow__555.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 278,
+      "line": 277,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1371,12 +670,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__457.trace",
+      "tracefile": "machine__flow__556.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 278,
+      "line": 277,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1391,12 +690,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__458.trace",
+      "tracefile": "machine__flow__557.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 278,
+      "line": 277,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1411,12 +710,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__459.trace",
+      "tracefile": "machine__flow__558.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 278,
+      "line": 277,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1431,12 +730,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__460.trace",
+      "tracefile": "machine__flow__559.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 278,
+      "line": 277,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1451,12 +750,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__461.trace",
+      "tracefile": "machine__flow__560.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 278,
+      "line": 277,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1471,12 +770,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__462.trace",
+      "tracefile": "machine__flow__561.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 278,
+      "line": 277,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1491,12 +790,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__463.trace",
+      "tracefile": "machine__flow__562.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 278,
+      "line": 277,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1511,12 +810,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__464.trace",
+      "tracefile": "machine__flow__563.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 278,
+      "line": 277,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1531,12 +830,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__465.trace",
+      "tracefile": "machine__flow__564.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 278,
+      "line": 277,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1551,12 +850,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__466.trace",
+      "tracefile": "machine__flow__565.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 278,
+      "line": 277,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1571,12 +870,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__467.trace",
+      "tracefile": "machine__flow__566.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 278,
+      "line": 277,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1591,12 +890,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__468.trace",
+      "tracefile": "machine__flow__567.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 278,
+      "line": 277,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1611,12 +910,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__469.trace",
+      "tracefile": "machine__flow__568.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 278,
+      "line": 277,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1631,12 +930,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__470.trace",
+      "tracefile": "machine__flow__569.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 278,
+      "line": 277,
       "col": 26,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1651,7 +950,67 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__471.trace",
+      "tracefile": "machine__flow__570.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 282,
+      "col": 16,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__571.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 282,
+      "col": 16,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__572.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 282,
+      "col": 16,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__573.trace",
       "how_proved": "flow"
     },
     {
@@ -1671,47 +1030,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__472.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 283,
-      "col": 16,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__473.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 283,
-      "col": 16,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__474.trace",
+      "tracefile": "machine__flow__574.trace",
       "how_proved": "flow"
     },
     {
@@ -1731,7 +1050,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__475.trace",
+      "tracefile": "machine__flow__575.trace",
       "how_proved": "flow"
     },
     {
@@ -1751,107 +1070,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__476.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 286,
-      "col": 16,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__477.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 286,
-      "col": 16,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__478.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 286,
-      "col": 16,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__479.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 24,
-      "col": 7,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__480.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 26,
-      "col": 12,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__481.trace",
+      "tracefile": "machine__flow__576.trace",
       "how_proved": "flow"
     },
     {
@@ -1871,7 +1090,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__482.trace",
+      "tracefile": "machine__flow__577.trace",
       "how_proved": "flow"
     },
     {
@@ -1891,7 +1110,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__483.trace",
+      "tracefile": "machine__flow__578.trace",
       "how_proved": "flow"
     },
     {
@@ -1911,7 +1130,27 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__484.trace",
+      "tracefile": "machine__flow__579.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 290,
+      "col": 16,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__580.trace",
       "how_proved": "flow"
     },
     {
@@ -1931,7 +1170,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__485.trace",
+      "tracefile": "machine__flow__581.trace",
       "how_proved": "flow"
     },
     {
@@ -1951,12 +1190,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__486.trace",
+      "tracefile": "machine__flow__582.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 292,
+      "line": 296,
       "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1971,12 +1210,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__487.trace",
+      "tracefile": "machine__flow__583.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 292,
+      "line": 296,
       "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -1991,12 +1230,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__488.trace",
+      "tracefile": "machine__flow__584.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 292,
+      "line": 296,
       "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -2011,7 +1250,27 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__489.trace",
+      "tracefile": "machine__flow__585.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 297,
+      "col": 16,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__586.trace",
       "how_proved": "flow"
     },
     {
@@ -2031,7 +1290,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__490.trace",
+      "tracefile": "machine__flow__587.trace",
       "how_proved": "flow"
     },
     {
@@ -2051,12 +1310,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__491.trace",
+      "tracefile": "machine__flow__588.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 295,
+      "line": 303,
       "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -2071,12 +1330,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__492.trace",
+      "tracefile": "machine__flow__589.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 295,
+      "line": 303,
       "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -2091,12 +1350,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__493.trace",
+      "tracefile": "machine__flow__590.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 295,
+      "line": 303,
       "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -2111,372 +1370,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__494.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 181,
-      "col": 22,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__495.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 190,
-      "col": 25,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__496.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 199,
-      "col": 28,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__497.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 24,
-      "col": 7,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__498.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 26,
-      "col": 12,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__499.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 298,
-      "col": 16,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__500.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 298,
-      "col": 16,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__501.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 298,
-      "col": 16,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__502.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 222,
-      "col": 23,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__503.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 231,
-      "col": 26,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__504.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 240,
-      "col": 29,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__505.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 24,
-      "col": 7,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__506.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 26,
-      "col": 12,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__507.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 301,
-      "col": 16,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__508.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 301,
-      "col": 16,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__509.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 24,
-      "col": 7,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__510.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 26,
-      "col": 12,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__511.trace",
+      "tracefile": "machine__flow__591.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 304,
-      "col": 23,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__512.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 308,
       "col": 16,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -2491,7 +1390,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__513.trace",
+      "tracefile": "machine__flow__592.trace",
       "how_proved": "flow"
     },
     {
@@ -2511,7 +1410,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__514.trace",
+      "tracefile": "machine__flow__593.trace",
       "how_proved": "flow"
     },
     {
@@ -2531,7 +1430,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__515.trace",
+      "tracefile": "machine__flow__594.trace",
       "how_proved": "flow"
     },
     {
@@ -2551,12 +1450,552 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__516.trace",
+      "tracefile": "machine__flow__595.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 310,
+      "col": 16,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__596.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 310,
+      "col": 16,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__597.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 180,
+      "col": 22,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__598.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 189,
+      "col": 25,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__599.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 198,
+      "col": 28,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__600.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
       "line": 311,
+      "col": 16,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__601.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 24,
+      "col": 7,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__602.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 26,
+      "col": 12,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__603.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 317,
+      "col": 16,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__604.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 317,
+      "col": 16,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__605.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 317,
+      "col": 16,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__606.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 221,
+      "col": 23,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__607.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 230,
+      "col": 26,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__608.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 239,
+      "col": 29,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__609.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 318,
+      "col": 16,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__610.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 24,
+      "col": 7,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__611.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 26,
+      "col": 12,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__612.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 324,
+      "col": 16,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__613.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 324,
+      "col": 16,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__614.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 325,
+      "col": 16,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__615.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 24,
+      "col": 7,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__616.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 26,
+      "col": 12,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__617.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 331,
+      "col": 23,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__618.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 335,
+      "col": 16,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__619.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 24,
+      "col": 7,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__620.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 26,
+      "col": 12,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__621.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 337,
+      "col": 16,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__622.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 338,
       "col": 19,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -2571,7 +2010,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__517.trace",
+      "tracefile": "machine__flow__623.trace",
       "how_proved": "flow"
     },
     {
@@ -2591,7 +2030,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__518.trace",
+      "tracefile": "machine__flow__624.trace",
       "how_proved": "flow"
     },
     {
@@ -2611,7 +2050,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__519.trace",
+      "tracefile": "machine__flow__625.trace",
       "how_proved": "flow"
     },
     {
@@ -2631,7 +2070,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__520.trace",
+      "tracefile": "machine__flow__626.trace",
       "how_proved": "flow"
     },
     {
@@ -2651,7 +2090,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__521.trace",
+      "tracefile": "machine__flow__627.trace",
       "how_proved": "flow"
     },
     {
@@ -2671,7 +2110,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__522.trace",
+      "tracefile": "machine__flow__628.trace",
       "how_proved": "flow"
     },
     {
@@ -2691,12 +2130,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__523.trace",
+      "tracefile": "machine__flow__629.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 318,
+      "line": 345,
       "col": 21,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -2711,12 +2150,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__524.trace",
+      "tracefile": "machine__flow__630.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 273,
+      "line": 272,
       "col": 53,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -2731,12 +2170,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__525.trace",
+      "tracefile": "machine__flow__631.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 273,
+      "line": 272,
       "col": 53,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -2751,12 +2190,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__526.trace",
+      "tracefile": "machine__flow__632.trace",
       "how_proved": "flow"
     },
     {
       "file": "machine.adb",
-      "line": 320,
+      "line": 347,
       "col": 7,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -2771,227 +2210,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__527.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 175,
-      "col": 20,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.DoLdr",
-        "sloc": [
-          {
-            "file": "machine.adb",
-            "line": 172
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__602.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 181,
-      "col": 22,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.DoLdr",
-        "sloc": [
-          {
-            "file": "machine.adb",
-            "line": 172
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__603.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 190,
-      "col": 25,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.DoLdr",
-        "sloc": [
-          {
-            "file": "machine.adb",
-            "line": 172
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__604.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 199,
-      "col": 28,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.DoLdr",
-        "sloc": [
-          {
-            "file": "machine.adb",
-            "line": 172
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__605.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 64,
-      "col": 20,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.DoSub",
-        "sloc": [
-          {
-            "file": "machine.adb",
-            "line": 61
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__637.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 157,
-      "col": 20,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.DoDiv",
-        "sloc": [
-          {
-            "file": "machine.adb",
-            "line": 154
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__664.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 22,
-      "col": 20,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.IncPC",
-        "sloc": [
-          {
-            "file": "machine.adb",
-            "line": 22
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__683.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 216,
-      "col": 20,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.DoStr",
-        "sloc": [
-          {
-            "file": "machine.adb",
-            "line": 213
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__729.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 222,
-      "col": 23,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.DoStr",
-        "sloc": [
-          {
-            "file": "machine.adb",
-            "line": 213
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__730.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 231,
-      "col": 26,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.DoStr",
-        "sloc": [
-          {
-            "file": "machine.adb",
-            "line": 213
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__731.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "machine.adb",
-      "line": 240,
-      "col": 29,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.DoStr",
-        "sloc": [
-          {
-            "file": "machine.adb",
-            "line": 213
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "machine__flow__732.trace",
+      "tracefile": "machine__flow__633.trace",
       "how_proved": "flow"
     },
     {
@@ -3011,7 +2230,67 @@
       },
       "check_tree": {
       },
-      "tracefile": "machine__flow__764.trace",
+      "tracefile": "machine__flow__694.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 89,
+      "col": 20,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.DoMul",
+        "sloc": [
+          {
+            "file": "machine.adb",
+            "line": 86
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__748.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 255,
+      "col": 20,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.DoMov",
+        "sloc": [
+          {
+            "file": "machine.adb",
+            "line": 253
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__769.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "machine.adb",
+      "line": 22,
+      "col": 20,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.IncPC",
+        "sloc": [
+          {
+            "file": "machine.adb",
+            "line": 22
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "machine__flow__788.trace",
       "how_proved": "flow"
     }
   ],
@@ -3037,7 +2316,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 1.90000000000000E-01
             }
           },
           "transformations": {
@@ -3052,13 +2331,13 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 1.89999997615814E-01
         }
       }
     },
     {
       "file": "machine.adb",
-      "line": 95,
+      "line": 94,
       "col": 38,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -3077,7 +2356,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 602,
-              "time": 0
+              "time": 2.20000000000000E-01
             }
           },
           "transformations": {
@@ -3085,20 +2364,20 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 95,
+      "check_line": 94,
       "check_col": 38,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 2.19999998807907E-01
         }
       }
     },
     {
       "file": "machine.adb",
-      "line": 295,
+      "line": 310,
       "col": 16,
       "rule": "VC_DISCRIMINANT_CHECK",
       "severity": "info",
@@ -3117,7 +2396,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 1.10000000000000E-01
             }
           },
           "transformations": {
@@ -3125,20 +2404,20 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 295,
+      "check_line": 310,
       "check_col": 16,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 1.09999999403954E-01
         }
       }
     },
     {
       "file": "machine.adb",
-      "line": 301,
+      "line": 324,
       "col": 16,
       "rule": "VC_DISCRIMINANT_CHECK",
       "severity": "info",
@@ -3165,7 +2444,7 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 301,
+      "check_line": 324,
       "check_col": 16,
       "how_proved": "prover",
       "stats": {
@@ -3179,86 +2458,6 @@
     {
       "file": "machine.adb",
       "line": 39,
-      "col": 40,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 39,
-      "check_col": 40,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 180,
-      "col": 32,
-      "rule": "VC_RANGE_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 14,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 180,
-      "check_col": 32,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 75,
       "col": 43,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -3277,7 +2476,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 1.60000000000000E-01
             }
           },
           "transformations": {
@@ -3285,14 +2484,94 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 75,
+      "check_line": 39,
       "check_col": 43,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 1.59999996423721E-01
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 179,
+      "col": 32,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 1.30000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 179,
+      "check_col": 32,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.29999995231628E-01
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 74,
+      "col": 43,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.40000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 74,
+      "check_col": 43,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.40000000596046E-01
         }
       }
     },
@@ -3317,7 +2596,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 1.70000000000000E-01
             }
           },
           "transformations": {
@@ -3332,13 +2611,13 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 1.70000001788139E-01
         }
       }
     },
     {
       "file": "machine.adb",
-      "line": 221,
+      "line": 220,
       "col": 32,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -3357,7 +2636,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 0
+              "time": 1.40000000000000E-01
             }
           },
           "transformations": {
@@ -3365,20 +2644,20 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 221,
+      "check_line": 220,
       "check_col": 32,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 1.40000000596046E-01
         }
       }
     },
     {
       "file": "machine.adb",
-      "line": 310,
+      "line": 337,
       "col": 28,
       "rule": "VC_DISCRIMINANT_CHECK",
       "severity": "info",
@@ -3405,7 +2684,7 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 310,
+      "check_line": 337,
       "check_col": 28,
       "how_proved": "prover",
       "stats": {
@@ -3418,7 +2697,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 161,
+      "line": 160,
       "col": 35,
       "rule": "VC_DIVISION_CHECK",
       "severity": "info",
@@ -3445,7 +2724,7 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 161,
+      "check_line": 160,
       "check_col": 35,
       "how_proved": "prover",
       "stats": {
@@ -3458,7 +2737,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 292,
+      "line": 303,
       "col": 16,
       "rule": "VC_DISCRIMINANT_CHECK",
       "severity": "info",
@@ -3485,7 +2764,7 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 292,
+      "check_line": 303,
       "check_col": 16,
       "how_proved": "prover",
       "stats": {
@@ -3498,7 +2777,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 139,
+      "line": 138,
       "col": 47,
       "rule": "VC_DIVISION_CHECK",
       "severity": "info",
@@ -3517,83 +2796,28 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 1.30000000000000E-01
             }
           },
           "transformations": {
-            "split_disj": [
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                  "CVC4_CE": {
-                    "result": "Unknown (none)",
-                    "steps": 181,
-                    "time": 0
-                  }
-                },
-                "transformations": {
-                }
-              }
-            ]
           }
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 139,
+      "check_line": 138,
       "check_col": 47,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 1.29999995231628E-01
         }
       }
     },
     {
       "file": "machine.adb",
-      "line": 283,
+      "line": 282,
       "col": 16,
       "rule": "VC_DISCRIMINANT_CHECK",
       "severity": "info",
@@ -3612,7 +2836,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 1.30000000000000E-01
             }
           },
           "transformations": {
@@ -3620,20 +2844,20 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 283,
+      "check_line": 282,
       "check_col": 16,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 1.29999995231628E-01
         }
       }
     },
     {
       "file": "machine.adb",
-      "line": 198,
+      "line": 197,
       "col": 38,
       "rule": "VC_RANGE_CHECK",
       "severity": "info",
@@ -3652,7 +2876,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 1.10000000000000E-01
             }
           },
           "transformations": {
@@ -3660,20 +2884,20 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 198,
+      "check_line": 197,
       "check_col": 38,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 1.09999999403954E-01
         }
       }
     },
     {
       "file": "machine.adb",
-      "line": 111,
+      "line": 110,
       "col": 44,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -3692,7 +2916,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 520,
-              "time": 0
+              "time": 1.90000000000000E-01
             }
           },
           "transformations": {
@@ -3700,20 +2924,20 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 111,
+      "check_line": 110,
       "check_col": 44,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 1.89999997615814E-01
         }
       }
     },
     {
       "file": "machine.adb",
-      "line": 198,
+      "line": 197,
       "col": 38,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -3740,7 +2964,7 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 198,
+      "check_line": 197,
       "check_col": 38,
       "how_proved": "prover",
       "stats": {
@@ -3753,7 +2977,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 304,
+      "line": 331,
       "col": 43,
       "rule": "VC_DISCRIMINANT_CHECK",
       "severity": "info",
@@ -3780,7 +3004,7 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 304,
+      "check_line": 331,
       "check_col": 43,
       "how_proved": "prover",
       "stats": {
@@ -3793,7 +3017,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 179,
+      "line": 178,
       "col": 60,
       "rule": "VC_RANGE_CHECK",
       "severity": "info",
@@ -3820,7 +3044,7 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 179,
+      "check_line": 178,
       "check_col": 60,
       "how_proved": "prover",
       "stats": {
@@ -3852,7 +3076,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 1.40000000000000E-01
             }
           },
           "transformations": {
@@ -3867,13 +3091,13 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 1.40000000596046E-01
         }
       }
     },
     {
       "file": "machine.adb",
-      "line": 283,
+      "line": 282,
       "col": 16,
       "rule": "VC_DISCRIMINANT_CHECK",
       "severity": "info",
@@ -3900,7 +3124,7 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 283,
+      "check_line": 282,
       "check_col": 16,
       "how_proved": "prover",
       "stats": {
@@ -3913,7 +3137,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 189,
+      "line": 188,
       "col": 35,
       "rule": "VC_RANGE_CHECK",
       "severity": "info",
@@ -3940,7 +3164,7 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 189,
+      "check_line": 188,
       "check_col": 35,
       "how_proved": "prover",
       "stats": {
@@ -3953,7 +3177,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 298,
+      "line": 317,
       "col": 16,
       "rule": "VC_DISCRIMINANT_CHECK",
       "severity": "info",
@@ -3980,7 +3204,7 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 298,
+      "check_line": 317,
       "check_col": 16,
       "how_proved": "prover",
       "stats": {
@@ -3993,7 +3217,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 161,
+      "line": 160,
       "col": 35,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -4012,7 +3236,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 886,
-              "time": 0
+              "time": 1.60000000000000E-01
             }
           },
           "transformations": {
@@ -4020,20 +3244,20 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 161,
+      "check_line": 160,
       "check_col": 35,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 1.59999996423721E-01
         }
       }
     },
     {
       "file": "machine.adb",
-      "line": 298,
+      "line": 317,
       "col": 16,
       "rule": "VC_DISCRIMINANT_CHECK",
       "severity": "info",
@@ -4060,7 +3284,7 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 298,
+      "check_line": 317,
       "check_col": 16,
       "how_proved": "prover",
       "stats": {
@@ -4073,7 +3297,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 124,
+      "line": 123,
       "col": 38,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -4092,7 +3316,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 438,
-              "time": 0
+              "time": 1.60000000000000E-01
             }
           },
           "transformations": {
@@ -4100,20 +3324,20 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 124,
+      "check_line": 123,
       "check_col": 38,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 1.59999996423721E-01
         }
       }
     },
     {
       "file": "machine.adb",
-      "line": 308,
+      "line": 335,
       "col": 16,
       "rule": "VC_DISCRIMINANT_CHECK",
       "severity": "info",
@@ -4140,7 +3364,7 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 308,
+      "check_line": 335,
       "check_col": 16,
       "how_proved": "prover",
       "stats": {
@@ -4154,7 +3378,7 @@
     {
       "file": "machine.adb",
       "line": 47,
-      "col": 42,
+      "col": 45,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
       "entity": {
@@ -4172,7 +3396,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 1.10000000000000E-01
             }
           },
           "transformations": {
@@ -4181,19 +3405,19 @@
       ],
       "check_file": "machine.adb",
       "check_line": 47,
-      "check_col": 42,
+      "check_col": 45,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 1.09999999403954E-01
         }
       }
     },
     {
       "file": "machine.adb",
-      "line": 239,
+      "line": 238,
       "col": 38,
       "rule": "VC_RANGE_CHECK",
       "severity": "info",
@@ -4220,7 +3444,7 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 239,
+      "check_line": 238,
       "check_col": 38,
       "how_proved": "prover",
       "stats": {
@@ -4233,7 +3457,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 132,
+      "line": 131,
       "col": 41,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -4252,7 +3476,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 319,
-              "time": 0
+              "time": 1.40000000000000E-01
             }
           },
           "transformations": {
@@ -4260,20 +3484,20 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 132,
+      "check_line": 131,
       "check_col": 41,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 1.40000000596046E-01
         }
       }
     },
     {
       "file": "machine.adb",
-      "line": 292,
+      "line": 303,
       "col": 16,
       "rule": "VC_DISCRIMINANT_CHECK",
       "severity": "info",
@@ -4300,7 +3524,7 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 292,
+      "check_line": 303,
       "check_col": 16,
       "how_proved": "prover",
       "stats": {
@@ -4313,7 +3537,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 311,
+      "line": 338,
       "col": 19,
       "rule": "VC_DISCRIMINANT_CHECK",
       "severity": "info",
@@ -4340,7 +3564,7 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 311,
+      "check_line": 338,
       "check_col": 19,
       "how_proved": "prover",
       "stats": {
@@ -4353,7 +3577,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 103,
+      "line": 102,
       "col": 41,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -4372,7 +3596,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 563,
-              "time": 0
+              "time": 1.60000000000000E-01
             }
           },
           "transformations": {
@@ -4380,20 +3604,20 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 103,
+      "check_line": 102,
       "check_col": 41,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 1.59999996423721E-01
         }
       }
     },
     {
       "file": "machine.adb",
-      "line": 221,
+      "line": 220,
       "col": 32,
       "rule": "VC_RANGE_CHECK",
       "severity": "info",
@@ -4420,7 +3644,7 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 221,
+      "check_line": 220,
       "check_col": 32,
       "how_proved": "prover",
       "stats": {
@@ -4452,7 +3676,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 1.40000000000000E-01
             }
           },
           "transformations": {
@@ -4467,7 +3691,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 1.40000000596046E-01
         }
       }
     },
@@ -4513,8 +3737,423 @@
     },
     {
       "file": "machine.adb",
-      "line": 318,
+      "line": 345,
       "col": 35,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 4.80000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 345,
+      "check_col": 35,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 4.79999989271164E-01
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 188,
+      "col": 35,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.90000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 188,
+      "check_col": 35,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.89999997615814E-01
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 138,
+      "col": 47,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 343,
+              "time": 1.40000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 138,
+      "check_col": 47,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.40000000596046E-01
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 196,
+      "col": 85,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 196,
+      "check_col": 85,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 187,
+      "col": 32,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.30000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 187,
+      "check_col": 32,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.29999995231628E-01
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 26,
+      "col": 42,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.60000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 26,
+      "check_col": 42,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.59999996423721E-01
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 109,
+      "col": 46,
+      "rule": "VC_DIVISION_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+            "split_disj": [
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                  "CVC4_CE": {
+                    "result": "Unknown (none)",
+                    "steps": 181,
+                    "time": 0
+                  }
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 109,
+      "check_col": 46,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.09999999403954E-01
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 219,
+      "col": 60,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 219,
+      "check_col": 60,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.09999999403954E-01
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 26,
+      "col": 42,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 26,
+      "check_col": 42,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.09999999403954E-01
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 75,
+      "col": 38,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
       "entity": {
@@ -4540,8 +4179,8 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 318,
-      "check_col": 35,
+      "check_line": 75,
+      "check_col": 38,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -4553,8 +4192,8 @@
     },
     {
       "file": "machine.adb",
-      "line": 189,
-      "col": 35,
+      "line": 93,
+      "col": 41,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
       "entity": {
@@ -4571,48 +4210,8 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 189,
-      "check_col": 35,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 139,
-      "col": 47,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 343,
-              "time": 0
+              "steps": 525,
+              "time": 1.60000000000000E-01
             }
           },
           "transformations": {
@@ -4675,781 +4274,21 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 139,
-      "check_col": 47,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 197,
-      "col": 85,
-      "rule": "VC_RANGE_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 197,
-      "check_col": 85,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 188,
-      "col": 32,
-      "rule": "VC_RANGE_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 188,
-      "check_col": 32,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 26,
-      "col": 42,
-      "rule": "VC_RANGE_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 26,
-      "check_col": 42,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 110,
-      "col": 46,
-      "rule": "VC_DIVISION_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 110,
-      "check_col": 46,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 220,
-      "col": 60,
-      "rule": "VC_RANGE_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 220,
-      "check_col": 60,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 26,
-      "col": 42,
-      "rule": "VC_RANGE_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 26,
-      "check_col": 42,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 76,
-      "col": 38,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 14,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 76,
-      "check_col": 38,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 94,
-      "col": 41,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 525,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 94,
+      "check_line": 93,
       "check_col": 41,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 1.59999996423721E-01
         }
       }
     },
     {
       "file": "machine.adb",
-      "line": 94,
+      "line": 93,
       "col": 41,
-      "rule": "VC_DIVISION_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 94,
-      "check_col": 41,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 239,
-      "col": 38,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 239,
-      "check_col": 38,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 188,
-      "col": 81,
-      "rule": "VC_RANGE_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 188,
-      "check_col": 81,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 298,
-      "col": 16,
-      "rule": "VC_DISCRIMINANT_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 298,
-      "check_col": 16,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 26,
-      "col": 42,
-      "rule": "VC_RANGE_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 26,
-      "check_col": 42,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 301,
-      "col": 16,
-      "rule": "VC_DISCRIMINANT_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 301,
-      "check_col": 16,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 26,
-      "col": 42,
-      "rule": "VC_RANGE_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 26,
-      "check_col": 42,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 295,
-      "col": 16,
-      "rule": "VC_DISCRIMINANT_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 295,
-      "check_col": 16,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 26,
-      "col": 42,
-      "rule": "VC_RANGE_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 26,
-      "check_col": 42,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 67,
-      "col": 66,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 67,
-      "check_col": 66,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 40,
-      "col": 35,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 14,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 40,
-      "check_col": 35,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 123,
-      "col": 40,
       "rule": "VC_DIVISION_CHECK",
       "severity": "info",
       "entity": {
@@ -5492,35 +4331,35 @@
               },
               {
                 "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
                   "CVC4_CE": {
                     "result": "Unknown (none)",
                     "steps": 181,
                     "time": 0
                   }
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
                 },
                 "transformations": {
                 }
@@ -5530,8 +4369,8 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 123,
-      "check_col": 40,
+      "check_line": 93,
+      "check_col": 41,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -5544,8 +4383,8 @@
     {
       "file": "machine.adb",
       "line": 238,
-      "col": 85,
-      "rule": "VC_RANGE_CHECK",
+      "col": 38,
+      "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
       "entity": {
         "name": "Machine.ExecuteProgram",
@@ -5571,7 +4410,7 @@
       ],
       "check_file": "machine.adb",
       "check_line": 238,
-      "check_col": 85,
+      "check_col": 38,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -5583,7 +4422,47 @@
     },
     {
       "file": "machine.adb",
-      "line": 289,
+      "line": 187,
+      "col": 81,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 187,
+      "check_col": 81,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.09999999403954E-01
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 317,
       "col": 16,
       "rule": "VC_DISCRIMINANT_CHECK",
       "severity": "info",
@@ -5610,168 +4489,8 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 289,
+      "check_line": 317,
       "check_col": 16,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 289,
-      "col": 16,
-      "rule": "VC_DISCRIMINANT_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 289,
-      "check_col": 16,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 289,
-      "col": 16,
-      "rule": "VC_DISCRIMINANT_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 289,
-      "check_col": 16,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 68,
-      "col": 35,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 14,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 68,
-      "check_col": 35,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 230,
-      "col": 35,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 230,
-      "check_col": 35,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -5823,47 +4542,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 229,
-      "col": 32,
-      "rule": "VC_RANGE_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Machine.ExecuteProgram",
-        "sloc": [
-          {
-            "file": "machine.ads",
-            "line": 35
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "machine.adb",
-      "check_line": 229,
-      "check_col": 32,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "machine.adb",
-      "line": 283,
+      "line": 324,
       "col": 16,
       "rule": "VC_DISCRIMINANT_CHECK",
       "severity": "info",
@@ -5890,7 +4569,7 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 283,
+      "check_line": 324,
       "check_col": 16,
       "how_proved": "prover",
       "stats": {
@@ -5903,7 +4582,167 @@
     },
     {
       "file": "machine.adb",
-      "line": 48,
+      "line": 26,
+      "col": 42,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 26,
+      "check_col": 42,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 310,
+      "col": 16,
+      "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 310,
+      "check_col": 16,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 26,
+      "col": 42,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 26,
+      "check_col": 42,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.09999999403954E-01
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 66,
+      "col": 66,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 66,
+      "check_col": 66,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.09999999403954E-01
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 40,
       "col": 38,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -5930,7 +4769,7 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 48,
+      "check_line": 40,
       "check_col": 38,
       "how_proved": "prover",
       "stats": {
@@ -5943,7 +4782,447 @@
     },
     {
       "file": "machine.adb",
-      "line": 180,
+      "line": 122,
+      "col": 40,
+      "rule": "VC_DIVISION_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 122,
+      "check_col": 40,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.09999999403954E-01
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 237,
+      "col": 85,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 237,
+      "check_col": 85,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 296,
+      "col": 16,
+      "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 296,
+      "check_col": 16,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 296,
+      "col": 16,
+      "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 296,
+      "check_col": 16,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 296,
+      "col": 16,
+      "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 296,
+      "check_col": 16,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 67,
+      "col": 35,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 1.40000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 67,
+      "check_col": 35,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.40000000596046E-01
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 229,
+      "col": 35,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 229,
+      "check_col": 35,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.09999999403954E-01
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 26,
+      "col": 42,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 26,
+      "check_col": 42,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.09999999403954E-01
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 228,
+      "col": 32,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 228,
+      "check_col": 32,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 282,
+      "col": 16,
+      "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 282,
+      "check_col": 16,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 48,
+      "col": 41,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Machine.ExecuteProgram",
+        "sloc": [
+          {
+            "file": "machine.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "machine.adb",
+      "check_line": 48,
+      "check_col": 41,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.09999999403954E-01
+        }
+      }
+    },
+    {
+      "file": "machine.adb",
+      "line": 179,
       "col": 32,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -5970,7 +5249,7 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 180,
+      "check_line": 179,
       "check_col": 32,
       "how_proved": "prover",
       "stats": {
@@ -5983,7 +5262,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 292,
+      "line": 303,
       "col": 16,
       "rule": "VC_DISCRIMINANT_CHECK",
       "severity": "info",
@@ -6010,7 +5289,7 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 292,
+      "check_line": 303,
       "check_col": 16,
       "how_proved": "prover",
       "stats": {
@@ -6023,7 +5302,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 295,
+      "line": 310,
       "col": 16,
       "rule": "VC_DISCRIMINANT_CHECK",
       "severity": "info",
@@ -6050,7 +5329,7 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 295,
+      "check_line": 310,
       "check_col": 16,
       "how_proved": "prover",
       "stats": {
@@ -6063,7 +5342,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 286,
+      "line": 289,
       "col": 16,
       "rule": "VC_DISCRIMINANT_CHECK",
       "severity": "info",
@@ -6090,7 +5369,7 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 286,
+      "check_line": 289,
       "check_col": 16,
       "how_proved": "prover",
       "stats": {
@@ -6103,7 +5382,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 230,
+      "line": 229,
       "col": 35,
       "rule": "VC_RANGE_CHECK",
       "severity": "info",
@@ -6122,7 +5401,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 1.10000000000000E-01
             }
           },
           "transformations": {
@@ -6130,20 +5409,20 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 230,
+      "check_line": 229,
       "check_col": 35,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 1.09999999403954E-01
         }
       }
     },
     {
       "file": "machine.adb",
-      "line": 229,
+      "line": 228,
       "col": 81,
       "rule": "VC_RANGE_CHECK",
       "severity": "info",
@@ -6170,7 +5449,7 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 229,
+      "check_line": 228,
       "check_col": 81,
       "how_proved": "prover",
       "stats": {
@@ -6183,7 +5462,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 274,
+      "line": 273,
       "col": 15,
       "rule": "VC_DISCRIMINANT_CHECK",
       "severity": "info",
@@ -6221,7 +5500,7 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 274,
+      "check_line": 273,
       "check_col": 15,
       "how_proved": "prover",
       "stats": {
@@ -6234,7 +5513,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 286,
+      "line": 289,
       "col": 16,
       "rule": "VC_DISCRIMINANT_CHECK",
       "severity": "info",
@@ -6261,7 +5540,7 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 286,
+      "check_line": 289,
       "check_col": 16,
       "how_proved": "prover",
       "stats": {
@@ -6274,7 +5553,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 286,
+      "line": 289,
       "col": 16,
       "rule": "VC_DISCRIMINANT_CHECK",
       "severity": "info",
@@ -6301,7 +5580,7 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 286,
+      "check_line": 289,
       "check_col": 16,
       "how_proved": "prover",
       "stats": {
@@ -6314,7 +5593,7 @@
     },
     {
       "file": "machine.adb",
-      "line": 140,
+      "line": 139,
       "col": 44,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -6333,7 +5612,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 518,
-              "time": 0
+              "time": 1.60000000000000E-01
             }
           },
           "transformations": {
@@ -6341,14 +5620,14 @@
         }
       ],
       "check_file": "machine.adb",
-      "check_line": 140,
+      "check_line": 139,
       "check_col": 44,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 1.59999996423721E-01
         }
       }
     }
@@ -6356,79 +5635,63 @@
   "assumptions": [
     {
       "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Debug.New_Line",
+            "sloc": [
+              {
+                "file": "debug.ads",
+                "line": 16
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Debug.Put",
+            "sloc": [
+              {
+                "file": "debug.ads",
+                "line": 12
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Debug.Put",
+            "sloc": [
+              {
+                "file": "debug.ads",
+                "line": 20
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Instruction.DebugPrintInstr",
+            "sloc": [
+              {
+                "file": "instruction.ads",
+                "line": 78
+              }
+            ]
+          }
+        }
       ],
       "claim": {
-        "predicate": "CLAIM_AORTE",
+        "predicate": "CLAIM_EFFECTS",
         "arg": {
-          "name": "Machine",
+          "name": "Machine.ExecuteProgram",
           "sloc": [
             {
               "file": "machine.ads",
-              "line": 4
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
-        "arg": {
-          "name": "Machine.DetectInvalidBehaviour",
-          "sloc": [
-            {
-              "file": "machine.ads",
-              "line": 47
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-      ],
-      "claim": {
-        "predicate": "CLAIM_EFFECTS",
-        "arg": {
-          "name": "Machine.DoSub",
-          "sloc": [
-            {
-              "file": "machine.adb",
-              "line": 61
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-      ],
-      "claim": {
-        "predicate": "CLAIM_EFFECTS",
-        "arg": {
-          "name": "Machine.DoLdr",
-          "sloc": [
-            {
-              "file": "machine.adb",
-              "line": 172
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-      ],
-      "claim": {
-        "predicate": "CLAIM_EFFECTS",
-        "arg": {
-          "name": "Machine.IncPC",
-          "sloc": [
-            {
-              "file": "machine.adb",
-              "line": 22
+              "line": 35
             }
           ]
         }
@@ -6444,39 +5707,7 @@
           "sloc": [
             {
               "file": "machine.adb",
-              "line": 213
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-      ],
-      "claim": {
-        "predicate": "CLAIM_EFFECTS",
-        "arg": {
-          "name": "Machine.DoMul",
-          "sloc": [
-            {
-              "file": "machine.adb",
-              "line": 87
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-      ],
-      "claim": {
-        "predicate": "CLAIM_EFFECTS",
-        "arg": {
-          "name": "Machine.DoDiv",
-          "sloc": [
-            {
-              "file": "machine.adb",
-              "line": 154
+              "line": 212
             }
           ]
         }
@@ -6600,11 +5831,59 @@
       "claim": {
         "predicate": "CLAIM_EFFECTS",
         "arg": {
+          "name": "Machine.DoMul",
+          "sloc": [
+            {
+              "file": "machine.adb",
+              "line": 86
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Machine.DoDiv",
+          "sloc": [
+            {
+              "file": "machine.adb",
+              "line": 153
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Machine",
+          "sloc": [
+            {
+              "file": "machine.ads",
+              "line": 4
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
           "name": "Machine.DoMov",
           "sloc": [
             {
               "file": "machine.adb",
-              "line": 254
+              "line": 253
             }
           ]
         }
@@ -6625,17 +5904,81 @@
           ]
         }
       }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Machine.DetectInvalidBehaviour",
+          "sloc": [
+            {
+              "file": "machine.ads",
+              "line": 47
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Machine.DoSub",
+          "sloc": [
+            {
+              "file": "machine.adb",
+              "line": 60
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Machine.DoLdr",
+          "sloc": [
+            {
+              "file": "machine.adb",
+              "line": 171
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Machine.IncPC",
+          "sloc": [
+            {
+              "file": "machine.adb",
+              "line": 22
+            }
+          ]
+        }
+      }
     }
   ],
   "timings": {
-    "marking": 1.11682899296284E-03,
-    "globals (basic)": 1.23965498059988E-02,
-    "globals/properties (advanced)": 1.87740754336119E-02,
-    "flow analysis": 1.09929747879505E-01,
-    "codepeer results": 4.27499981014989E-06,
-    "init_why_sections": 2.01764007215388E-04,
-    "translation of standard": 2.90848710574210E-03,
-    "translation of compilation unit": 3.96510027348995E-02,
-    "proof": 1.45781517028809E+00
+    "marking": 1.79504102561623E-03,
+    "globals (basic)": 3.08760181069374E-02,
+    "globals/properties (advanced)": 5.41411675512791E-02,
+    "flow analysis": 6.92961886525154E-02,
+    "codepeer results": 5.13199984197854E-06,
+    "init_why_sections": 2.33130995184183E-04,
+    "translation of standard": 3.04317497648299E-03,
+    "translation of compilation unit": 4.22089286148548E-02,
+    "proof": 1.26377496719360E+01
   }
 }
