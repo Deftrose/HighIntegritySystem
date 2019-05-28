@@ -1,0 +1,9 @@
+20190528131330
+-c
+-x
+ada
+-gnatA
+-g
+-O2
+-gnatc
+-gnates=C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3_befor\assignment3\gnatprove\784fedc9.tmp

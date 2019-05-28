@@ -1,0 +1,187 @@
+V "GNAT Lib v2018"
+A -x
+A ada
+A -gnatA
+A -g
+A -O2
+A -gnatc
+P GP FX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U machine%b		machine.adb		52678ad2 OO PK
+W ada%s			ada.ads			ada.ali
+W ada.characters%s	a-charac.ads		a-charac.ali
+W ada.characters.latin_1%s  a-chlat1.ads	a-chlat1.ali
+W debug%s		debug.adb		debug.ali
+W instruction%s		instruction.adb		instruction.ali
+
+U machine%s		machine.ads		8ffc8149 OO PK
+W instruction%s		instruction.adb		instruction.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-charac.ads		20180524051736 2d3ec45b ada.characters%s
+D a-chlat1.ads		20180524051736 66457d31 ada.characters.latin_1%s
+D debug.ads		20190505125630 cd66d8b0 debug%s
+D instruction.ads	20190505125630 277a987f instruction%s
+D machine.ads		20190505125630 a8861936 machine%s
+D machine.adb		20190505125630 76b8ae1a machine%b
+D system.ads		20180524051738 32a08138 system%s
+X 1 ada.ads
+16K9*Ada 20e8 7|6r6 107r42
+X 2 a-charac.ads
+16K13*Characters 18e19 7|6r10 107r46
+X 3 a-chlat1.ads
+18K24*Latin_1 296e27 7|6w21 107r57
+34e4*HT{character} 7|107r65
+X 4 debug.ads
+2K9*Debug 23e10 7|3w6 3r17
+12U14*Put 7|107s10
+16U14*New_Line 7|109s10
+20U14*Put 7|107s28 107s38
+X 5 instruction.ads
+2K9*Instruction 81e16 6|1w6 1r23 22r46 7|1w6 2r5 133r18
+5n20*NOP{5E9} 7|145r18
+5n24*ADD{5E9} 7|112r18
+5n28*SUB{5E9} 7|115r18
+5n32*MUL{5E9} 7|118r18
+5n36*DIV{5E9} 7|121r18
+5n40*RET{5E9} 7|133r30
+5n44*LDR{5E9} 7|124r18
+5n48*STR{5E9} 7|127r18
+5n52*MOV{5E9} 7|130r18
+5n56*JMP{5E9} 7|137r18
+5n60*JZ{5E9} 7|139r18
+12I9*Reg<short_short_integer> 7|14r18 28r28 29r29 30r29 37r28 38r29 39r29
+. 46r28 47r29 48r29 55r28 56r29 57r29 64r28 65r28 74r28 76r28 84r28
+19I9*Addr<integer> 7|17r20 68r11 68r19 78r11 78r19
+22I9*Offset<integer> 7|22r52 66r30 75r30 85r30
+25R9*Instr 66e14 6|22r58 7|98r14
+25e15*Op{5E9} 7|111r20
+30i13*AddRd{12I9} 7|113r27
+31i13*AddRs1{12I9} 7|113r38
+32i13*AddRs2{12I9} 7|113r50
+34i13*SubRd{12I9} 7|116r27
+35i13*SubRs1{12I9} 7|116r38
+36i13*SubRs2{12I9} 7|116r50
+38i13*MulRd{12I9} 7|119r27
+39i13*MulRs1{12I9} 7|119r38
+40i13*MulRs2{12I9} 7|119r50
+42i13*DivRd{12I9} 7|122r27
+43i13*DivRs1{12I9} 7|122r38
+44i13*DivRs2{12I9} 7|122r50
+46i13*RetRs{12I9} 7|134r44
+48i13*LdrRd{12I9} 7|125r27
+49i13*LdrRs{12I9} 7|125r38
+50i13*LdrOffs{22I9} 7|125r49
+52i13*StrRa{12I9} 7|128r27
+53i13*StrOffs{22I9} 7|128r38
+54i13*StrRb{12I9} 7|128r51
+56i13*MovRd{12I9} 7|131r27
+57i13*MovOffs{22I9} 7|131r38
+59i13*JmpOffs{22I9} 7|138r31
+61i13*JzRa{12I9} 7|140r29
+62i13*JzOffs{22I9} 7|141r34
+78U14*DebugPrintInstr 7|108s10
+X 6 machine.ads
+4K9*Machine 50l5 50e12 7|8b14 162l5 162t12
+12E9*ReturnCode 12e63 37r39 7|22r30 31r30 40r30 49r30 58r30 67r30 77r30 86r30
+. 94r39
+12n24*Success{12E9} 7|25r14 34r14 43r14 52r14 61r14 71r14 81r14 89r14 100r14
+. 103r44 135r23 150r16
+12n32*CyclesExhausted{12E9} 7|152r17
+12n48*IllegalProgram{12E9}
+15i4*MAX_PROGRAM_LENGTH{integer} 19r38
+19I9*ProgramCounter<integer> 22r27 7|20r9 20r27 24r13 101r13
+22A9*Program(5|25R9)<19I9> 35r39 47r46 7|92r39 156r46
+35U14*ExecuteProgram 35>29 36>29 37<29 38<29 7|92b14 154l8 154t22
+35a29 Prog{22A9} 7|92b29 104r18
+36i29 Cycles{integer} 7|93b29 103r27
+37e29 Ret{12E9} 7|94b29 100m7 103r38 113m57 114m22 116m57 117m22 119m57 120m22
+. 122m57 123m22 125m57 126m22 128m57 129m22 131m46 132m22 135m16 138m22 141m25
+. 143m25 146m22 150r10 152m10
+38i29 Result{integer} 7|95b29 102m7 134m16
+47V13*DetectInvalidBehaviour{boolean} 47>36 48>36 7|156b13 160l8 160t30
+47a36 Prog{22A9} 7|156b36
+48i36 Cycles{integer} 7|157b36
+X 7 machine.adb
+11I9 DataVal<integer> 14r26 17r29 68r35 78r35 88r19
+14a4 Regs(11I9) 33m7 33r19 33r31 42m7 42r19 42r31 51m7 51r19 51r31 60m7 60r19
+. 60r31 68r24 70m7 78r24 80r20 88m7 134r34 140r19 33m7 42m7 51m7 60m7 70m7
+. 88m7
+17a4 Memory(11I9) 70r19 80m7 80m7
+20i4 PC{6|19I9} 24m7 24r36 101m7 104r23 107r22 24m7 24m7 24m7 24m7 24m7 24m7
+. 24m7 24m7 24m7 24m7 24m7
+22U14 IncPC 26l8 26t13 114s16 117s16 120s16 123s16 126s16 129s16 132s16 138s16
+. 141s19 143s19 146s16
+22e20 Ret{6|12E9} 25m7
+22i42 Offs{5|22I9} 24r50
+28U14 DoAdd 35l8 35t13 113s16
+28i20 Rd{5|12I9} 33r12
+29i20 Rs1{5|12I9} 33r24
+30i20 Rs2{5|12I9} 33r36
+31e20 Ret{6|12E9} 34m7
+37U14 DoSub 44l8 44t13 116s16
+37i20 Rd{5|12I9} 42r12
+38i20 Rs1{5|12I9} 42r24
+39i20 Rs2{5|12I9} 42r36
+40e20 Ret{6|12E9} 43m7
+46U14 DoMul 53l8 53t13 119s16
+46i20 Rd{5|12I9} 51r12
+47i20 Rs1{5|12I9} 51r24
+48i20 Rs2{5|12I9} 51r36
+49e20 Ret{6|12E9} 52m7
+55U14 DoDiv 62l8 62t13 122s16
+55i20 Rd{5|12I9} 60r12
+56i20 Rs1{5|12I9} 60r24
+57i20 Rs2{5|12I9} 60r36
+58e20 Ret{6|12E9} 61m7
+64U14 DoLdr 72l8 72t13 125s16
+64i20 Rd{5|12I9} 70r12
+65i20 Rs{5|12I9} 68r29
+66i20 Offs{5|22I9} 68r43
+67e20 Ret{6|12E9} 71m7
+68i7 A{5|19I9} 70r26
+74U14 DoStr 82l8 82t13 128s16
+74i20 Ra{5|12I9} 78r29
+75i20 Offs{5|22I9} 78r43
+76i20 Rb{5|12I9} 80r25
+77e20 Ret{6|12E9} 81m7
+78i7 A{5|19I9} 80r14
+84U14 DoMov 90l8 90t13 131s16
+84i20 Rd{5|12I9} 88r12
+85i20 Offs{5|22I9} 88r27
+86e20 Ret{6|12E9} 89m7
+97i7 CycleCount{integer} 103r14 148m10 148r24
+98r7 Inst{5|25R9} 104m10 108r26 111r15 113r22 113r33 113r45 116r22 116r33
+. 116r45 119r22 119r33 119r45 122r22 122r33 122r45 125r22 125r33 125r44 128r22
+. 128r33 128r46 131r22 131r33 134r39 138r26 140r24 141r29
+
+QQ SPARKVERSION 2018 (20180523)
+GG EK_DIRECT_CALLS machine__executeprogram 4 instruction__debugprintinstr debug__put__2 debug__new_line debug__put__3
+GG EK_GLOBALS machine__executeprogram local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 2 machine__regs machine__memory proper_output 3 machine__regs machine__memory machine__pc refined_proof_in 0 refined_input 2 machine__regs machine__memory refined_output 3 machine__regs machine__memory machine__pc calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE TRUE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 3 machine__regs machine__memory machine__pc LOCKS 0
+GG EK_DIRECT_CALLS machine__detectinvalidbehaviour 0
+GG EK_GLOBALS machine__detectinvalidbehaviour local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS machine__incpc 0
+GG EK_GLOBALS machine__incpc local TRUE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 1 machine__pc proper_output 1 machine__pc refined_proof_in 0 refined_input 1 machine__pc refined_output 1 machine__pc calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 machine__pc LOCKS 0
+GG EK_DIRECT_CALLS machine__doadd 0
+GG EK_GLOBALS machine__doadd local TRUE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 1 machine__regs proper_output 1 machine__regs refined_proof_in 0 refined_input 1 machine__regs refined_output 1 machine__regs calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 machine__regs LOCKS 0
+GG EK_DIRECT_CALLS machine__dosub 0
+GG EK_GLOBALS machine__dosub local TRUE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 1 machine__regs proper_output 1 machine__regs refined_proof_in 0 refined_input 1 machine__regs refined_output 1 machine__regs calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 machine__regs LOCKS 0
+GG EK_DIRECT_CALLS machine__domul 0
+GG EK_GLOBALS machine__domul local TRUE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 1 machine__regs proper_output 1 machine__regs refined_proof_in 0 refined_input 1 machine__regs refined_output 1 machine__regs calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 machine__regs LOCKS 0
+GG EK_DIRECT_CALLS machine__dodiv 0
+GG EK_GLOBALS machine__dodiv local TRUE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 1 machine__regs proper_output 1 machine__regs refined_proof_in 0 refined_input 1 machine__regs refined_output 1 machine__regs calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 machine__regs LOCKS 0
+GG EK_DIRECT_CALLS machine__doldr 0
+GG EK_GLOBALS machine__doldr local TRUE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 2 machine__regs machine__memory proper_output 1 machine__regs refined_proof_in 0 refined_input 2 machine__regs machine__memory refined_output 1 machine__regs calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 2 machine__regs machine__memory LOCKS 0
+GG EK_DIRECT_CALLS machine__dostr 0
+GG EK_GLOBALS machine__dostr local TRUE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 2 machine__regs machine__memory proper_output 1 machine__memory refined_proof_in 0 refined_input 2 machine__regs machine__memory refined_output 1 machine__memory calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 2 machine__regs machine__memory LOCKS 0
+GG EK_DIRECT_CALLS machine__domov 0
+GG EK_GLOBALS machine__domov local TRUE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 1 machine__regs proper_output 1 machine__regs refined_proof_in 0 refined_input 1 machine__regs refined_output 1 machine__regs calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 machine__regs LOCKS 0
+GG EK_DIRECT_CALLS machine 0
+GG EK_GLOBALS machine local FALSE E_PACKAGE TRUE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 initializes 3 machine__regs machine__memory machine__pc calls_proof 0 calls 0 calls_conditional 0 local_var 3 machine__regs machine__memory machine__pc FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_END_MARKER
