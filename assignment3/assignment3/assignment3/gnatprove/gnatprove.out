@@ -66,7 +66,7 @@ in unit machine, 19 subprograms and packages out of 19 analyzed
   Machine.DetectInvalidBehaviour.CheckAdd at machine.adb:395 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
   Machine.DetectInvalidBehaviour.CheckDiv at machine.adb:517 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
   Machine.DetectInvalidBehaviour.CheckLdr at machine.adb:537 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DetectInvalidBehaviour.CheckMov at machine.adb:644 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DetectInvalidBehaviour.CheckMov at machine.adb:645 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
   Machine.DetectInvalidBehaviour.CheckMul at machine.adb:449 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
   Machine.DetectInvalidBehaviour.CheckStr at machine.adb:598 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
   Machine.DetectInvalidBehaviour.CheckSub at machine.adb:422 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)

@@ -13,57 +13,69 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_LOOPS
 RV SPARK_05
 
-U driver%b		driver.adb		9917b88b NE OO SU
+U driver%b		driver.adb		0298257d NE OO SU
 W debug%s		debug.adb		debug.ali
 W instruction%s		instruction.adb		instruction.ali
 Z interfaces%s		interfac.ads		interfac.ali
 W machine%s		machine.adb		machine.ali
 Z system.img_bool%s	s-imgboo.adb		s-imgboo.ali
 
-D debug.ads		20190522115824 cd66d8b0 debug%s
-D driver.adb		20190529112802 db8de172 driver%b
-D instruction.ads	20190522115824 277a987f instruction%s
+D debug.ads		20190505125630 cd66d8b0 debug%s
+D driver.adb		20190529124544 40027c84 driver%b
+D instruction.ads	20190505125630 277a987f instruction%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
-D machine.ads		20190522115824 a8861936 machine%s
+D machine.ads		20190505125630 a8861936 machine%s
 D system.ads		20180524051738 32a08138 system%s
 D s-imgboo.ads		20180524051736 f5d971eb system.img_bool%s
 X 1 debug.ads
 2K9*Debug 23e10 2|5w6 5r17
-4U14*Put 2|29s4 30s4 36s4 37s4 39s7
-8U14*Put_Line 2|22s4 27s4 34s4
-12U14*Put 2|39s25
-16U14*New_Line 2|30s36 41s4
+4U14*Put 2|35s4 36s4 42s4 43s4 45s7
+8U14*Put_Line 2|28s4 33s4 40s4
+12U14*Put 2|45s25
+16U14*New_Line 2|36s36 47s4
 X 2 driver.adb
-7U11*Driver 7b11 43l5 43t11
-8a4 Prog{5|22A9} 23r13 24m27 24r27 28r50 35r19
-9e4 Code{5|12E9} 35m43 37r8 38r7
-10i4 Result{integer} 35m48 39r29
-11b4 HasInvalidBehaviour{boolean} 28m4 30r8
-13a4 test{5|22A9}
-23i8 I<integer> 24r32
+7U11*Driver 7b11 49l5 49t11
+8a4 Prog{5|22A9} 29r13 30m27 30r27
+9e4 Code{5|12E9} 41m43 43r8 44r7
+10i4 Result{integer} 41m48 45r29
+11b4 HasInvalidBehaviour{boolean} 34m4 36r8
+13a4 test2{5|22A9}
+15a4 JMPtest{5|22A9}
+17a4 test{5|22A9} 34r50 41r19
+29i8 I<integer> 30r32
 X 3 instruction.ads
-2K9*Instruction 2|1w6 2r5 19r4 3|81e16
-5n20*NOP{5E9} 2|8r40 14r124
-5n40*RET{5E9} 2|14r91
-5n48*STR{5E9} 2|14r35
-5n52*MOV{5E9} 2|13r35 13r78
+2K9*Instruction 2|1w6 2r5 25r4 3|81e16
+5n20*NOP{5E9} 2|8r40 14r70 20r70
+5n40*RET{5E9} 2|14r35 16r78 20r37
+5n44*LDR{5E9} 2|19r35
+5n48*STR{5E9} 2|18r35
+5n52*MOV{5E9} 2|13r36 15r38 15r81 17r35 17r78
+5n56*JMP{5E9} 2|16r38
+5n60*JZ{5E9} 2|13r79
 12I9*Reg<short_short_integer>
 22I9*Offset<integer>
-25e15*Op{5E9} 2|8m34 13m29 13m72 14m29 14m85 14m118
-46i13*RetRs{12I9} 2|14m96
-52i13*StrRa{12I9} 2|14m40
-53i13*StrOffs{22I9} 2|14m52
-54i13*StrRb{12I9} 2|14m66
-56i13*MovRd{12I9} 2|13m40 13m83
-57i13*MovOffs{22I9} 2|13m52 13m95
-70U14*Init 2|19s16
-74U14*GenerateRandomInstr 2|24s7
+25e15*Op{5E9} 2|8m34 13m30 13m73 14m29 14m64 15m32 15m75 16m32 16m72 17m29
+. 17m72 18m29 19m29 20m31 20m64
+46i13*RetRs{12I9} 2|14m40 16m83 20m42
+48i13*LdrRd{12I9} 2|19m40
+49i13*LdrRs{12I9} 2|19m52
+50i13*LdrOffs{22I9} 2|19m64
+52i13*StrRa{12I9} 2|18m40
+53i13*StrOffs{22I9} 2|18m52
+54i13*StrRb{12I9} 2|18m66
+56i13*MovRd{12I9} 2|13m41 15m43 15m86 17m40 17m83
+57i13*MovOffs{22I9} 2|13m53 15m55 15m98 17m52 17m95
+59i13*JmpOffs{22I9} 2|16m43
+61i13*JzRa{12I9} 2|13m83
+62i13*JzOffs{22I9} 2|13m94
+70U14*Init 2|25s16
+74U14*GenerateRandomInstr 2|30s7
 X 5 machine.ads
 4K9*Machine 2|3w6 4r5 5|50e12
 12E9*ReturnCode 2|9r11 5|12e63
-12n24*Success{12E9} 2|38r14
-15i4*MAX_PROGRAM_LENGTH{integer} 2|28r55 35r24
-22A9*Program(3|25R9)<19I9> 2|8r11 13r11
-35U14*ExecuteProgram 2|35s4
-47V13*DetectInvalidBehaviour{boolean} 2|28s27
+12n24*Success{12E9} 2|44r14
+15i4*MAX_PROGRAM_LENGTH{integer} 2|34r55 41r24
+22A9*Program(3|25R9)<19I9> 2|8r11 13r12 15r14 17r11
+35U14*ExecuteProgram 2|41s4
+47V13*DetectInvalidBehaviour{boolean} 2|34s27
 

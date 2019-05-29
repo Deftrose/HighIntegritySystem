@@ -596,15 +596,16 @@ package body Machine with SPARK_Mode is
       
       -- Check if the instruction str is valid
       procedure CheckStr(Ra : in Reg;
-                         Offs : in Offset;
-                         Rb : in Reg;
-                         Ret : out ReturnCode) is
-         A : Addr;  
-      begin -- the memory address should not out of range
+                   Offs : in Offset;
+                   Rb : in Reg;
+                   Ret : out ReturnCode) is
+      A : Addr;  
+      begin
          if Check_Regs(Ra) >= DataVal(-Addr'Last) and Check_Regs(Ra) <= 0 then
             if Offs <= Offset(Addr'Last) and Offs >= - Offset(Check_Regs(Ra)) then
                A := Addr(Check_Regs(Ra) + DataVal(Offs));
-               Check_Regs(Rb) := Check_Memory(A);
+               Check_Memory(A) := Check_Regs(Rb);
+               -- mark the address as assigned
                MemorySigned(A) := True;
                Ret := Success;
             else
@@ -613,11 +614,11 @@ package body Machine with SPARK_Mode is
          else
             if Check_Regs(Ra) > 0 and Check_Regs(Ra) <= DataVal(Addr'Last) then
                if Offs >= -Offset(Check_Regs(Ra)) and Offs <= Offset(Addr'Last) - Offset(Check_Regs(Ra)) then
-                  A := Addr(Check_Regs(Ra) + DataVal(Offs));                 
-                  Check_Regs(Rb) := Check_Memory(A);
+                  A := Addr(Check_Regs(Ra) + DataVal(Offs));
+                  Check_Memory(A) := Check_Regs(Rb);
+                  --mark the address as assigned
                   MemorySigned(A) := True;
                   Ret := Success;
-               
                else
                   Ret := IllegalProgram;
                end if;
@@ -625,8 +626,8 @@ package body Machine with SPARK_Mode is
                if Check_Regs(Ra) > DataVal(Addr'Last) and Check_Regs(Ra) <= DataVal(Addr'Last - Addr'First) then
                   if Offs >= Offset(Addr'First) and Offs <= Offset(Addr'Last) - Offset(Check_Regs(Ra)) then
                      A := Addr(Check_Regs(Ra) + DataVal(Offs));
-                     MemorySigned(A) := True;
-                     Check_Regs(Rb) := Check_Memory(A);
+                     Check_Memory(A) := Check_Regs(Rb);
+                     -- mark the address as assigned
                      Ret := Success;
                   else
                      Ret := IllegalProgram;
@@ -642,8 +643,8 @@ package body Machine with SPARK_Mode is
       
       -- check if the instruction mov is valid
       procedure CheckMov(Rd : in Reg;
-                      Offs : in Offset;
-                      Ret : out ReturnCode) is
+                         Offs : in Offset;
+                         Ret : out ReturnCode) is
       begin
          Check_Regs(Rd) := DataVal(Offs);
          Ret := Success;
@@ -718,7 +719,7 @@ package body Machine with SPARK_Mode is
             when JMP =>
                Check_InCPC(Ret,Inst.JmpOffs);
                if Ret = IllegalProgram then
-                  return false;
+                  return True;
                end if;
                
             when JZ =>
@@ -778,6 +779,8 @@ package body Machine with SPARK_Mode is
                   else
                      return True;
                   end if;
+               else
+                  return True;
                end if;
                
          end case;

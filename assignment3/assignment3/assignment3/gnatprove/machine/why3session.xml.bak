@@ -463,6 +463,7 @@
   </goal>
   <goal name="WP_parameter def.32" expl="precondition" proved="true">
   <proof prover="0"><result status="valid" steps="611"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="650"/></proof>
   </goal>
   <goal name="WP_parameter def.33" expl="precondition" proved="true">
   <proof prover="0"><result status="valid" steps="5"/></proof>
@@ -475,7 +476,6 @@
   </goal>
   <goal name="WP_parameter def.36" expl="precondition" proved="true">
   <proof prover="0"><result status="valid" steps="473"/></proof>
-  <proof prover="1" obsolete="true"><result status="unknown" steps="650"/></proof>
   </goal>
   <goal name="WP_parameter def.37" expl="precondition" proved="true">
   <proof prover="0"><result status="valid" steps="344"/></proof>
