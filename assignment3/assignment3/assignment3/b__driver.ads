@@ -37,7 +37,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#1e5fbf14#;
+   u00001 : constant Version_32 := 16#9917b88b#;
    pragma Export (C, u00001, "driverB");
    u00002 : constant Version_32 := 16#050ff2f0#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -335,7 +335,7 @@ package ada_main is
    pragma Export (C, u00148, "system__task_lockS");
    u00149 : constant Version_32 := 16#1a9147da#;
    pragma Export (C, u00149, "system__win32__extS");
-   u00150 : constant Version_32 := 16#23a4330a#;
+   u00150 : constant Version_32 := 16#8b92478a#;
    pragma Export (C, u00150, "machineB");
    u00151 : constant Version_32 := 16#8ffc8149#;
    pragma Export (C, u00151, "machineS");

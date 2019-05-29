@@ -381,6 +381,7 @@ package body Machine with SPARK_Mode is
       -- Increasse the PC
       procedure Check_InCPC(Ret : out ReturnCode; Offs : in Offset) is
       begin
+         -- the value should not be out of Program range
          if Integer(ProgramCounter'First) < (Integer(Check_PC) + Integer(Offs)) and
            (Integer(Check_PC) + Integer(Offs)) < Integer(ProgramCounter'Last) then
             Check_PC := ProgramCounter(Integer(Check_PC) + Integer(Offs));
@@ -395,7 +396,7 @@ package body Machine with SPARK_Mode is
                          Rs1 : in Reg; 
                          Rs2 : in Reg;
                          Ret : out ReturnCode) is
-      begin
+      begin -- The sum of these two value should not out of range
          if Check_Regs(Rs1) > DataVal'First and Check_Regs(Rs1) <= 0 then
             if Check_Regs(Rs2) > (DataVal'First - Check_Regs(Rs1)) and Check_Regs(Rs2) < DataVal'Last then
                Check_Regs(Rd) := Check_Regs(Rs1) + Check_Regs(Rs2);
@@ -419,10 +420,10 @@ package body Machine with SPARK_Mode is
  
       -- Check if the instruction sub is valid
       procedure CheckSub(Rd : in Reg; 
-                      Rs1 : in Reg; 
-                      Rs2 : in Reg;
-                      Ret : out ReturnCode) is
-      begin
+                         Rs1 : in Reg; 
+                         Rs2 : in Reg;
+                         Ret : out ReturnCode) is
+      begin -- Check_Regs(Rs1) - Check_Regs(Rs2) should not out of range
          if Check_Regs(Rs1) > DataVal'First and Check_Regs(Rs1) <= 0 then
             if Check_Regs(Rs2) > DataVal'First and Check_Regs(Rs2) < (Check_Regs(Rs1) + DataVal'Last) then
                Check_Regs(Rd) := Check_Regs(Rs1) - Check_Regs(Rs2);
@@ -449,7 +450,7 @@ package body Machine with SPARK_Mode is
                          Rs1 : in Reg; 
                          Rs2 : in Reg;
                          Ret : out ReturnCode) is
-      begin
+      begin -- Check_Regs(Rs1) * Check_Regs(Rs2)should not out of range of dataValue
          if Check_Regs(Rs2) >= 0 then
             if Check_Regs(Rs1) > DataVal'First and Check_Regs(Rs1) < DataVal'First/DataVal'Last then
                if Check_Regs(Rs2) < DataVal'First/ Check_Regs(Rs1) then
@@ -514,10 +515,11 @@ package body Machine with SPARK_Mode is
       
       -- Check if the instruction div is valid
       procedure CheckDiv(Rd : in Reg; 
-                      Rs1 : in Reg; 
-                      Rs2 : in Reg;
-                      Ret : out ReturnCode) is
+                         Rs1 : in Reg; 
+                         Rs2 : in Reg;
+                         Ret : out ReturnCode) is
       begin
+         -- should not appear divide by zero
          if Check_Regs(Rs2) /= 0 then
             if Check_Regs(Rs1) > DataVal'First and Check_Regs(Rs1) < DataVal'Last then
                Check_Regs(Rd) := Check_Regs(Rs1) / Check_Regs(Rs2);
@@ -533,11 +535,11 @@ package body Machine with SPARK_Mode is
       
       -- Check if the instruction ldr is valid
       procedure CheckLdr(Rd : in Reg; 
-                      Rs : in Reg; 
-                      Offs : in Offset;
-                      Ret : out ReturnCode) is
+                         Rs : in Reg; 
+                         Offs : in Offset;
+                         Ret : out ReturnCode) is
          A : Addr;
-      begin
+      begin -- The memory address should not out of range
          if Check_Regs(Rs) >= DataVal(-Addr'Last) and Check_Regs(Rs) <= 0 then
             if Offs <= Offset(Addr'Last) and Offs >= - Offset(Check_Regs(Rs)) then
                A := Addr(Check_Regs(Rs) + DataVal(Offs));
@@ -573,7 +575,7 @@ package body Machine with SPARK_Mode is
                if Check_Regs(Rs) > DataVal(Addr'Last) and Check_Regs(Rs) <= DataVal(Addr'Last - Addr'First) then
                   if Offs >= Offset(Addr'First) and Offs <= Offset(Addr'Last) - Offset(Check_Regs(Rs)) then
                      A := Addr(Check_Regs(Rs) + DataVal(Offs));
-                  -- The memory should be assigned before it is used
+                     -- The memory should be assigned before it is used
                      if MemorySigned(A) then
                         Check_Regs(Rd) := Check_Memory(A);
                         Ret := Success;
@@ -594,15 +596,15 @@ package body Machine with SPARK_Mode is
       
       -- Check if the instruction str is valid
       procedure CheckStr(Ra : in Reg;
-                      Offs : in Offset;
-                      Rb : in Reg;
-                      Ret : out ReturnCode) is
+                         Offs : in Offset;
+                         Rb : in Reg;
+                         Ret : out ReturnCode) is
          A : Addr;  
-      begin
+      begin -- the memory address should not out of range
          if Check_Regs(Ra) >= DataVal(-Addr'Last) and Check_Regs(Ra) <= 0 then
             if Offs <= Offset(Addr'Last) and Offs >= - Offset(Check_Regs(Ra)) then
                A := Addr(Check_Regs(Ra) + DataVal(Offs));
-               Check_Regs(Rb) := Memory(A);
+               Check_Regs(Rb) := Check_Memory(A);
                MemorySigned(A) := True;
                Ret := Success;
             else
@@ -612,7 +614,7 @@ package body Machine with SPARK_Mode is
             if Check_Regs(Ra) > 0 and Check_Regs(Ra) <= DataVal(Addr'Last) then
                if Offs >= -Offset(Check_Regs(Ra)) and Offs <= Offset(Addr'Last) - Offset(Check_Regs(Ra)) then
                   A := Addr(Check_Regs(Ra) + DataVal(Offs));                 
-                  Check_Regs(Rb) := Memory(A);
+                  Check_Regs(Rb) := Check_Memory(A);
                   MemorySigned(A) := True;
                   Ret := Success;
                
@@ -622,10 +624,10 @@ package body Machine with SPARK_Mode is
             else
                if Check_Regs(Ra) > DataVal(Addr'Last) and Check_Regs(Ra) <= DataVal(Addr'Last - Addr'First) then
                   if Offs >= Offset(Addr'First) and Offs <= Offset(Addr'Last) - Offset(Check_Regs(Ra)) then
-                    A := Addr(Check_Regs(Ra) + DataVal(Offs));
-                    MemorySigned(A) := True;
-                    Check_Regs(Rb) := Memory(A);
-                    Ret := Success;
+                     A := Addr(Check_Regs(Ra) + DataVal(Offs));
+                     MemorySigned(A) := True;
+                     Check_Regs(Rb) := Check_Memory(A);
+                     Ret := Success;
                   else
                      Ret := IllegalProgram;
                   end if;
@@ -638,6 +640,15 @@ package body Machine with SPARK_Mode is
 
       end CheckStr;
       
+      -- check if the instruction mov is valid
+      procedure CheckMov(Rd : in Reg;
+                      Offs : in Offset;
+                      Ret : out ReturnCode) is
+      begin
+         Check_Regs(Rd) := DataVal(Offs);
+         Ret := Success;
+      end CheckMov;
+      
    begin
       while (CycleCount < Cycles and Ret = Success) loop
          Inst := Prog(Check_PC);
@@ -645,9 +656,11 @@ package body Machine with SPARK_Mode is
          
          case Inst.Op is 
             when ADD =>
+               -- check if the registers used have been assigned value or not
                if RegsSigned(Inst.AddRs1) and RegsSigned(Inst.AddRs2) then
                   CheckAdd(Inst.AddRd,Inst.AddRs1,Inst.AddRs2,Ret);
                   if Ret = Success then
+                     -- mark the register as assigned
                      RegsSigned(Inst.AddRd) := True;
                      Check_InCPC(Ret,1);
                   else
@@ -656,10 +669,13 @@ package body Machine with SPARK_Mode is
                else
                   return True;
                end if;
+               
             when SUB =>
+                -- check if the registers used have been assigned value or not
                if RegsSigned(Inst.SubRs1) and RegsSigned(Inst.SubRs2) then
                   CheckSub(Inst.SubRd,Inst.SubRs1,Inst.SubRs2,Ret);
                   if Ret = Success then
+                     -- mark the register as assigned
                      RegsSigned(Inst.SubRd) := True;
                      Check_InCPC(Ret,1);
                   else
@@ -668,10 +684,13 @@ package body Machine with SPARK_Mode is
                else
                   return True;
                end if;
+               
             when MUL =>
+               -- check if the registers used have been assigned value or not
                if RegsSigned(Inst.MulRs1) and RegsSigned(Inst.MulRs2) then
                   CheckMul(Inst.MulRd,Inst.MulRs1,Inst.MulRs2,Ret);
                   if Ret = Success then
+                     -- mark the register as assigned
                      RegsSigned(Inst.MulRd) := True;
                      Check_InCPC(Ret,1);
                   else
@@ -680,10 +699,13 @@ package body Machine with SPARK_Mode is
                else
                   return True;
                end if;
+               
             when DIV =>
+               -- check if the registers used have been assigned value or not
                if RegsSigned(Inst.DivRs1) and RegsSigned(Inst.DivRs2) then
                   CheckDiv(Inst.DivRd,Inst.DivRs1,Inst.DivRs2,Ret);
                   if Ret = Success then
+                     -- mark the register as assigned
                      RegsSigned(Inst.DivRd) := True;
                      Check_InCPC(Ret,1);
                   else
@@ -692,9 +714,15 @@ package body Machine with SPARK_Mode is
                else
                   return True;
                end if;
+               
             when JMP =>
                Check_InCPC(Ret,Inst.JmpOffs);
+               if Ret = IllegalProgram then
+                  return false;
+               end if;
+               
             when JZ =>
+               -- check if the register used have been assigned value or not
                if RegsSigned(Inst.JzRa) then
                   if Check_Regs(Inst.JzRa) = 0 then
                      Check_InCPC(Ret,Inst.JzOffs);
@@ -703,23 +731,35 @@ package body Machine with SPARK_Mode is
                   end if;
                else
                   return True;
-               end if;            
+               end if;
+               
             when NOP =>
                Check_InCPC(Ret,1);
+               
             when Instruction.RET =>
-               return False;
+               -- check if the register used have been assigned value or not
+               if RegsSigned(Inst.RetRs) then
+                  return False;
+               else
+                  return True;
+               end if;
+               
             when MOV =>
-               DoMov(Inst.MovRd,Inst.MovOffs,Ret);
+               CheckMov(Inst.MovRd,Inst.MovOffs,Ret);
                if Ret = Success then
+                  -- mark the register as assigned
                   RegsSigned(Inst.MovRd) := True;
                   Check_InCPC(Ret,1);
                else
                   return True;
                end if;
+               
             when LDR =>
+               -- check if the register used have been assigned value or not
                if RegsSigned(Inst.LdrRs) then
                   CheckLdr(Inst.LdrRd,Inst.LdrRs,Inst.LdrOffs,Ret);
                   if Ret = Success then
+                     -- mark the register as assigned
                      RegsSigned(Inst.LdrRd) := True;
                      Check_InCPC(Ret,1);
                   else
@@ -727,8 +767,10 @@ package body Machine with SPARK_Mode is
                   end if;
                else
                   return True;
-               end if;               
+               end if;   
+               
             when STR =>
+               -- check if the register used have been assigned value or not
                if RegsSigned(Inst.StrRa) and RegsSigned(Inst.StrRb) then
                   CheckStr(Inst.StrRa,Inst.StrOffs,Inst.StrRb,Ret);
                   if Ret = Success then
@@ -736,16 +778,20 @@ package body Machine with SPARK_Mode is
                   else
                      return True;
                   end if;
-               end if;                                          
+               end if;
+               
          end case;
+         
          CycleCount := CycleCount + 1;   
       end loop;
+      
+      -- The program has no RET
       if Ret = Success then
-         Ret := CyclesExhausted;
          return True;
       else
-         return False;
+         return True;
       end if;
+      
    end DetectInvalidBehaviour;
       
 

@@ -6,14 +6,14 @@ SPARK Analysis results        Total         Flow   Interval   CodePeer       Pro
 -----------------------------------------------------------------------------------------------------------
 Data Dependencies                 .            .          .          .             .           .          .
 Flow Dependencies                 .            .          .          .             .           .          .
-Initialization                  291          291          .          .             .           .          .
+Initialization                  330          330          .          .             .           .          .
 Non-Aliasing                      .            .          .          .             .           .          .
-Run-time Checks                 181            .          .          .    181 (CVC4)           .          .
+Run-time Checks                 200            .          .          .    200 (CVC4)           .          .
 Assertions                        .            .          .          .             .           .          .
 Functional Contracts              .            .          .          .             .           .          .
 LSP Verification                  .            .          .          .             .           .          .
 -----------------------------------------------------------------------------------------------------------
-Total                           472    291 (62%)          .          .     181 (38%)           .          .
+Total                           530    330 (62%)          .          .     200 (38%)           .          .
 
 
 Analyzed 4 units
@@ -60,15 +60,17 @@ in unit instruction, 1 subprograms and packages out of 33 analyzed
   Instruction.Random_Reg.Save at a-nudira.ads:61, instantiated at instruction.adb:8 skipped
   Instruction.Random_Reg.State at a-nudira.ads:59, instantiated at instruction.adb:8 skipped
   Instruction.Random_Reg.Value at a-nudira.ads:67, instantiated at instruction.adb:8 skipped
-in unit machine, 17 subprograms and packages out of 17 analyzed
+in unit machine, 19 subprograms and packages out of 19 analyzed
   Machine at machine.ads:4 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DetectInvalidBehaviour at machine.ads:47 flow analyzed (0 errors, 0 checks and 1 warnings) and proved (78 checks)
-  Machine.DetectInvalidBehaviour.CheckAdd at machine.adb:382 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DetectInvalidBehaviour.CheckDiv at machine.adb:504 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DetectInvalidBehaviour.CheckLdr at machine.adb:523 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DetectInvalidBehaviour.CheckMul at machine.adb:436 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DetectInvalidBehaviour.CheckStr at machine.adb:584 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DetectInvalidBehaviour.CheckSub at machine.adb:409 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DetectInvalidBehaviour at machine.ads:47 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (97 checks)
+  Machine.DetectInvalidBehaviour.CheckAdd at machine.adb:395 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DetectInvalidBehaviour.CheckDiv at machine.adb:517 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DetectInvalidBehaviour.CheckLdr at machine.adb:537 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DetectInvalidBehaviour.CheckMov at machine.adb:644 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DetectInvalidBehaviour.CheckMul at machine.adb:449 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DetectInvalidBehaviour.CheckStr at machine.adb:598 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DetectInvalidBehaviour.CheckSub at machine.adb:422 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Machine.DetectInvalidBehaviour.Check_InCPC at machine.adb:382 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
   Machine.DoAdd at machine.adb:33 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
   Machine.DoDiv at machine.adb:153 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
   Machine.DoLdr at machine.adb:171 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)

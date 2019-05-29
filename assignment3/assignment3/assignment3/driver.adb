@@ -9,6 +9,9 @@ procedure Driver with SPARK_Mode is
    Code : ReturnCode;
    Result : Integer;
    HasInvalidBehaviour : Boolean;
+   
+   test : Program := (1 => (OP => MOV, MovRd => 1, MovOffs => 1), 2=> (OP => MOV, MovRd => 2, MovOffs => 1), 
+                      3 => (OP => STR, StrRa => 1, StrOffs => 1, StrRb => 3), 4 => (OP => RET, RetRs => 3),others =>(Op => NOP)  );
 begin
    -- initialise the random number generators used to generate
    -- random instructions. Commenting this out may yield predictable

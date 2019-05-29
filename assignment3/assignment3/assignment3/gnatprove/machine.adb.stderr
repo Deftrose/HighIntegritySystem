@@ -1,1 +1,0 @@
-machine.ads:47:13: function with output global "Regs" is not allowed in SPARK[#0]
