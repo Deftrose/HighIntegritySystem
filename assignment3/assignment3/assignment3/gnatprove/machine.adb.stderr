@@ -1,3 +1,1 @@
-machine.adb:357:13: warning: unused assignment[#2]
-machine.ads:47:36: warning: unused variable "Prog"[#0]
-machine.ads:48:36: warning: unused initial value of "Cycles"[#1]
+machine.ads:47:13: function with output global "Regs" is not allowed in SPARK[#0]

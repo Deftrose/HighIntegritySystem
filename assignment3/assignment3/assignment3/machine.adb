@@ -352,9 +352,401 @@ package body Machine with SPARK_Mode is
 
    function DetectInvalidBehaviour(Prog : in Program;
                                    Cycles : in Integer) return Boolean is
-   begin
-      Prog()
-      return True;
-   end DetectInvalidBehaviour;
+      
+      -- This array is used to mark if the register is assigned with value
+      -- If the register hasn't been assigned, using it will be regard as invalid
+      RegsSigned : array (Reg) of Boolean := ( others => False);
+      
+      -- This array is used to mark if the memory is assigned with value
+      -- If this memory hasn't been assigned value, it should not be used
+      MemorySigned : array (Addr) of Boolean := ( others => False);
+      
+      -- Registers used to store the value of used register
+      Check_Regs : array (Reg) of DataVal := (others => 0);
+      
+      -- Memory used to store the value of memory
+      Check_Memory : array (Addr) of DataVal := ( others => 0);
+      
+      -- Program counter
+      Check_PC : ProgramCounter := ProgramCounter'First;
+      
+      -- If the instruction is valid
+      Ret : ReturnCode := Success;
+      
+      -- the cycle counter
+      CycleCount : Integer := 0 ;
+      -- the instruction 
+      Inst : Instr;
+      
+      -- Increasse the PC
+      procedure Check_InCPC(Ret : out ReturnCode; Offs : in Offset) is
+      begin
+         if Integer(ProgramCounter'First) < (Integer(Check_PC) + Integer(Offs)) and
+           (Integer(Check_PC) + Integer(Offs)) < Integer(ProgramCounter'Last) then
+            Check_PC := ProgramCounter(Integer(Check_PC) + Integer(Offs));
+            Ret := Success;
+         else
+            Ret := IllegalProgram;
+         end if;
+      end Check_InCPC;
+      
+      -- Check if the instruction add is valid
+      procedure CheckAdd(Rd : in Reg; 
+                         Rs1 : in Reg; 
+                         Rs2 : in Reg;
+                         Ret : out ReturnCode) is
+      begin
+         if Check_Regs(Rs1) > DataVal'First and Check_Regs(Rs1) <= 0 then
+            if Check_Regs(Rs2) > (DataVal'First - Check_Regs(Rs1)) and Check_Regs(Rs2) < DataVal'Last then
+               Check_Regs(Rd) := Check_Regs(Rs1) + Check_Regs(Rs2);
+               Ret := Success;
+            else
+               Ret := IllegalProgram;
+            end if;
+         else
+            if Check_Regs(Rs1) < DataVal'Last and Check_Regs(Rs1) > 0 then
+               if Check_Regs(Rs2) < (DataVal'Last - Check_Regs(Rs1)) and Check_Regs(Rs2) > DataVal'First then
+                  Check_Regs(Rd) := Check_Regs(Rs1) + Check_Regs(Rs2);
+                  Ret := Success;
+               else
+                  Ret := IllegalProgram;
+               end if;
+            else
+               Ret := IllegalProgram;
+            end if;
+         end if;
+      end CheckAdd;   
+ 
+      -- Check if the instruction sub is valid
+      procedure CheckSub(Rd : in Reg; 
+                      Rs1 : in Reg; 
+                      Rs2 : in Reg;
+                      Ret : out ReturnCode) is
+      begin
+         if Check_Regs(Rs1) > DataVal'First and Check_Regs(Rs1) <= 0 then
+            if Check_Regs(Rs2) > DataVal'First and Check_Regs(Rs2) < (Check_Regs(Rs1) + DataVal'Last) then
+               Check_Regs(Rd) := Check_Regs(Rs1) - Check_Regs(Rs2);
+               Ret := Success;
+            else
+               Ret := IllegalProgram;
+            end if;
+         else
+            if Check_Regs(Rs1) > 0 and Check_Regs(Rs1) < DataVal'Last then
+               if Check_Regs(Rs2) > (DataVal'First + Check_Regs(Rs1)) and Check_Regs(Rs2) < DataVal'Last then
+                  Check_Regs(Rd) := Check_Regs(Rs1) - Check_Regs(Rs2);
+                  Ret := Success;
+               else
+                  Ret := IllegalProgram;
+               end if;
+            else
+               Ret := IllegalProgram;
+            end if; 
+         end if;
+      end CheckSub;
    
+      -- Check if the instruction mul is valid
+      procedure CheckMul(Rd : in Reg; 
+                         Rs1 : in Reg; 
+                         Rs2 : in Reg;
+                         Ret : out ReturnCode) is
+      begin
+         if Check_Regs(Rs2) >= 0 then
+            if Check_Regs(Rs1) > DataVal'First and Check_Regs(Rs1) < DataVal'First/DataVal'Last then
+               if Check_Regs(Rs2) < DataVal'First/ Check_Regs(Rs1) then
+                  Check_Regs(Rd) := Check_Regs(Rs1) * Check_Regs(Rs2);
+                  Ret := Success;
+               else
+                  Ret := IllegalProgram;
+               end if;
+            else
+               if Check_Regs(Rs1) > DataVal'First/DataVal'Last and Check_Regs(Rs1) <= 1 then
+                  if Check_Regs(Rs2) < DataVal'Last then
+                     Check_Regs(Rd) := Check_Regs(Rs1) * Check_Regs(Rs2);
+                     Ret:= Success;
+                  else
+                     Ret := IllegalProgram;
+                  end if;
+               else
+                  if Check_Regs(Rs1) >1 and Check_Regs(Rs1) < DataVal'Last then
+                     if Check_Regs(Rs2) < DataVal'Last/ Check_Regs(Rs1) then
+                        Check_Regs(Rd) := Check_Regs(Rs1) * Check_Regs(Rs2);
+                        Ret:= Success;
+                     else
+                        Ret:= IllegalProgram;
+                     end if;
+                  else
+                     Ret := IllegalProgram;
+                  end if;
+               end if;
+            end if;
+         else --Check_Regs(Rs2)<0
+            if Check_Regs(Rs1) > DataVal'First and Check_Regs(Rs1) < DataVal'Last/DataVal'First then
+               if Check_Regs(Rs2) > DataVal'Last/Check_Regs(Rs1) then
+                  Check_Regs(Rd) := Check_Regs(Rs1) * Check_Regs(Rs2);
+                  Ret := Success;
+               else
+                  Ret := IllegalProgram;
+               end if;
+            else
+               if Check_Regs(Rs1) > DataVal'Last/DataVal'First and Check_Regs(Rs1) <= 1 then
+                  if Check_Regs(Rs2) > DataVal'First then
+                     Check_Regs(Rd) := Check_Regs(Rs1) * Check_Regs(Rs2);
+                     Ret:= Success;
+                  else
+                     Ret := IllegalProgram;
+                  end if;
+               else
+                  if Check_Regs(Rs1) > 1 and Check_Regs(Rs1) < DataVal'Last then
+                     if Check_Regs(Rs2) > DataVal'First/Check_Regs(Rs1) then
+                        Check_Regs(Rd) := Check_Regs(Rs1) * Check_Regs(Rs2);
+                        Ret:= Success;
+                     else
+                        Ret:= IllegalProgram;
+                     end if;
+                  else
+                     Ret := IllegalProgram;
+                  end if;
+               end if;
+            end if;
+         end if;
+      
+      end CheckMul;
+      
+      -- Check if the instruction div is valid
+      procedure CheckDiv(Rd : in Reg; 
+                      Rs1 : in Reg; 
+                      Rs2 : in Reg;
+                      Ret : out ReturnCode) is
+      begin
+         if Check_Regs(Rs2) /= 0 then
+            if Check_Regs(Rs1) > DataVal'First and Check_Regs(Rs1) < DataVal'Last then
+               Check_Regs(Rd) := Check_Regs(Rs1) / Check_Regs(Rs2);
+               Ret:= Success;
+            else
+               Ret := IllegalProgram;
+            end if;
+         else
+            Ret:= IllegalProgram;
+         end if;
+      
+      end CheckDiv;
+      
+      -- Check if the instruction ldr is valid
+      procedure CheckLdr(Rd : in Reg; 
+                      Rs : in Reg; 
+                      Offs : in Offset;
+                      Ret : out ReturnCode) is
+         A : Addr;
+      begin
+         if Check_Regs(Rs) >= DataVal(-Addr'Last) and Check_Regs(Rs) <= 0 then
+            if Offs <= Offset(Addr'Last) and Offs >= - Offset(Check_Regs(Rs)) then
+               A := Addr(Check_Regs(Rs) + DataVal(Offs));
+               
+               -- The memory should be assigned before it is used
+               if MemorySigned(A) then
+                  Check_Regs(Rd) := Check_Memory(A);
+                  Ret := Success;
+               else
+                  Ret := IllegalProgram;
+               end if;
+               
+            else
+               Ret := IllegalProgram;
+            end if;
+         else
+            if Check_Regs(Rs) > 0 and Check_Regs(Rs) <= DataVal(Addr'Last) then
+               if Offs >= -Offset(Check_Regs(Rs)) and Offs <= Offset(Addr'Last) - Offset(Check_Regs(Rs)) then
+                  A := Addr(Check_Regs(Rs) + DataVal(Offs));
+                  
+                  -- The memory should be assigned before it is used
+                  if MemorySigned(A) then
+                     Check_Regs(Rd) := Check_Memory(A);
+                     Ret := Success;
+                  else
+                     Ret := IllegalProgram;
+                  end if;
+                  
+               else
+                  Ret := IllegalProgram;
+               end if;
+            else
+               if Check_Regs(Rs) > DataVal(Addr'Last) and Check_Regs(Rs) <= DataVal(Addr'Last - Addr'First) then
+                  if Offs >= Offset(Addr'First) and Offs <= Offset(Addr'Last) - Offset(Check_Regs(Rs)) then
+                     A := Addr(Check_Regs(Rs) + DataVal(Offs));
+                  -- The memory should be assigned before it is used
+                     if MemorySigned(A) then
+                        Check_Regs(Rd) := Check_Memory(A);
+                        Ret := Success;
+                     else
+                        Ret := IllegalProgram;
+                     end if;
+                  else
+                     Ret := IllegalProgram;
+                  end if;
+               else
+                  Ret := IllegalProgram;
+               end if;
+            
+            end if;
+         end if;
+         
+      end CheckLdr;
+      
+      -- Check if the instruction str is valid
+      procedure CheckStr(Ra : in Reg;
+                      Offs : in Offset;
+                      Rb : in Reg;
+                      Ret : out ReturnCode) is
+         A : Addr;  
+      begin
+         if Check_Regs(Ra) >= DataVal(-Addr'Last) and Check_Regs(Ra) <= 0 then
+            if Offs <= Offset(Addr'Last) and Offs >= - Offset(Check_Regs(Ra)) then
+               A := Addr(Check_Regs(Ra) + DataVal(Offs));
+               Check_Regs(Rb) := Memory(A);
+               MemorySigned(A) := True;
+               Ret := Success;
+            else
+               Ret := IllegalProgram;
+            end if;
+         else
+            if Check_Regs(Ra) > 0 and Check_Regs(Ra) <= DataVal(Addr'Last) then
+               if Offs >= -Offset(Check_Regs(Ra)) and Offs <= Offset(Addr'Last) - Offset(Check_Regs(Ra)) then
+                  A := Addr(Check_Regs(Ra) + DataVal(Offs));                 
+                  Check_Regs(Rb) := Memory(A);
+                  MemorySigned(A) := True;
+                  Ret := Success;
+               
+               else
+                  Ret := IllegalProgram;
+               end if;
+            else
+               if Check_Regs(Ra) > DataVal(Addr'Last) and Check_Regs(Ra) <= DataVal(Addr'Last - Addr'First) then
+                  if Offs >= Offset(Addr'First) and Offs <= Offset(Addr'Last) - Offset(Check_Regs(Ra)) then
+                    A := Addr(Check_Regs(Ra) + DataVal(Offs));
+                    MemorySigned(A) := True;
+                    Check_Regs(Rb) := Memory(A);
+                    Ret := Success;
+                  else
+                     Ret := IllegalProgram;
+                  end if;
+               else
+                  Ret := IllegalProgram;
+               end if;
+            
+            end if;
+         end if;
+
+      end CheckStr;
+      
+   begin
+      while (CycleCount < Cycles and Ret = Success) loop
+         Inst := Prog(Check_PC);
+         DebugPrintInstr(Inst);
+         
+         case Inst.Op is 
+            when ADD =>
+               if RegsSigned(Inst.AddRs1) and RegsSigned(Inst.AddRs2) then
+                  CheckAdd(Inst.AddRd,Inst.AddRs1,Inst.AddRs2,Ret);
+                  if Ret = Success then
+                     RegsSigned(Inst.AddRd) := True;
+                     Check_InCPC(Ret,1);
+                  else
+                     return True;
+                  end if;
+               else
+                  return True;
+               end if;
+            when SUB =>
+               if RegsSigned(Inst.SubRs1) and RegsSigned(Inst.SubRs2) then
+                  CheckSub(Inst.SubRd,Inst.SubRs1,Inst.SubRs2,Ret);
+                  if Ret = Success then
+                     RegsSigned(Inst.SubRd) := True;
+                     Check_InCPC(Ret,1);
+                  else
+                     return True;
+                  end if;
+               else
+                  return True;
+               end if;
+            when MUL =>
+               if RegsSigned(Inst.MulRs1) and RegsSigned(Inst.MulRs2) then
+                  CheckMul(Inst.MulRd,Inst.MulRs1,Inst.MulRs2,Ret);
+                  if Ret = Success then
+                     RegsSigned(Inst.MulRd) := True;
+                     Check_InCPC(Ret,1);
+                  else
+                     return True;
+                  end if;
+               else
+                  return True;
+               end if;
+            when DIV =>
+               if RegsSigned(Inst.DivRs1) and RegsSigned(Inst.DivRs2) then
+                  CheckDiv(Inst.DivRd,Inst.DivRs1,Inst.DivRs2,Ret);
+                  if Ret = Success then
+                     RegsSigned(Inst.DivRd) := True;
+                     Check_InCPC(Ret,1);
+                  else
+                     return True;
+                  end if;
+               else
+                  return True;
+               end if;
+            when JMP =>
+               Check_InCPC(Ret,Inst.JmpOffs);
+            when JZ =>
+               if RegsSigned(Inst.JzRa) then
+                  if Check_Regs(Inst.JzRa) = 0 then
+                     Check_InCPC(Ret,Inst.JzOffs);
+                  else
+                     Check_InCPC(Ret,1);
+                  end if;
+               else
+                  return True;
+               end if;            
+            when NOP =>
+               Check_InCPC(Ret,1);
+            when Instruction.RET =>
+               return False;
+            when MOV =>
+               DoMov(Inst.MovRd,Inst.MovOffs,Ret);
+               if Ret = Success then
+                  RegsSigned(Inst.MovRd) := True;
+                  Check_InCPC(Ret,1);
+               else
+                  return True;
+               end if;
+            when LDR =>
+               if RegsSigned(Inst.LdrRs) then
+                  CheckLdr(Inst.LdrRd,Inst.LdrRs,Inst.LdrOffs,Ret);
+                  if Ret = Success then
+                     RegsSigned(Inst.LdrRd) := True;
+                     Check_InCPC(Ret,1);
+                  else
+                     return True;
+                  end if;
+               else
+                  return True;
+               end if;               
+            when STR =>
+               if RegsSigned(Inst.StrRa) and RegsSigned(Inst.StrRb) then
+                  CheckStr(Inst.StrRa,Inst.StrOffs,Inst.StrRb,Ret);
+                  if Ret = Success then
+                     Check_InCPC(Ret,1);
+                  else
+                     return True;
+                  end if;
+               end if;                                          
+         end case;
+         CycleCount := CycleCount + 1;   
+      end loop;
+      if Ret = Success then
+         Ret := CyclesExhausted;
+         return True;
+      else
+         return False;
+      end if;
+   end DetectInvalidBehaviour;
+      
+
 end Machine;

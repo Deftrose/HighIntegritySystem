@@ -1,4 +1,4 @@
-20190528005026
+20190529062314
 -c
 -x
 ada
@@ -6,4 +6,4 @@ ada
 -g
 -O2
 -gnatc
--gnates=C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\gnatprove\a32b4484.tmp
+-gnates=C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\gnatprove\f8838099.tmp

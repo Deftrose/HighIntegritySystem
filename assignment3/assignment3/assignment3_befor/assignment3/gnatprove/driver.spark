@@ -290,14 +290,14 @@
     }
   ],
   "timings": {
-    "marking": 3.73891001800075E-04,
-    "globals (basic)": 2.70850360393524E-01,
-    "globals/properties (advanced)": 1.87239181250334E-02,
-    "flow analysis": 4.10083588212729E-03,
-    "codepeer results": 3.41899999511952E-06,
-    "init_why_sections": 2.03475006856024E-04,
-    "translation of standard": 2.86317500285804E-03,
-    "translation of compilation unit": 1.43905421718955E-02,
-    "proof": 2.56399994214007E-06
+    "marking": 9.12366027478129E-04,
+    "globals (basic)": 4.16652858257294E-01,
+    "globals/properties (advanced)": 6.49385377764702E-02,
+    "flow analysis": 8.26517771929502E-03,
+    "codepeer results": 6.59799979985110E-06,
+    "init_why_sections": 3.67658998584375E-04,
+    "translation of standard": 5.57609880343080E-03,
+    "translation of compilation unit": 3.16758491098881E-02,
+    "proof": 3.66600011147966E-06
   }
 }

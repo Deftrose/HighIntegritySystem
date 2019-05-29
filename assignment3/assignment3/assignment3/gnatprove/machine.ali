@@ -13,7 +13,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U machine%b		machine.adb		c1929b99 OO PK
+U machine%b		machine.adb		5e9a35d8 OO PK
 W ada%s			ada.ads			ada.ali
 W ada.characters%s	a-charac.ads		a-charac.ali
 W ada.characters.latin_1%s  a-chlat1.ads	a-chlat1.ali
@@ -29,7 +29,7 @@ D a-chlat1.ads		20180524051736 66457d31 ada.characters.latin_1%s
 D debug.ads		20190505125630 cd66d8b0 debug%s
 D instruction.ads	20190505125630 277a987f instruction%s
 D machine.ads		20190505125630 a8861936 machine%s
-D machine.adb		20190528042052 e54dbf51 machine%b
+D machine.adb		20190529090340 7a451110 machine%b
 D system.ads		20180524051738 32a08138 system%s
 X 1 ada.ads
 16K9*Ada 20e8 7|6r6 276r42
@@ -44,66 +44,78 @@ X 4 debug.ads
 16U14*New_Line 7|278s10
 20U14*Put 7|276s28 276s38
 X 5 instruction.ads
-2K9*Instruction 81e16 6|1w6 1r23 22r46 7|1w6 2r5 330r18
-5n20*NOP{5E9} 7|342r18
-5n24*ADD{5E9} 7|281r18
-5n28*SUB{5E9} 7|288r18
-5n32*MUL{5E9} 7|295r18
-5n36*DIV{5E9} 7|302r18
-5n40*RET{5E9} 7|330r30
-5n44*LDR{5E9} 7|309r18
-5n48*STR{5E9} 7|316r18
-5n52*MOV{5E9} 7|323r18
-5n56*JMP{5E9} 7|334r18
-5n60*JZ{5E9} 7|336r18
+2K9*Instruction 81e16 6|1w6 1r23 22r46 7|1w6 2r5 330r18 675r18
+5n20*NOP{5E9} 7|342r18 673r18
+5n24*ADD{5E9} 7|281r18 623r18
+5n28*SUB{5E9} 7|288r18 625r18
+5n32*MUL{5E9} 7|295r18 637r18
+5n36*DIV{5E9} 7|302r18 649r18
+5n40*RET{5E9} 7|330r30 675r30
+5n44*LDR{5E9} 7|309r18 685r18
+5n48*STR{5E9} 7|316r18 697r18
+5n52*MOV{5E9} 7|323r18 677r18
+5n56*JMP{5E9} 7|334r18 661r18
+5n60*JZ{5E9} 7|336r18 663r18
 12I9*Reg<short_short_integer> 7|14r18 33r28 34r29 35r29 60r28 61r29 62r29
 . 86r28 87r29 88r29 153r28 154r29 155r29 171r28 172r28 212r28 214r28 253r28
+. 358r27 365r27 397r34 398r32 399r32 424r34 425r35 426r35 492r34 493r32 494r32
+. 511r34 512r31 572r34 574r31
 19I9*Addr<integer> 7|17r20 175r11 177r31 178r28 179r18 186r50 187r61 188r21
 . 195r35 195r70 195r82 196r34 196r65 197r24 216r11 218r32 219r28 220r18 227r50
-. 228r61 229r21 236r35 236r70 236r82 237r34 237r65 238r24
+. 228r61 229r21 236r35 236r70 236r82 237r34 237r65 238r24 362r29 368r29 515r14
+. 517r40 518r31 519r21 533r65 534r70 535r24 549r44 549r85 549r97 550r37 550r68
+. 551r27 576r14 578r40 579r31 580r21 588r65 589r70 590r24 599r44 599r85 599r97
+. 600r37 600r68 601r26
 22I9*Offset<integer> 7|22r52 173r30 178r21 178r53 187r25 187r54 187r74 196r27
 . 196r58 196r78 213r30 219r21 219r53 228r25 228r54 228r74 237r27 237r58 237r78
-. 254r30
-25R9*Instr 66e14 6|22r58 7|267r14
-25e15*Op{5E9} 7|280r20
+. 254r30 382r61 513r33 518r24 518r56 534r28 534r63 534r83 550r30 550r61 550r81
+. 573r33 579r24 579r56 589r28 589r63 589r83 600r30 600r61 600r81
+25R9*Instr 66e14 6|22r58 7|267r14 379r14
+25e15*Op{5E9} 7|280r20 622r20
 30i13*AddRd{12I9} 7|282r27
 31i13*AddRs1{12I9} 7|282r38
 32i13*AddRs2{12I9} 7|282r50
-34i13*SubRd{12I9} 7|289r27
-35i13*SubRs1{12I9} 7|289r38
-36i13*SubRs2{12I9} 7|289r50
-38i13*MulRd{12I9} 7|296r27
-39i13*MulRs1{12I9} 7|296r38
-40i13*MulRs2{12I9} 7|296r50
-42i13*DivRd{12I9} 7|303r27
-43i13*DivRs1{12I9} 7|303r38
-44i13*DivRs2{12I9} 7|303r50
+34i13*SubRd{12I9} 7|289r27 627r33 629r38
+35i13*SubRs1{12I9} 7|289r38 626r35 627r44
+36i13*SubRs2{12I9} 7|289r50 626r63 627r56
+38i13*MulRd{12I9} 7|296r27 639r33 641r38
+39i13*MulRs1{12I9} 7|296r38 638r35 639r44
+40i13*MulRs2{12I9} 7|296r50 638r63 639r56
+42i13*DivRd{12I9} 7|303r27 651r33 653r38
+43i13*DivRs1{12I9} 7|303r38 650r35 651r44
+44i13*DivRs2{12I9} 7|303r50 650r63 651r56
 46i13*RetRs{12I9} 7|331r44
-48i13*LdrRd{12I9} 7|310r27
-49i13*LdrRs{12I9} 7|310r38
-50i13*LdrOffs{22I9} 7|310r49
-52i13*StrRa{12I9} 7|317r27
-53i13*StrOffs{22I9} 7|317r38
-54i13*StrRb{12I9} 7|317r51
-56i13*MovRd{12I9} 7|324r27
-57i13*MovOffs{22I9} 7|324r38
-59i13*JmpOffs{22I9} 7|335r31
-61i13*JzRa{12I9} 7|337r29
-62i13*JzOffs{22I9} 7|338r34
-78U14*DebugPrintInstr 7|277s10
+48i13*LdrRd{12I9} 7|310r27 687r33 689r38
+49i13*LdrRs{12I9} 7|310r38 686r35 687r44
+50i13*LdrOffs{22I9} 7|310r49 687r55
+52i13*StrRa{12I9} 7|317r27 698r35 699r33
+53i13*StrOffs{22I9} 7|317r38 699r44
+54i13*StrRb{12I9} 7|317r51 698r62 699r57
+56i13*MovRd{12I9} 7|324r27 678r27 680r35
+57i13*MovOffs{22I9} 7|324r38 678r38
+59i13*JmpOffs{22I9} 7|335r31 662r37
+61i13*JzRa{12I9} 7|337r29 664r35 665r38
+62i13*JzOffs{22I9} 7|338r34 666r43
+78U14*DebugPrintInstr 7|277s10 620s10
 X 6 machine.ads
-4K9*Machine 50l5 50e12 7|8b14 361l5 361t12
+4K9*Machine 50l5 50e12 7|8b14 718l5 718t12
 12E9*ReturnCode 12e63 37r39 7|22r30 36r30 63r30 89r30 156r30 174r30 215r30
-. 255r30 263r39
+. 255r30 263r39 374r13 382r39 400r33 427r36 495r33 514r33 575r33
 12n24*Success{12E9} 7|27r16 41r23 49r26 68r20 76r23 95r23 103r25 111r28 124r23
 . 132r25 140r28 161r19 181r20 190r23 199r26 222r20 231r23 240r26 258r14 269r14
-. 272r44 283r25 290r25 297r25 304r25 311r25 318r25 325r25 332r23 347r16
-12n32*CyclesExhausted{12E9} 7|349r17
+. 272r44 283r25 290r25 297r25 304r25 311r25 318r25 325r25 332r23 347r16 374r27
+. 387r20 405r23 413r26 433r26 441r28 449r31 462r26 470r28 478r31 500r22 524r26
+. 540r29 555r32 583r23 593r26 604r28 618r44 628r28 640r28 652r28 679r25 688r28
+. 700r28 709r16
+12n32*CyclesExhausted{12E9} 7|349r17 710r17
 12n48*IllegalProgram{12E9} 7|29r16 43r23 51r26 54r23 70r20 78r23 81r20 97r23
 . 105r26 113r28 116r26 126r23 134r26 142r28 145r26 163r20 166r16 183r20 192r23
-. 201r26 204r23 224r20 233r23 242r26 245r23
+. 201r26 204r23 224r20 233r23 242r26 245r23 389r20 407r23 415r26 418r23 435r26
+. 443r29 451r31 454r29 464r26 472r29 480r31 483r29 502r23 505r19 526r26 530r23
+. 542r29 546r26 557r32 560r29 563r26 585r23 596r26 606r29 609r26
 15i4*MAX_PROGRAM_LENGTH{integer} 19r38
 19I9*ProgramCounter<integer> 22r27 7|20r9 20r27 24r18 25r49 26r15 270r13
+. 371r18 371r36 384r21 385r58 386r25
 22A9*Program(5|25R9)<19I9> 35r39 47r46 7|261r39 353r46
 35U14*ExecuteProgram 35>29 36>29 37<29 38<29 7|261b14 351l8 351t22
 35a29 Prog{22A9} 7|261b29 273r18
@@ -113,15 +125,19 @@ X 6 machine.ads
 . 318r19 319m25 324m46 325r19 326m25 332m16 335m22 338m25 340m25 343m22 347r10
 . 349m10
 38i29 Result{integer} 7|264b29 271m7 331m16
-47V13*DetectInvalidBehaviour{boolean} 47>36 48>36 7|353b13 359l8 359t30
-47a36 Prog{22A9} 7|353b36
-48i36 Cycles{integer} 7|354b36 357r16
+47V13*DetectInvalidBehaviour{boolean} 47>36 48>36 7|353b13 715l8 715t30
+47a36 Prog{22A9} 7|353b36 619r18
+48i36 Cycles{integer} 7|354b36 618r27
 X 7 machine.adb
 11I9 DataVal<integer> 14r26 17r29 38r25 39r29 39r72 46r28 47r32 47r74 65r22
 . 66r25 66r68 73r43 74r29 74r72 92r25 92r55 92r69 93r28 100r28 100r42 101r31
 . 108r48 109r34 121r25 121r55 121r68 122r28 129r28 129r41 130r31 137r49 138r34
 . 159r25 159r55 177r22 179r34 186r42 188r37 195r27 195r62 197r40 218r23 220r34
-. 227r42 229r37 236r27 236r62 238r40 257r19
+. 227r42 229r37 236r27 236r62 238r40 257r19 365r35 368r38 402r31 403r34 403r89
+. 410r58 411r38 411r93 430r34 430r70 430r84 431r37 438r37 438r51 439r40 446r63
+. 447r43 459r34 459r70 459r83 460r37 467r37 467r50 468r40 475r64 476r43 498r34
+. 498r70 517r31 519r43 533r57 535r46 549r36 549r77 551r49 578r31 580r43 588r57
+. 590r46 599r36 599r77 601r48
 14a4 Regs(11I9) 38r13 38r43 39r16 39r45 39r60 40m16 40r28 40r40 46r16 46r45
 . 47r19 47r47 47r62 48m19 48r31 48r43 65r10 65r40 66r13 66r43 66r56 67m13
 . 67r25 67r37 73r13 73r31 74r16 74r45 74r60 75m16 75r28 75r40 91r10 92r13
@@ -133,9 +149,9 @@ X 7 machine.adb
 . 189m16 195r16 195r50 196r85 197r29 198m19 218r11 218r47 219r60 220r23 221r26
 . 227r13 227r30 228r32 228r81 229r26 230r29 236r16 236r50 237r85 238r29 239r32
 . 257m7 331r34 337r19 40m16 48m19 67m13 75m16 94m16 102m19 110m22 123m16
-. 131m19 139m22 160m13 180m13 189m16 198m19 257m7
-17a4 Memory(11I9) 180r25 189r28 198r31 221m13 230m16 239m19 221m13 230m16
-. 239m19
+. 131m19 139m22 160m13 180m13 189m16 198m19 257m7 257m7
+17a4 Memory(11I9) 180r25 189r28 198r31 221m13 230m16 239m19 581r34 591r37
+. 603r39 221m13 230m16 239m19
 20i4 PC{6|19I9} 24r51 25r18 26m9 26r38 270m7 273r23 276r22 26m9 26m9 26m9
 . 26m9 26m9 26m9 26m9 26m9 26m9 26m9 26m9
 22U14 IncPC 31l8 31t13 284s19 291s19 298s19 305s19 312s19 319s19 326s19 335s16
@@ -182,7 +198,7 @@ X 7 machine.adb
 214i20 Rb{5|12I9} 221r31 230r34 239r37
 215e20 Ret{6|12E9} 222m13 224m13 231m16 233m16 240m19 242m19 245m16
 216i7 A{5|19I9} 220m13 221r20 229m16 230r23 238m19 239r26
-253U14 DoMov 259l8 259t13 324s16
+253U14 DoMov 259l8 259t13 324s16 678s16
 253i20 Rd{5|12I9} 257r12
 254i20 Offs{5|22I9} 257r27
 255e20 Ret{6|12E9} 258m7
@@ -190,13 +206,92 @@ X 7 machine.adb
 267r7 Inst{5|25R9} 273m10 277r26 280r15 282r22 282r33 282r45 289r22 289r33
 . 289r45 296r22 296r33 296r45 303r22 303r33 303r45 310r22 310r33 310r44 317r22
 . 317r33 317r46 324r22 324r33 331r39 335r26 337r24 338r29
-355i7 cycle{integer} 357m7
+358a7 RegsSigned(boolean) 626r19 626r47 629m22 638r19 638r47 641m22 650r19
+. 650r47 653m22 664r19 680m19 686r19 689m22 698r19 698r46
+362a7 MemorySigned(boolean) 522r19 538r22 553r25 582m16 592m19 602m21 582m16
+. 592m19 602m21
+365a7 Check_Regs(11I9) 402r13 402r49 403r16 403r52 403r71 404m16 404r34 404r52
+. 410r16 410r40 411r19 411r54 411r75 412m19 412r37 412r55 429r13 430r16 430r52
+. 431r19 431r52 432m19 432r37 432r55 438r19 438r68 439r22 440m22 440r40 440r58
+. 446r22 446r45 447r25 447r57 448m25 448r43 448r61 459r16 459r52 460r19 460r50
+. 461m19 461r37 461r55 467r19 467r68 468r22 469m22 469r40 469r58 475r22 475r46
+. 476r25 476r57 477m25 477r43 477r61 497r13 498r16 498r52 499m16 499r34 499r52
+. 517r13 517r55 518r63 519r26 523m19 533r16 533r39 534r35 534r90 535r29 539m22
+. 549r19 549r59 550r88 551r32 554m25 578r13 578r55 579r63 580r26 581m16 588r16
+. 588r39 589r35 589r90 590r29 591m19 599r19 599r59 600r88 601r31 603m21 665r22
+. 404m16 412m19 432m19 440m22 448m25 461m19 469m22 477m25 499m16 523m19 539m22
+. 554m25 581m16 591m19 603m21
+368a7 Check_Memory(11I9) 523r37 539r40 554r43
+371i7 Check_PC{6|19I9} 384r54 385r21 386m13 386r48 619r23 386m13 386m13 386m13
+. 386m13 386m13 386m13 386m13 386m13 386m13 386m13
+374e7 Ret{6|12E9} 618r38 627m63 628r22 630m34 639m63 640r22 642m34 651m63
+. 652r22 654m34 662m28 666m34 668m34 674m28 678m46 679r19 681m31 687m63 688r22
+. 690m34 699m63 700r22 701m34 709r10 710m10
+377i7 CycleCount{integer} 618r14 707m10 707r24
+379r7 Inst{5|25R9} 619m10 620r26 622r15 626r30 626r58 627r28 627r39 627r51
+. 629r33 638r30 638r58 639r28 639r39 639r51 641r33 650r30 650r58 651r28 651r39
+. 651r51 653r33 662r32 664r30 665r33 666r38 678r22 678r33 680r30 686r30 687r28
+. 687r39 687r50 689r33 698r30 698r57 699r28 699r39 699r52
+382U17 Check_InCPC 391l11 391t22 630s22 642s22 654s22 662s16 666s22 668s22
+. 674s16 681s19 690s22 701s22
+382e29 Ret{6|12E9} 387m13 389m13
+382i51 Offs{5|22I9} 384r74 385r41 386r68
+397U17 CheckSub 421l11 421t19 627s19
+397i26 Rd{5|12I9} 404r27 412r30
+398i23 Rs1{5|12I9} 402r24 402r60 403r82 404r45 410r27 410r51 411r65 412r48
+399i23 Rs2{5|12I9} 403r27 403r63 404r63 411r30 411r86 412r66
+400e23 Ret{6|12E9} 405m16 407m16 413m19 415m19 418m16
+424U17 CheckMul 489l11 489t19 639s19
+424i26 Rd{5|12I9} 432r30 440r33 448r36 461r30 469r33 477r36
+425i26 Rs1{5|12I9} 430r27 430r63 431r63 432r48 438r30 438r79 440r51 446r33
+. 446r56 447r68 448r54 459r27 459r63 460r61 461r48 467r30 467r79 469r51 475r33
+. 475r57 476r68 477r54
+426i26 Rs2{5|12I9} 429r24 431r30 432r66 439r33 440r69 447r36 448r72 460r30
+. 461r66 468r33 469r69 476r36 477r72
+427e26 Ret{6|12E9} 433m19 435m19 441m22 443m22 449m25 451m25 454m22 462m19
+. 464m19 470m22 472m22 478m25 480m25 483m22
+492U17 CheckDiv 508l11 508t19 651s19
+492i26 Rd{5|12I9} 499r27
+493i23 Rs1{5|12I9} 498r27 498r63 499r45
+494i23 Rs2{5|12I9} 497r24 499r63
+495e23 Ret{6|12E9} 500m16 502m16 505m13
+511U17 CheckLdr 569l11 569t19 687s19
+511i26 Rd{5|12I9} 523r30 539r33 554r36
+512i23 Rs{5|12I9} 517r24 517r66 518r74 519r37 533r27 533r50 534r46 534r101
+. 535r40 549r30 549r70 550r99 551r43
+513i23 Offs{5|22I9} 518r16 518r46 519r51 534r19 534r55 535r54 550r22 550r53
+. 551r57
+514e23 Ret{6|12E9} 524m19 526m19 530m16 540m22 542m22 546m19 555m25 557m25
+. 560m22 563m19
+515i10 A{5|19I9} 519m16 522r32 523r50 535m19 538r35 539r53 551m22 553r38
+. 554r56
+572U17 CheckStr 615l11 615t19 699s19
+572i26 Ra{5|12I9} 578r24 578r66 579r74 580r37 588r27 588r50 589r46 589r101
+. 590r40 599r30 599r70 600r99 601r42
+573i23 Offs{5|22I9} 579r16 579r46 580r51 589r19 589r55 590r54 600r22 600r53
+. 601r56
+574i23 Rb{5|12I9} 581r27 591r30 603r32
+575e23 Ret{6|12E9} 583m16 585m16 593m19 596m19 604m21 606m22 609m19
+576i10 A{5|19I9} 580m16 581r41 582r29 590m19 591r44 592r32 601m21 602r34
+. 603r46
 
 QQ SPARKVERSION 2018 (20180523)
 GG EK_DIRECT_CALLS machine__executeprogram 4 instruction__debugprintinstr debug__put__2 debug__new_line debug__put__3
 GG EK_GLOBALS machine__executeprogram local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 2 machine__regs machine__memory proper_output 3 machine__regs machine__memory machine__pc refined_proof_in 0 refined_input 2 machine__regs machine__memory refined_output 3 machine__regs machine__memory machine__pc calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE TRUE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 3 machine__regs machine__memory machine__pc LOCKS 0
-GG EK_DIRECT_CALLS machine__detectinvalidbehaviour 0
-GG EK_GLOBALS machine__detectinvalidbehaviour local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS machine__detectinvalidbehaviour__check_incpc 0
+GG EK_GLOBALS machine__detectinvalidbehaviour__check_incpc local TRUE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 1 machine__detectinvalidbehaviour__check_pc proper_output 1 machine__detectinvalidbehaviour__check_pc refined_proof_in 0 refined_input 1 machine__detectinvalidbehaviour__check_pc refined_output 1 machine__detectinvalidbehaviour__check_pc calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS machine__detectinvalidbehaviour__checksub 0
+GG EK_GLOBALS machine__detectinvalidbehaviour__checksub local TRUE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 1 machine__detectinvalidbehaviour__check_regs proper_output 1 machine__detectinvalidbehaviour__check_regs refined_proof_in 0 refined_input 1 machine__detectinvalidbehaviour__check_regs refined_output 1 machine__detectinvalidbehaviour__check_regs calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS machine__detectinvalidbehaviour__checkmul 0
+GG EK_GLOBALS machine__detectinvalidbehaviour__checkmul local TRUE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 1 machine__detectinvalidbehaviour__check_regs proper_output 1 machine__detectinvalidbehaviour__check_regs refined_proof_in 0 refined_input 1 machine__detectinvalidbehaviour__check_regs refined_output 1 machine__detectinvalidbehaviour__check_regs calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS machine__detectinvalidbehaviour__checkdiv 0
+GG EK_GLOBALS machine__detectinvalidbehaviour__checkdiv local TRUE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 1 machine__detectinvalidbehaviour__check_regs proper_output 1 machine__detectinvalidbehaviour__check_regs refined_proof_in 0 refined_input 1 machine__detectinvalidbehaviour__check_regs refined_output 1 machine__detectinvalidbehaviour__check_regs calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS machine__detectinvalidbehaviour__checkldr 0
+GG EK_GLOBALS machine__detectinvalidbehaviour__checkldr local TRUE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 3 machine__detectinvalidbehaviour__memorysigned machine__detectinvalidbehaviour__check_regs machine__detectinvalidbehaviour__check_memory proper_output 1 machine__detectinvalidbehaviour__check_regs refined_proof_in 0 refined_input 3 machine__detectinvalidbehaviour__memorysigned machine__detectinvalidbehaviour__check_regs machine__detectinvalidbehaviour__check_memory refined_output 1 machine__detectinvalidbehaviour__check_regs calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS machine__detectinvalidbehaviour__checkstr 0
+GG EK_GLOBALS machine__detectinvalidbehaviour__checkstr local TRUE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 3 machine__memory machine__detectinvalidbehaviour__memorysigned machine__detectinvalidbehaviour__check_regs proper_output 2 machine__detectinvalidbehaviour__memorysigned machine__detectinvalidbehaviour__check_regs refined_proof_in 0 refined_input 3 machine__memory machine__detectinvalidbehaviour__memorysigned machine__detectinvalidbehaviour__check_regs refined_output 2 machine__detectinvalidbehaviour__memorysigned machine__detectinvalidbehaviour__check_regs calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 machine__memory LOCKS 0
+GG EK_DIRECT_CALLS machine__detectinvalidbehaviour 1 instruction__debugprintinstr
+GG EK_GLOBALS machine__detectinvalidbehaviour local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 2 machine__regs machine__memory proper_output 1 machine__regs refined_proof_in 0 refined_input 2 machine__regs machine__memory refined_output 1 machine__regs calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE TRUE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 2 machine__regs machine__memory LOCKS 0
 GG EK_DIRECT_CALLS machine__incpc 0
 GG EK_GLOBALS machine__incpc local TRUE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 1 machine__pc proper_output 1 machine__pc refined_proof_in 0 refined_input 1 machine__pc refined_output 1 machine__pc calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 machine__pc LOCKS 0
 GG EK_DIRECT_CALLS machine__doadd 0
