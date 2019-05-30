@@ -657,64 +657,112 @@ package body Machine with SPARK_Mode is
          
          case Inst.Op is 
             when ADD =>
-               -- check if the registers used have been assigned value or not
-               if RegsSigned(Inst.AddRs1) and RegsSigned(Inst.AddRs2) then
-                  CheckAdd(Inst.AddRd,Inst.AddRs1,Inst.AddRs2,Ret);
-                  if Ret = Success then
-                     -- mark the register as assigned
+               -- if there is a register assigned 0 it should be valid
+               if RegsSigned(Inst.AddRs1) or RegsSigned(Inst.AddRs2) then
+                  if Check_Regs(Inst.AddRs1) = 0 or Check_Regs(Inst.AddRs2) = 0 then
                      RegsSigned(Inst.AddRd) := True;
                      Check_InCPC(Ret,1);
                   else
-                     return True;
+                     -- check if the registers used have been assigned value or not
+                     if RegsSigned(Inst.AddRs1) and RegsSigned(Inst.AddRs2) then                        
+                        CheckAdd(Inst.AddRd,Inst.AddRs1,Inst.AddRs2,Ret);
+                        if Ret = Success then
+                           -- mark the register as assigned
+                           RegsSigned(Inst.AddRd) := True;
+                           Check_InCPC(Ret,1);
+                        else
+                           return True;
+                        end if;
+                     else
+                        return True;
+                     end if;
                   end if;
                else
                   return True;
                end if;
-               
+                  
             when SUB =>
-                -- check if the registers used have been assigned value or not
-               if RegsSigned(Inst.SubRs1) and RegsSigned(Inst.SubRs2) then
-                  CheckSub(Inst.SubRd,Inst.SubRs1,Inst.SubRs2,Ret);
-                  if Ret = Success then
-                     -- mark the register as assigned
+               if RegsSigned(Inst.SubRs1) or RegsSigned(Inst.SubRs2) then
+                  -- if there is a register assigned 0 it should be valid
+                  if Check_Regs(Inst.SubRs1) = 0 or Check_Regs(Inst.SubRs2) =0 then
                      RegsSigned(Inst.SubRd) := True;
                      Check_InCPC(Ret,1);
-                  else
-                     return True;
+                  else                     
+                     -- check if the registers used have been assigned value or not
+                     if RegsSigned(Inst.SubRs1) and RegsSigned(Inst.SubRs2) then
+                        CheckSub(Inst.SubRd,Inst.SubRs1,Inst.SubRs2,Ret);
+                        if Ret = Success then
+                           -- mark the register as assigned
+                           RegsSigned(Inst.SubRd) := True;
+                           Check_InCPC(Ret,1);
+                        else
+                           return True;
+                        end if;
+                     else
+                        return True;
+                     end if;
                   end if;
                else
                   return True;
                end if;
                
+               
             when MUL =>
-               -- check if the registers used have been assigned value or not
-               if RegsSigned(Inst.MulRs1) and RegsSigned(Inst.MulRs2) then
-                  CheckMul(Inst.MulRd,Inst.MulRs1,Inst.MulRs2,Ret);
-                  if Ret = Success then
-                     -- mark the register as assigned
+               if RegsSigned(Inst.MulRs1) or RegsSigned(Inst.MulRs2) then
+                  -- if there is a register assigned 0 it should be valid
+                  if Check_Regs(Inst.MulRs1) = 0 or Check_Regs(Inst.MulRs2) = 0 then
                      RegsSigned(Inst.MulRd) := True;
                      Check_InCPC(Ret,1);
-                  else
-                     return True;
+                  else                     
+                     -- check if the registers used have been assigned value or not
+                     if RegsSigned(Inst.MulRs1) and RegsSigned(Inst.MulRs2) then
+                        CheckMul(Inst.MulRd,Inst.MulRs1,Inst.MulRs2,Ret);
+                        if Ret = Success then
+                           -- mark the register as assigned
+                           RegsSigned(Inst.MulRd) := True;
+                           Check_InCPC(Ret,1);
+                        else
+                           return True;
+                        end if;
+                     else
+                        return True;
+                     end if;
                   end if;
                else
                   return True;
                end if;
+               
                
             when DIV =>
                -- check if the registers used have been assigned value or not
-               if RegsSigned(Inst.DivRs1) and RegsSigned(Inst.DivRs2) then
-                  CheckDiv(Inst.DivRd,Inst.DivRs1,Inst.DivRs2,Ret);
-                  if Ret = Success then
+               if RegsSigned(Inst.DivRs1) then
+                  if Check_Regs(Inst.DivRs1) = 0 then
+                     CheckDiv(Inst.DivRd,Inst.DivRs1,Inst.DivRs2,Ret);
+                     if Ret = Success then
                      -- mark the register as assigned
-                     RegsSigned(Inst.DivRd) := True;
-                     Check_InCPC(Ret,1);
+                        RegsSigned(Inst.DivRd) := True;
+                        Check_InCPC(Ret,1);
+                     else
+                        return True;
+                     end if;          
                   else
-                     return True;
-                  end if;
+                     if RegsSigned(Inst.DivRs2) then
+                        CheckDiv(Inst.DivRd,Inst.DivRs1,Inst.DivRs2,Ret);
+                        if Ret = Success then
+                           -- mark the register as assigned
+                           RegsSigned(Inst.DivRd) := True;
+                           Check_InCPC(Ret,1);
+                        else
+                           return True;
+                        end if;
+                     else
+                        return True;
+                     end if;
+                  end if;                  
                else
                   return True;
-               end if;
+               end if;               
+                     
                
             when JMP =>
                Check_InCPC(Ret,Inst.JmpOffs);
@@ -738,12 +786,7 @@ package body Machine with SPARK_Mode is
                Check_InCPC(Ret,1);
                
             when Instruction.RET =>
-               -- check if the register used have been assigned value or not
-               if RegsSigned(Inst.RetRs) then
-                  return False;
-               else
-                  return True;
-               end if;
+               return False;
                
             when MOV =>
                CheckMov(Inst.MovRd,Inst.MovOffs,Ret);

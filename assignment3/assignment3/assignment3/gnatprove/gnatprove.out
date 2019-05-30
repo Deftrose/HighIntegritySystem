@@ -6,14 +6,14 @@ SPARK Analysis results        Total         Flow   Interval   CodePeer       Pro
 -----------------------------------------------------------------------------------------------------------
 Data Dependencies                 .            .          .          .             .           .          .
 Flow Dependencies                 .            .          .          .             .           .          .
-Initialization                  330          330          .          .             .           .          .
+Initialization                  372          372          .          .             .           .          .
 Non-Aliasing                      .            .          .          .             .           .          .
-Run-time Checks                 200            .          .          .    200 (CVC4)           .          .
+Run-time Checks                 225            .          .          .    225 (CVC4)           .          .
 Assertions                        .            .          .          .             .           .          .
 Functional Contracts              .            .          .          .             .           .          .
 LSP Verification                  .            .          .          .             .           .          .
 -----------------------------------------------------------------------------------------------------------
-Total                           530    330 (62%)          .          .     200 (38%)           .          .
+Total                           597    372 (62%)          .          .     225 (38%)           .          .
 
 
 Analyzed 4 units
@@ -62,7 +62,7 @@ in unit instruction, 1 subprograms and packages out of 33 analyzed
   Instruction.Random_Reg.Value at a-nudira.ads:67, instantiated at instruction.adb:8 skipped
 in unit machine, 19 subprograms and packages out of 19 analyzed
   Machine at machine.ads:4 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Machine.DetectInvalidBehaviour at machine.ads:47 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (97 checks)
+  Machine.DetectInvalidBehaviour at machine.ads:47 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (122 checks)
   Machine.DetectInvalidBehaviour.CheckAdd at machine.adb:395 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
   Machine.DetectInvalidBehaviour.CheckDiv at machine.adb:517 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
   Machine.DetectInvalidBehaviour.CheckLdr at machine.adb:537 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)

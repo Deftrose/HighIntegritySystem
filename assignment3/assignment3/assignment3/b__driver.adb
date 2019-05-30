@@ -252,13 +252,13 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\debug.o
-   --   C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\instruction.o
-   --   C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.o
-   --   C:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\driver.o
-   --   -LC:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\
-   --   -LC:\Users\BAI\Desktop\study\HighIntegritySystem\assignment3\assignment3\assignment3\
-   --   -LC:/gnat/2018/lib/gcc/x86_64-pc-mingw32/7.3.1/adalib/
+   --   C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\debug.o
+   --   C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\instruction.o
+   --   C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\machine.o
+   --   C:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\driver.o
+   --   -LC:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\
+   --   -LC:\Users\BAI\Desktop\Study\HighIntegritySystem\assignment3\assignment3\assignment3\
+   --   -LF:/gnat/lib/gcc/x86_64-pc-mingw32/7.3.1/adalib/
    --   -static
    --   -lgnat
    --   -Wl,--stack=0x2000000
