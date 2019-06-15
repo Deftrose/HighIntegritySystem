@@ -32,13 +32,6 @@ pred load [c, c': CacheSystem] {
 	c'.main = c.main
 }
 
-assert LoadPreserves{
-	all c, c': CacheSystem |
-		load[c,c'] implies
-		c.main = c'.main
-}
-check LoadPreserves for 5 expect 0 
-
 //Flush memory from the cache back into the main memory.
 //Note this is also non-deterministic
 pred flush [c, c': CacheSystem] {
@@ -46,6 +39,11 @@ pred flush [c, c': CacheSystem] {
 		c'.main = c.main ++ addrs <: c.cache
 		c'.cache = c.cache - addrs -> Data
 	}
+}
+
+pred destroy [c, c' : CacheSystem, a : Addr] {
+	c'.main = c.main - (a -> Data)
+	c'.cache = c.cache - (a -> Data)
 }
 
 //If a load is performed between a write and a read, this should not be observable.
@@ -64,22 +62,28 @@ assert LoadNotObservable {
 
 check LoadNotObservable for 5
 
+assert LoadPreserves {
+	all c, c' : CacheSystem | load [c, c'] implies c'.main in c.main
+}
+
+check LoadPreserves for 5
+
 assert CannotReadInitially {
-	all c : CacheSystem, a: Addr, d: Data |
-	init[c] => 	not read[c,a,d]
+	all c : CacheSystem, a : Addr, d : Data | init[c] => not read[c, a, d] 
 }
 
-check CannotReadInitially for 5 expect 0
+check CannotReadInitially for 5
 
-pred destroy [c, c': CacheSystem, a: Addr]{
-	c'.cache = c.cache - (a -> Data)
-	c'.main = c.main - (a -> Data) 
-}
-
+/* 
+ * This check fails because, while the load and flush operations move memory between main 
+ * and the cache, and there is never any address in both at the same time, the OnlyOne assert
+ * is checking only the 'destroy' operation, which takes any main memory and cache operation.
+ *  That is, the Alloy Analyser does not consider how the values for c and c' come about: it just
+ * checks them. For this property to be preserved, we would need to add an invariant to the model
+ * that specifies that no address is in both main and cache, and then check that this invariant holds
+ * for all operations. Then, we could modify below to state: destroy[c, c', a] and inv[c] => ...
+ */
 assert OnlyOneMemoryDestroyed {
-	all c, c': CacheSystem , a: Addr |
-	destroy[c,c',a] => 
-	(c.main = c'.main or c.cache = c'.cache)
+	all c, c' : CacheSystem, a : Addr | destroy [c, c', a] => (c'.main = c.main or c'.cache = c.cache)
 }
-
-check OnlyOneMemoryDestroyed for 2 but 1 Data expect 1
+check OnlyOneMemoryDestroyed for 5

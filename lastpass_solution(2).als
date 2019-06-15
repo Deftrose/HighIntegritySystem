@@ -23,6 +23,7 @@ sig Username {}
 sig Password {}
 sig PassBook {password : Username -> URL -> Password}
 
+
 //Add an axiom stating that all PassBooks have no duplicates
 // This is equivalent to instead putting "lone Password" instead of "Password" 
 //  in PassBook's definition
@@ -30,10 +31,17 @@ fact noDuplicates {
     all pb : PassBook, user : Username, url : URL | lone pb.password[user][url]
 }
 
+//A predicate stating that for the given PassBook no two users share the
+// same password for the same URL
+pred noSharedPasswords[pb : PassBook] {
+  all user1, user2 : Username, url : URL |
+    user1 != user2 => no pb.password[user1][url] & pb.password[user2][url]
+}
+
 //Add a password for a new user/url pair
 pred add [pb, pb': PassBook, url : URL, user: Username, pwd: Password] {
-    no pb.password[user][url]  
-    all user1 : Username | pwd not in pb.password[user1][url]
+    no pb.password[user][url]
+    all user2 : Username | pwd not in pb.password[user2][url]
     pb'.password = pb.password + (user->url->pwd)
 }
 
@@ -99,26 +107,14 @@ assert lookupLOne {
       lone lookup[pb, url, user]
 }
 
-// check the add to confirm there are no two same passwords for two users
-assert checkAdd {
-    all pb1, pb2 : PassBook, user: Username, url : URL, pwd: Password |
-        noSharedPassword[pb1] implies 
-    (
-            add [pb1, pb2, url, user, pwd] => (
-            noSharedPassword[pb2]
-        )
-    )
+assert addNoSharedPasswords {
+  all pb, pb' : PassBook, url : URL, user : Username, pwd : Password |
+    noSharedPasswords[pb] =>
+    add[pb, pb', url, user, pwd] => noSharedPasswords[pb']
 }
 
-pred noSharedPassword [pb: PassBook ] {
-    all user1, user2 : Username, url : URL  |
-    user1 != user2 => (
-        no pb.password[user1][url] & pb.password[user2][url]
-    )
-}
-
-check checkAdd for 5 expect 1
 check addWorks for 5 but 2 PassBook expect 0
 check updateWorks for 5 but 2 PassBook expect 0
 check deleteIsUndo for 2 expect 0
 check lookupLOne for 2 but 1 PassBook expect 0
+check addNoSharedPasswords for 5 expect 0

@@ -31,13 +31,19 @@ procedure WordCount is
 begin
 
    loop
-      Get(Ch); -- Get a character from standard input
 
-      NumChars := NumChars +1;
-      Word := ASU.To_Unbounded_String("Hello world!");
-      Put(ASU.To_String(Word) & ": " & Ch);
-      st.Push(Ch);
-      Put(" number of chars :"); Put(NumChars);
-      Ada.Text_IO.New_Line;
+      Get(Ch); -- Get a character from standard input
+      if Ch /= '#' then
+         NumChars := NumChars +1;
+         Word := Word & Ch;
+         Put("Got a new character " & ": " & Ch);
+         Put(" number of chars :"); Put(NumChars);
+         Ada.Text_IO.New_Line;
+      else
+         Put("The word is :" & ASU.To_String(Word));
+         break;
+      end if;
+
    end loop;
+      
 end WordCount;

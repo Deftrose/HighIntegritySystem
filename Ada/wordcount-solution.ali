@@ -3,6 +3,7 @@ M P W=b
 P ZX
 
 RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
 RV NO_EXCEPTION_HANDLERS
 RV NO_EXCEPTION_PROPAGATION
 RV NO_EXCEPTIONS
@@ -18,8 +19,9 @@ RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLICIT_LOOPS
 RV SPARK_05
 RV MAX_PROTECTED_ENTRIES=6
+RV MAX_ENTRY_QUEUE_LENGTH=1+
 
-U wordcount%b		wordcount.adb		8d4b064e NE OO SU IU
+U wordcount%b		wordcount-solution.adb	25b7f6ef NE OO SU IU
 W ada%s			ada.ads			ada.ali
 W ada.characters%s	a-charac.ads		a-charac.ali
 W ada.characters.latin_1%s  a-chlat1.ads	a-chlat1.ali
@@ -95,13 +97,14 @@ D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
 D s-win32.ads		20180524051736 b7f96285 system.win32%s
-D wordcount.adb		20190615052506 55c2a0ae wordcount%b
+D wordcount-solution.adb  20190615052802 fd3e500f wordcount%b
 X 1 ada.ads
-16K9*Ada 20e8 55|1r6 2r6 4r6 5r6 8r6 10r6 17r24 41r10
+16K9*Ada 20e8 55|1r6 2r6 4r6 5r6 8r6 10r6 17r24 45r27 48r33
 X 2 a-charac.ads
-16K13*Characters 18e19 55|10r10
+16K13*Characters 18e19 55|10r10 45r31 48r37
 X 3 a-chlat1.ads
-18K24*Latin_1 296e27 55|10w21
+18K24*Latin_1 296e27 55|10w21 45r42 48r48
+34e4*HT{character} 55|45r50 48r56
 X 6 a-inteio.ads
 18K13*Integer_Text_IO[14|46] 55|4w10 5r10
 X 9 a-string.ads
@@ -109,18 +112,22 @@ X 9 a-string.ads
 X 11 a-strunb.ads
 76K21*Unbounded 491e26 55|8w18 17r36
 79R9*Unbounded_String<5|43R9> 474e14 55|19r55 22r20
-100V13*To_String{string} 55|43s36
-131V14*"&"{79R9} 55|38s23
+94V13*To_Unbounded_String{79R9} 55|38s16 54s22
+100V13*To_String{string} 55|74s15
+131V14*"&"{79R9} 55|57s23
 X 13 a-textio.ads
-49K13*Text_IO 471e16 55|1w10 2r10 41r14
-166U14*New_Line 55|41s22
-206U14*Get 55|35s7
-242U14*Put 55|39s10 40s10 43s10
+49K13*Text_IO 471e16 55|1w10 2r10
+166U14*New_Line 55|67s19 68s19
+206U14*Get 55|36s4 49s13 58s10
+242U14*Put 55|74s7
 X 14 a-tiinio.ads
-66U14*Put 55|40s37[6|18]
+66U14*Put 55|67s4[6|18] 68s4[6|18]
 X 20 protectedstack.ads
 13k9*ProtectedStack 49e19 55|7w6 19r31
 30W19 Stack 55|29r21[19]
+31Y13 Push 55|53s13[19] 65s7[19]
+32Y13 Pop 55|73s10[19]
+34Y13 Empty 55|71s7[19] 75s10[19]
 X 22 system.ads
 67M9*Address
 X 31 s-memory.ads
@@ -132,13 +139,14 @@ X 38 s-stausa.ads
 268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
 X 40 s-stalib.adb
 93U14 Break_Start 94i<c,__gnat_break_start>22
-X 55 wordcount.adb
-15U11*WordCount 15b11 48l5 48t14
-17K12 ASU=17:36 18r8 19r51 22r16 43r32
+X 55 wordcount-solution.adb
+15U11*WordCount 15b11 77l5 77t14
+17K12 ASU=17:36 18r8 19r51 22r16 38r12 54r18 74r11
 19K12 StringStack[20|13] 29r9
-21e4 Ch{character} 35m11 36r10 38r25 39r46
-22r4 Word{11|79R9} 38m10 38r18 43r46
-25i4 NumChars{integer} 37m10 37r22 40r41
-26i4 NumWords{integer}
-29w4 St{20|30W19[19]}
+21e4 Ch{character} 36m8 40r11 45r10 45r22 48r16 48r28 49m17 57r25 58m14
+22r4 Word{11|79R9} 38m4 53r18 54m10 57m10 57r18 65r12 73m14 74r25
+25i4 NumChars{integer} 42m7 42r19 68r8
+26i4 NumWords{integer} 52m10 52r22 64m4 64r16 67r8
+29w4 St{20|30W19[19]} 53r10 65r4 71r4 73r7 75r7
+32b4 IsEmpty{boolean} 71m13 72r14 75m16
 

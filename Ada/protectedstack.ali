@@ -11,8 +11,8 @@ U protectedstack%b	protectedstack.adb	8a9022db NE OO PK GE
 
 U protectedstack%s	protectedstack.ads	40022830 BN EE NE OO PK GE
 
-D protectedstack.ads	20190502233344 40022830 protectedstack%s
-D protectedstack.adb	20190502233346 ca920aeb protectedstack%b
+D protectedstack.ads	20190529132012 40022830 protectedstack%s
+D protectedstack.adb	20190529132012 ca920aeb protectedstack%b
 D system.ads		20180524051738 32a08138 system%s
 X 1 protectedstack.ads
 9i4 Max_Size{positive} 43r32 45r32 2|26r24 64r35
